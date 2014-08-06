@@ -1,0 +1,106 @@
+background no
+
+update_interval 1.0
+double_buffer yes
+
+use_xft yes
+xftalpha 0.8
+xftfont Droid Sans Mono:size=7
+
+own_window yes
+own_window_class Conky
+own_window_transparent yes
+own_window_type override
+
+gap_x 0
+gap_y 0
+alignment tm
+minimum_size 1166 400
+#maximum_width 600
+
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+
+cpu_avg_samples 2
+net_avg_samples 2
+
+out_to_console no
+out_to_stderr no
+uppercase no
+use_spacer none
+
+lua_load ~/.conky/widgets.lua
+lua_draw_hook_pre widgets
+
+TEXT
+${image /usr/share/icons/AwOkenWhite/clear/128x128/start-here/start-here-gentoo1.png -p 522,35 -s 128x128}
+${image /home/jacobian/.conky/img/cpu.png -p 368,88 -s 54x54}
+${image /home/jacobian/.conky/img/mem.png -p 748,88 -s 54x54}
+
+${voffset -50}
+${offset 0}${font Living Together:size=42}$nodename!${exec whoami}${font}
+
+${offset 10}$sysname $kernel
+${offset 10}uptime: $uptime
+
+${voffset 0}
+${offset 250}${font GeosansLight:size=14}CPU: ${cpu cpu0}%${font}
+${voffset 0}
+${offset 225}cpu0: ${cpu cpu1}% ${freq_g 1}GHz
+${offset 225}cpu1: ${cpu cpu2}% ${freq_g 2}GHz
+${offset 225}cpu2: ${cpu cpu3}% ${freq_g 3}GHz
+${offset 225}cpu3: ${cpu cpu4}% ${freq_g 4}GHz
+
+${voffset -90}
+${offset 850}${font GeosansLight:size=14}MEM: $memperc${font}
+${voffset 0}
+${offset 865}used:  $mem
+${offset 865}total: $memmax
+${offset 865}swap:  $swap
+${offset 865}total: $swapmax
+
+${font GeosansLight:size=14}BAT: ${battery_percent}%${font}
+$battery_time
+$battery
+
+${font GeosansLight:size=14}I8K${font}
+${i8k_cpu_temp} °C
+${i8k_right_fan_status}
+${i8k_right_fan_rpm} rpm
+
+${time %A %d %B}
+
+${font GeosansLight:bold:size=14}$mpd_title${font}
+$mpd_album
+$mpd_artist
+${if_mpd_playing}
+${if_match "$mpd_status" == "Playing"}
+${image /usr/share/icons/AwOkenWhite/clear/128x128/actions/media-playback-start.png -p 175,345 -s 50x50}
+${endif}
+${if_match "$mpd_status" == "Paused"}
+${image /usr/share/icons/AwOkenWhite/clear/128x128/actions/media-playback-pause.png -p 175,345 -s 50x50}
+${endif}
+${else}
+${image /usr/share/icons/AwOkenWhite/clear/128x128/actions/media-playback-stop.png -p 175,345 -s 50x50}
+${endif}
+
+root      ${fs_size /} ${fs_used /} ${fs_free /} ${fs_used_perc /}%
+boot      ${fs_size /boot} ${fs_used /boot} ${fs_free /boot} ${fs_used_perc /boot}%
+home      ${fs_size /home} ${fs_used /home} ${fs_free /home} ${fs_used_perc /home}%
+opt       ${fs_size /opt} ${fs_used /opt}   ${fs_free /opt} ${fs_used_perc /opt}%
+tmp       ${fs_size /tmp} ${fs_used /tmp}   ${fs_free /tmp} ${fs_used_perc /tmp}%
+usr       ${fs_size /usr} ${fs_used /usr}  ${fs_free /usr} ${fs_used_perc /usr}%
+var       ${fs_size /var} ${fs_used /var}  ${fs_free /var} ${fs_used_perc /var}%
+portage   ${fs_size /usr/portage/distfiles}  ${fs_used /usr/portage/distfiles}  ${fs_free /usr/portage/distfiles}  ${fs_used_perc /usr/portage/distfiles}%
+music     ${fs_size /media/music}  ${fs_used /media/music}  ${fs_free /media/music}  ${fs_used_perc /media/music}%
+babel     ${fs_size /media/babel}  ${fs_used /media/babel}  ${fs_free /media/babel}  ${fs_used_perc /media/babel}%
+resources ${fs_size /media/resources}  ${fs_used /media/resources}  ${fs_free /media/resources}  ${fs_used_perc /media/resources}%
+
+eth0:  ${addr eth0}  ${downspeed eth0}  ${upspeed eth0}
+eth1:  ${addr eth1}  ${downspeed eth1}  ${upspeed eth1}
+gw:    ${gw_ip}
+${downspeedgraph eth0 48,180} ${downspeedgraph eth1 48,180}
+${upspeedgraph eth0 48,180} ${upspeedgraph eth1 48,180}
+

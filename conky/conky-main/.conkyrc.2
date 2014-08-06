@@ -1,0 +1,84 @@
+background no
+
+update_interval 1.0
+double_buffer yes
+
+use_xft yes
+xftalpha 0.8
+xftfont Droid Sans Mono:size=7
+
+own_window yes
+own_window_class Conky
+own_window_transparent yes
+own_window_type override
+
+gap_x 0
+gap_y 0
+alignment tm
+minimum_size 1166 400
+#maximum_width 600
+
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+
+cpu_avg_samples 2
+net_avg_samples 2
+
+out_to_console no
+out_to_stderr no
+uppercase no
+use_spacer none
+
+lua_load ~/.conky_widgets.lua
+lua_draw_hook_pre conky_widgets
+
+TEXT
+${voffset  3}${offset 275}${font GeosansLight:bold:size=24}${time %A %d %B}${font}
+#${voffset  5}${offset 275}$uptime
+#${voffset  5}${offset 275}> $battery_time
+#${voffset 32}${offset 385}${freq_g 1}
+#${voffset  0}${offset 395}${freq_g 2}
+#${voffset  0}${offset 400}${freq_g 3}
+#${voffset  0}${offset 405}${freq_g 4}
+#${voffset  0}${alignc}${offset -235}${font GeosansLight:bold:size=14}$memperc${font}
+#${voffset -19}${alignc}${offset 23}${font GeosansLight:bold:size=14}${cpu cpu0}${font}
+#${voffset  0}${offset 400}${i8k_cpu_temp} °C
+#${voffset  2}${offset 395}${i8k_right_fan_status}
+#${voffset  2}${offset 390}${i8k_right_fan_rpm} rpm
+#${voffset 26}${offset 67}$nodename!${exec whoami}
+#${voffset -9}${offset 264}$sysname $kernel
+#${voffset 61}${alignc}${offset -234}${font GeosansLight:bold:size=14}${battery_percent}${font}
+#${voffset -75}${offset 400}root      ${fs_size /}   ${fs_used /}  ${fs_free /}  ${fs_used_perc /}%
+#${offset 400}boot      ${fs_size /boot}  ${fs_used /boot}  ${fs_free /boot}  ${fs_used_perc /boot}%
+#${offset 400}home      ${fs_size /home}  ${fs_used /home}  ${fs_free /home}  ${fs_used_perc /home}%
+#${offset 400}opt       ${fs_size /opt}   ${fs_used /opt}   ${fs_free /opt}  ${fs_used_perc /opt}%
+#${offset 400}tmp        ${fs_size /tmp}  ${fs_used /tmp}   ${fs_free /tmp}   ${fs_used_perc /tmp}%
+#${offset 400}usr       ${fs_size /usr}  ${fs_used /usr}  ${fs_free /usr}  ${fs_used_perc /usr}%
+#${offset 400}var       ${fs_size /var}  ${fs_used /var}  ${fs_free /var}  ${fs_used_perc /var}%
+#${offset 400}portage   ${fs_size /usr/portage/distfiles}  ${fs_used /usr/portage/distfiles}  ${fs_free /usr/portage/distfiles}  ${fs_used_perc /usr/portage/distfiles}%
+#${offset 400}music     ${fs_size /media/music}  ${fs_used /media/music}  ${fs_free /media/music}  ${fs_used_perc /media/music}%
+#${offset 400}babel     ${fs_size /media/babel}  ${fs_used /media/babel}  ${fs_free /media/babel}  ${fs_used_perc /media/babel}%
+#${offset 400}resources  ${fs_size /media/resources}  ${fs_used /media/resources}  ${fs_free /media/resources}  ${fs_used_perc /media/resources}%
+#${voffset 70}${offset 275}${font GeosansLight:bold:size=14}$mpd_title${font}
+#${voffset  5}${offset 275}$mpd_album
+#${voffset  2}${offset 275}$mpd_artist
+#${image /usr/share/icons/AwOkenWhite/clear/128x128/start-here/start-here-gentoo1.png -p 140,163 -s 120x120}
+#${if_mpd_playing}
+#${if_match "$mpd_status" == "Playing"}
+#${image /usr/share/icons/AwOkenWhite/clear/128x128/actions/media-playback-start.png -p 175,345 -s 50x50}
+#${endif}
+#${if_match "$mpd_status" == "Paused"}
+#${image /usr/share/icons/AwOkenWhite/clear/128x128/actions/media-playback-pause.png -p 175,345 -s 50x50}
+#${endif}
+#${else}
+#${image /usr/share/icons/AwOkenWhite/clear/128x128/actions/media-playback-stop.png -p 175,345 -s 50x50}
+#${endif}
+#${voffset 10}
+#eth0:  ${addr eth0}  ${downspeed eth0}  ${upspeed eth0}
+#eth1:  ${addr eth1}  ${downspeed eth1}  ${upspeed eth1}
+#gw:     ${gw_ip}
+#${downspeedgraph eth0 48, 260}  ${downspeedgraph eth1 48, 260}
+#${upspeedgraph eth0 48, 260}  ${upspeedgraph eth1 48, 260}
+
