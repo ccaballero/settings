@@ -1,0 +1,14 @@
+
+gentoo/main/bin
+gentoo/main/dev
+gentoo/main/lib
+gentoo/main/lib32
+gentoo/main/lib64
+gentoo/main/media
+gentoo/main/mnt
+gentoo/main/portage*
+gentoo/main/run
+gentoo/main/sbin
+gentoo/main/stage*
+gentoo/main/sys
+
