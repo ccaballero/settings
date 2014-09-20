@@ -1,0 +1,36 @@
+# /etc/hosts: Local Host Database
+#
+# This file describes a number of aliases-to-address mappings for the for 
+# local hosts that share this file.
+#
+# In the presence of the domain name service or NIS, this file may not be 
+# consulted at all; see /etc/host.conf for the resolution order.
+#
+
+# IPv4 and IPv6 localhost aliases
+127.0.0.1       localhost
+::1             localhost
+
+# Global addresses
+192.168.0.1     main.local          main
+192.168.0.2     minot.local         minot
+192.168.0.3     fxos.local          fxos
+
+167.157.28.31   nab.scesi           nab
+167.157.28.32   link.scesi          link
+167.157.28.33   smith.scesi         smith
+167.157.28.34   dozer.scesi         dozer
+167.157.28.35   rineheart.scesi     rineheart
+
+167.157.27.22   jalapeno.scesi      jalapeno
+
+192.3.27.103    hiperborea.com.bo   hiperborea
+
+# Virtual hosts
+192.168.0.1     gentoo.main
+192.168.0.1	hiperborea.main
+192.168.0.1     ghost.main
+
+192.168.0.1	galao.main
+192.168.0.1	galao.local
+

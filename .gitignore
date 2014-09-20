@@ -11,4 +11,5 @@ gentoo/main/run
 gentoo/main/sbin
 gentoo/main/stage*
 gentoo/main/sys
+gentoo/main/var
 

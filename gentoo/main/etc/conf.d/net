@@ -1,0 +1,20 @@
+# This blank configuration will automatically use DHCP for any net.*
+# scripts in /etc/init.d.  To create a more complete configuration,
+# please review /usr/share/doc/openrc*/net.example* and save your configuration
+# in /etc/conf.d/net (this file :]!).
+
+# home's configuration
+#config_eth0="null"
+#routes_eth0="null"
+
+config_eth0="181.177.142.72 netmask 255.255.255.0 brd 181.177.142.255"
+routes_eth0="default via 181.177.142.1"
+
+modules_wlan0="!iwconfig !wpa_supplicant"
+config_wlan0="192.168.0.1 netmask 255.255.255.0 brd 192.168.0.255"
+
+# The network scripts are now part of net-misc/netifrc
+# In order to avoid sys-apps/openrc-0.12 from removing this file, this comment was
+# added; you can safely remove this comment.  Please see
+# /usr/share/doc/netifrc*/README* for more information.
+
