@@ -47,4 +47,6 @@ shm               /dev/shm         tmpfs   nodev,nosuid,noexec                  
 /home/jacobian/.config/awesome    /bckp/awesome/main     none bind 0 0
 /home/jacobian/.conky             /bckp/conky/main       none bind 0 0
 /home/jacobian/.vim               /bckp/vim/main         none bind 0 0
+/root/kernel                      /bckp/kernel/main      none bind 0 0
+/root/notes			  /bckp/notes            none bind 0 0
 

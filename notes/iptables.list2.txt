@@ -1,0 +1,20 @@
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+ACCEPT     all  --  anywhere             anywhere            
+ACCEPT     all  --  anywhere             anywhere            
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:ssh
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:http
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:rsync
+DROP       tcp  --  anywhere             anywhere             tcp dpts:0:1023
+DROP       udp  --  anywhere             anywhere             udp dpts:0:1023
+ACCEPT     all  --  anywhere             anywhere            
+
+Chain FORWARD (policy DROP)
+target     prot opt source               destination         
+DROP       all  --  anywhere             192.168.0.0/16      
+ACCEPT     all  --  192.168.0.0/16       anywhere            
+ACCEPT     all  --  anywhere             192.168.0.0/16      
+ACCEPT     all  --  anywhere             anywhere            
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         

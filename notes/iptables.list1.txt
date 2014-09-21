@@ -1,0 +1,10 @@
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy DROP)
+target     prot opt source               destination         
+ACCEPT     all  --  192.168.0.0/24       anywhere            
+ACCEPT     all  --  anywhere             192.168.0.0/24      
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         

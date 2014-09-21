@@ -1,0 +1,48 @@
+To update NPM:
+npm update -g npm
+
+Yeoman:
+npm install -g yo
+
+	Install of generators:
+	webapp:
+		npm install -g generator-webapp
+	foundation-five:
+		npm install -g generator-foundation-five
+	express:
+		npm install -g generator-express
+	firefox-os
+		npm install -g generator-firefox-os
+	angularexpress
+		npm install -g generator-angularexpress
+	generator-meteor
+		npm install -g generator-meteor
+	generator-ember
+		npm install -g generator-ember
+
+Grunt client:
+npm install -g grunt-cli
+
+Bower:
+npm install -g bower
+
+Forever:
+npm install -g forever
+
+Express:
+npm install -g express
+	
+	Install the generator
+	npm install -g express-generator
+
+Mocha:
+npm install -g mocha
+
+Less:
+npm install -g less
+
+MEAN:
+npm install -g meanio
+
+Meteorite:
+npm install -g meteorite

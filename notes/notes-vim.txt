@@ -1,0 +1,2 @@
+To enable Spanish spell checking, use:
+	:setlocal spell spelllang=es

@@ -1,0 +1,15 @@
+
+# create a volume group named vg
+vgcreate vg /dev/sda4
+
+# extending an existing volume group
+vgextend vg /dev/sdb1
+
+
+
+# create a logical volumes
+lvcreate -L10G -nusr vg
+
+# extending a logical volumes
+lvextend -L+5G /dev/vg/home
+

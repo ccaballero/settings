@@ -1,0 +1,4 @@
+texconfig font ro
+texconfig font rw
+
+/usr/sbin/texmf-update
