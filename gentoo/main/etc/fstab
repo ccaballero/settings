@@ -41,7 +41,10 @@
 proc              /proc            proc    defaults                                  0 0
 shm               /dev/shm         tmpfs   nodev,nosuid,noexec                       0 0
 
-/var/lib/mpd/playlists /var/www/settings/playlists        none bind 0 0
-/                      /var/www/settings/gentoo/main      none bind 0 0
-/var                   /var/www/settings/gentoo/main/var  none bind 0 0
+/var/lib/mpd/playlists            /bckp/playlists        none bind 0 0
+/etc                              /bckp/gentoo/main/etc  none bind 0 0
+/var                              /bckp/gentoo/main/var  none bind 0 0
+/home/jacobian/.config/awesome    /bckp/awesome/main     none bind 0 0
+/home/jacobian/.conky             /bckp/conky/main       none bind 0 0
+/home/jacobian/.vim               /bckp/vim/main         none bind 0 0
 

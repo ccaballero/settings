@@ -78,7 +78,6 @@ net-libs/nodejs
 net-misc/bridge-utils
 net-misc/spice-gtk
 net-p2p/transmission
-net-wireless/hostapd
 net-wireless/wpa_supplicant
 sys-apps/lm_sensors
 sys-apps/man-db

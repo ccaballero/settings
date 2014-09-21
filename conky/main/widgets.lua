@@ -502,7 +502,7 @@ end
 --cairo_move_to (cr, 900, 700)
 --cairo_show_text (cr, cover)
 --cairo_fill(cr)
-function draw_cover(xc, yc, width, height, t)
+function draw_cover(xc, yc, width, height, t, color)
     cover=string.reverse('/media/music/'..conky_parse('${mpd_file}'))
     index=string.find(cover,'/')
     cover=string.reverse(string.sub(cover,index))
@@ -518,7 +518,7 @@ function draw_cover(xc, yc, width, height, t)
         yc-((height+_t)/2),
         width+_t,
         height+_t,
-        t, 0xffffff, 0.25
+        t, color, 0.25
     )
 
     imlib_context_set_image(image)
@@ -544,54 +544,56 @@ function conky_widgets()
     cr = cairo_create(cs)
 
     r = 128
+    color = 0xd08f67
+    color1 = 0xf6d2a2
 
-    round_rect(70, 204, 130, 1, 0, 0xffffff, 0.5)
-    round_rect(70, 340, 130, 1, 0, 0xffffff, 0.5)
-    round_rect(70, 436, 130, 1, 0, 0xffffff, 0.5)
-    round_rect(70, 683, 210, 1, 0, 0xffffff, 0.5)
-    round_rect(70, 889, 210, 1, 0, 0xffffff, 0.5)
+    round_rect(70, 204, 130, 1, 0, color, 0.5)
+    round_rect(70, 340, 130, 1, 0, color, 0.5)
+    round_rect(70, 436, 130, 1, 0, color, 0.5)
+    round_rect(70, 683, 210, 1, 0, color, 0.5)
+    round_rect(70, 889, 210, 1, 0, color, 0.5)
 
-    round_rect(350, 489, 280, 1, 0, 0xffffff, 0.5)
-    round_rect(350, 657, 280, 1, 0, 0xffffff, 0.5)
-    round_rect(350, 954, 130, 1, 0, 0xffffff, 0.5)
+    round_rect(350, 489, 280, 1, 0, color, 0.5)
+    round_rect(350, 657, 280, 1, 0, color, 0.5)
+    round_rect(350, 954, 130, 1, 0, color, 0.5)
 
-    round_rect(519, 954, 130, 1, 0, 0xffffff, 0.5)
+    round_rect(519, 954, 130, 1, 0, color, 0.5)
 
-    clock_hands(965, 140, 0xffffff, 0.8, true, r-(6*7))
-    ring('time', '%I', 12, 0xffffff, 0.0, 0xffffff, 0.8, 965, 140, r-(11*7)+ 8, 10, 0, 360)
-    ring('time', '%M', 60, 0xffffff, 0.0, 0xffffff, 0.8, 965, 140, r-(10*7)+12, 10, 0, 360)
-    ring('time', '%S', 60, 0xffffff, 0.0, 0xffffff, 0.8, 965, 140, r-( 9*7)+16, 10, 0, 360)
+    clock_hands(965, 140, color1, 0.8, true, r-(6*7))
+    ring('time', '%I', 12, color, 0.0, color1, 0.8, 965, 140, r-(11*7)+ 8, 10, 0, 360)
+    ring('time', '%M', 60, color, 0.0, color1, 0.8, 965, 140, r-(10*7)+12, 10, 0, 360)
+    ring('time', '%S', 60, color, 0.0, color1, 0.8, 965, 140, r-( 9*7)+16, 10, 0, 360)
 
-    ring('cpu', 'cpu0', 100, 0xffffff, 0.2, 0xffffff, 0.8, 276, 207, r-(15*7)+3, 5,   0, 360)
-    ring('cpu', 'cpu1', 100, 0xffffff, 0.2, 0xffffff, 0.8, 276, 207, r-(14*7)+3, 5,  30,  90)
-    ring('cpu', 'cpu2', 100, 0xffffff, 0.2, 0xffffff, 0.8, 276, 207, r-(14*7)+3, 5, 120, 180)
-    ring('cpu', 'cpu3', 100, 0xffffff, 0.2, 0xffffff, 0.8, 276, 207, r-(14*7)+3, 5, 210, 270)
-    ring('cpu', 'cpu4', 100, 0xffffff, 0.2, 0xffffff, 0.8, 276, 207, r-(14*7)+3, 5, 300, 360)
-    ring('cpu', 'cpu5', 100, 0xffffff, 0.2, 0xffffff, 0.8, 276, 207, r-(13*7)+3, 5, 360, 420)
-    ring('cpu', 'cpu6', 100, 0xffffff, 0.2, 0xffffff, 0.8, 276, 207, r-(13*7)+3, 5, 450, 510)
-    ring('cpu', 'cpu7', 100, 0xffffff, 0.2, 0xffffff, 0.8, 276, 207, r-(13*7)+3, 5, 540, 600)
-    ring('cpu', 'cpu8', 100, 0xffffff, 0.2, 0xffffff, 0.8, 276, 207, r-(13*7)+3, 5, 630, 690)
+    ring('cpu', 'cpu0', 100, color, 0.2, color, 0.8, 276, 207, r-(15*7)+3, 5,   0, 360)
+    ring('cpu', 'cpu1', 100, color, 0.2, color, 0.8, 276, 207, r-(14*7)+3, 5,  30,  90)
+    ring('cpu', 'cpu2', 100, color, 0.2, color, 0.8, 276, 207, r-(14*7)+3, 5, 120, 180)
+    ring('cpu', 'cpu3', 100, color, 0.2, color, 0.8, 276, 207, r-(14*7)+3, 5, 210, 270)
+    ring('cpu', 'cpu4', 100, color, 0.2, color, 0.8, 276, 207, r-(14*7)+3, 5, 300, 360)
+    ring('cpu', 'cpu5', 100, color, 0.2, color, 0.8, 276, 207, r-(13*7)+3, 5, 360, 420)
+    ring('cpu', 'cpu6', 100, color, 0.2, color, 0.8, 276, 207, r-(13*7)+3, 5, 450, 510)
+    ring('cpu', 'cpu7', 100, color, 0.2, color, 0.8, 276, 207, r-(13*7)+3, 5, 540, 600)
+    ring('cpu', 'cpu8', 100, color, 0.2, color, 0.8, 276, 207, r-(13*7)+3, 5, 630, 690)
 
-    ring('memperc',  '', 100, 0xffffff, 0.2, 0xffffff, 0.8, 276, 343, r-(15*7), 5, 0, 360)
-    ring('swapperc', '', 100, 0xffffff, 0.2, 0xffffff, 0.8, 276, 343, r-(14*7), 5, 90, 270)
+    ring('memperc',  '', 100, color, 0.2, color, 0.8, 276, 343, r-(15*7), 5, 0, 360)
+    ring('swapperc', '', 100, color, 0.2, color, 0.8, 276, 343, r-(14*7), 5, 90, 270)
 
-    ring('fs_used_perc', '/',                100, 0xffffff, 0.2, 0xffffff, 0.6, 694, 511, r-(15*7), 5,   0, 120)
-    ring('fs_used_perc', '/boot',            100, 0xffffff, 0.2, 0xffffff, 0.6, 694, 511, r-(14*7), 5,  60, 180)
-    ring('fs_used_perc', '/home',            100, 0xffffff, 0.2, 0xffffff, 0.6, 694, 511, r-(13*7), 5, 120, 240)
-    ring('fs_used_perc', '/usr',             100, 0xffffff, 0.2, 0xffffff, 0.6, 694, 511, r-(15*7), 5, 180, 300)
-    ring('fs_used_perc', '/var',             100, 0xffffff, 0.2, 0xffffff, 0.6, 694, 511, r-(14*7), 5, 240, 360)
-    ring('fs_used_perc', '/opt',             100, 0xffffff, 0.2, 0xffffff, 0.6, 694, 511, r-(13*7), 5, 300, 420)
-    ring('fs_used_perc', '/usr/portage',     100, 0xffffff, 0.2, 0xffffff, 0.6, 694, 611, r-(15*7), 5,   0,  90)
-    ring('fs_used_perc', '/media/music',     100, 0xffffff, 0.2, 0xffffff, 0.6, 694, 611, r-(14*7), 5,  90, 180)
-    ring('fs_used_perc', '/media/books',     100, 0xffffff, 0.2, 0xffffff, 0.6, 694, 611, r-(15*7), 5, 180, 270)
-    ring('fs_used_perc', '/media/resources', 100, 0xffffff, 0.2, 0xffffff, 0.6, 694, 611, r-(14*7), 5, 270, 360)
+    ring('fs_used_perc', '/',                100, color, 0.2, color, 0.6, 694, 511, r-(15*7), 5,   0, 120)
+    ring('fs_used_perc', '/boot',            100, color, 0.2, color, 0.6, 694, 511, r-(14*7), 5,  60, 180)
+    ring('fs_used_perc', '/home',            100, color, 0.2, color, 0.6, 694, 511, r-(13*7), 5, 120, 240)
+    ring('fs_used_perc', '/usr',             100, color, 0.2, color, 0.6, 694, 511, r-(15*7), 5, 180, 300)
+    ring('fs_used_perc', '/var',             100, color, 0.2, color, 0.6, 694, 511, r-(14*7), 5, 240, 360)
+    ring('fs_used_perc', '/opt',             100, color, 0.2, color, 0.6, 694, 511, r-(13*7), 5, 300, 420)
+    ring('fs_used_perc', '/usr/portage',     100, color, 0.2, color, 0.6, 694, 611, r-(15*7), 5,   0,  90)
+    ring('fs_used_perc', '/media/music',     100, color, 0.2, color, 0.6, 694, 611, r-(14*7), 5,  90, 180)
+    ring('fs_used_perc', '/media/books',     100, color, 0.2, color, 0.6, 694, 611, r-(15*7), 5, 180, 270)
+    ring('fs_used_perc', '/media/resources', 100, color, 0.2, color, 0.6, 694, 611, r-(14*7), 5, 270, 360)
 
     if conky_parse('${mpd_status}') == 'Playing'
     then
-        draw_cover(1064, 1000, 100, 100, 4)
+        draw_cover(1064, 1000, 100, 100, 4, color)
     end
 
-    ring('mpd_percent', '', 100, 0xffffff, 0.2, 0xffffff, 0.8, 545, 998, r-(14*7), 5, 0, 360)
+    ring('mpd_percent', '', 100, color, 0.2, color, 0.8, 545, 998, r-(14*7), 5, 0, 360)
 
     cairo_destroy(cr)
 end
