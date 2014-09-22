@@ -590,7 +590,7 @@ function conky_widgets()
 
     if conky_parse('${mpd_status}') == 'Playing'
     then
-        draw_cover(1064, 1000, 100, 100, 4, color)
+        draw_cover(694, 900, 60, 60, 4, color)
     end
 
     ring('mpd_percent', '', 100, color, 0.2, color, 0.8, 545, 998, r-(14*7), 5, 0, 360)

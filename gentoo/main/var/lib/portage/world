@@ -14,11 +14,13 @@ app-emulation/virt-manager
 app-portage/gentoolkit
 app-shells/bash
 app-text/evince
+app-text/libebook
 app-text/poppler
 app-vim/airline
 app-vim/nerdtree
 app-vim/pathogen
 app-vim/vim-spell-es
+dev-cpp/libcmis
 dev-db/couchdb
 dev-db/mariadb
 dev-lang/perl
@@ -27,6 +29,8 @@ dev-lang/python:2.7
 dev-lang/python:3.3
 dev-lang/ruby
 dev-libs/gobject-introspection
+dev-libs/libixion
+dev-libs/liborcus
 dev-libs/nspr
 dev-libs/nss
 dev-libs/openssl
@@ -53,6 +57,7 @@ media-gfx/gimp
 media-gfx/inkscape
 media-gfx/librecad
 media-gfx/ristretto::gentoo
+media-libs/libcdr
 media-libs/mesa
 media-libs/x264
 media-libs/x265
@@ -64,11 +69,13 @@ media-sound/mpc
 media-sound/mpd
 media-sound/ncmpc
 media-video/gnome-mplayer
+media-video/vlc
 net-analyzer/nmap
 net-dns/dnsmasq
 net-firewall/iptables
 net-fs/nfs-utils
 net-im/pidgin
+net-libs/gtk-vnc
 net-libs/libsoup
 net-libs/libsoup-gnome
 net-libs/nodejs
