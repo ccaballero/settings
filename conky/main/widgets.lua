@@ -544,8 +544,7 @@ function conky_widgets()
     cr = cairo_create(cs)
 
     r = 128
-    color = 0xd08f67
-    color1 = 0xd08f67
+    color = 0xb1906c
 
     round_rect(70, 204, 130, 1, 0, color, 0.5)
     round_rect(70, 340, 130, 1, 0, color, 0.5)
@@ -559,10 +558,10 @@ function conky_widgets()
 
     round_rect(519, 954, 130, 1, 0, color, 0.5)
 
-    clock_hands(965, 140, color1, 0.8, true, r-(6*7))
-    ring('time', '%I', 12, color, 0.0, color1, 0.8, 965, 140, r-(11*7)+ 8, 10, 0, 360)
-    ring('time', '%M', 60, color, 0.0, color1, 0.8, 965, 140, r-(10*7)+12, 10, 0, 360)
-    ring('time', '%S', 60, color, 0.0, color1, 0.8, 965, 140, r-( 9*7)+16, 10, 0, 360)
+    clock_hands(960, 540, color, 0.8, true, 160)
+    ring('time', '%I', 12, color, 0, 0x000000, 0.05, 960, 540, 600, 1000, 0, 360)
+    ring('time', '%M', 60, color, 0, 0x000000, 0.05, 960, 540, 600, 900, 0, 360)
+    ring('time', '%S', 60, color, 0, 0x000000, 0.05, 960, 540, 600, 800, 0, 360)
 
     ring('cpu', 'cpu0', 100, color, 0.2, color, 0.8, 276, 207, r-(15*7)+3, 5,   0, 360)
     ring('cpu', 'cpu1', 100, color, 0.2, color, 0.8, 276, 207, r-(14*7)+3, 5,  30,  90)
