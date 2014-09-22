@@ -473,7 +473,7 @@ end
 
 --awful.util.spawn_with_shell("xcompmgr -cF &")
 --awful.util.spawn_with_shell("wmname LG3D &")
-run_once("conky")
+run_once("conky -c ~/.conky/.conkyrc")
 
 --awful.util.spawn_with_shell("conky")
 --awful.util.spawn_with_shell("liferea")
