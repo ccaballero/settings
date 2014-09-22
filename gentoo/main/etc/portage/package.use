@@ -44,11 +44,11 @@ media-plugins/gst-plugins-meta ffmpeg -cdda
 media-sound/mpc iconv
 media-sound/mpd -ffmpeg
 media-sound/ncmpc -help-screen colors mouse
-media-video/ffmpeg opus rtmp v4l threads -X
+#media-video/ffmpeg opus rtmp v4l threads -X x264
 media-video/gnome-mplayer -libnotify
 media-video/mjpegtools v4l
 media-video/mplayer win32codecs mmxext
-media-video/vlc fontconfig matroska mpeg qt4 svga truetype vorbis win32codecs wma-fixed x264
+media-video/vlc fontconfig matroska mpeg qt4 svga truetype vorbis win32codecs wma-fixed x264 -cdda -dvbpsi -gcrypt -ncurses -opengl
 net-analyzer/nmap -gtk -lua
 net-dns/dnsmasq dbus dhcp script
 net-im/pidgin -spell -xscreensaver
@@ -78,6 +78,7 @@ xfce-base/xfwm4 -startup-notification
 x11-base/xorg-server udev kdrive
 x11-libs/libwnck -startup-notification
 x11-misc/xdg-utils -perl
+virtual/ffmpeg -X 
 www-client/firefox bindist gstreamer
 www-client/links -X -tiff -jpeg -deprecated
 www-client/midori -libnotify

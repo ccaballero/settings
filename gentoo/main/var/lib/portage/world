@@ -55,9 +55,8 @@ media-gfx/librecad
 media-gfx/ristretto::gentoo
 media-libs/mesa
 media-libs/x264
+media-libs/x265
 media-plugins/gmpc-tagedit
-media-plugins/gst-plugins-ffmpeg
-media-plugins/gst-plugins-libav
 media-sound/alsa-utils
 media-sound/easytag
 media-sound/gmpc
@@ -65,8 +64,6 @@ media-sound/mpc
 media-sound/mpd
 media-sound/ncmpc
 media-video/gnome-mplayer
-media-video/mplayer
-media-video/vlc
 net-analyzer/nmap
 net-dns/dnsmasq
 net-firewall/iptables
