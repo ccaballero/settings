@@ -1,0 +1,87 @@
+app-admin/conky imlib iostats lua lua-cairo lua-imlib math mpd rss truetype vim-syntax nvidia wifi hddtemp 
+app-admin/eselect-php fpm -apache
+app-admin/sudo -ldap -sendmail
+app-editors/gobby gnome
+app-editors/gvim netbeans
+app-editors/vim -X python
+app-emulation/qemu -bluetooth spice usbredir
+app-emulation/libvirt -policykit virt-network
+app-emulation/libvirt-glib python
+app-emulation/virtualbox additions alsa extensions opengl qt4
+app-emulation/virtualbox-guest-additions X
+app-laptop/laptop-mode-tools acpi bluetooth scsi
+app-office/libreoffice pdfimport -opengl -vba -webdav
+app-text/acroread -ldap
+app-text/evince -dbus -introspection -postscript -tiff
+app-text/ghostscript cups
+app-text/ghostscript-gpl cups
+app-text/poppler qt4
+dev-cpp/glog gflags
+dev-db/mariadb -berkdb -pam -perl static-libs -xml
+dev-db/mysql -berkdb -perl
+dev-java/icedtea -webstart -nsplugin
+dev-lang/php -apache2 -berkdb curl -fpm -ftp gd intl json -mysql -mysqli nls -pdo -postgres sockets truetype -xmlreader -xmlwriter -xslt zip
+dev-lang/python sqlite
+dev-libs/apr-util -berkdb -ldap
+dev-libs/libnl utils
+dev-libs/libxml2 icu
+dev-python/django mysql vhosts
+dev-python/PyQt4 webkit
+dev-qt/qtwebkit -gstreamer -jit
+dev-vcs/git -pcre -perl -gtk -python
+gnome-base/gnome-menus python
+gnome-base/gvfs archive -cdda
+media-fonts/hunkyfonts X
+media-fonts/kochi-substitute X
+media-fonts/ttf-bitstreamvera X
+media-gfx/blender python_single_target_python3_4
+media-gfx/comix rar
+media-libs/freetype bindist
+media-libs/harfbuzz icu
+media-libs/lcms python
+media-libs/mesa gles2
+media-plugins/gst-plugins-meta ffmpeg -cdda
+media-sound/mpc iconv
+media-sound/mpd -ffmpeg
+media-sound/ncmpc -help-screen colors mouse
+media-video/ffmpeg opus rtmp v4l threads -X
+media-video/gnome-mplayer -libnotify
+media-video/mjpegtools v4l
+media-video/mplayer win32codecs mmxext
+media-video/vlc fontconfig matroska mpeg qt4 svga truetype vorbis win32codecs wma-fixed x264
+net-analyzer/nmap -gtk -lua
+net-dns/dnsmasq dbus dhcp script
+net-im/pidgin -spell -xscreensaver
+net-misc/curl -ldap
+net-misc/dhcp -ldap server ssl vim-syntax
+net-misc/spice-gtk python gtk3 usbredir
+net-libs/libpcap -bluetooth
+net-libs/nodejs npm
+net-print/cups-filters -dbus -foomatic
+net-wireless/blueman -policykit network -sendto
+# bluez5 net-wireless/bluez obex readline udev
+net-wireless/bluez alsa readline usb hid2hci
+sys-boot/grub -multislot -truetype
+sys-devel/gcc gcj
+sys-devel/llvm clang
+sys-fs/lvm2 -udev -thin
+sys-fs/udev -introspection -gudev
+sys-fs/udisks -gptfdisk
+sys-libs/zlib minizip
+sys-power/cpufreqd acpi lm_sensors
+sys-power/hibernate-script vim-syntax
+xfce-base/libxfce4ui -startup-notification
+xfce-base/thunar -pcre -startup-notification -libnotify
+xfce-base/xfdesktop -libnotify
+xfce-base/xfce4-session -xscreensaver
+xfce-base/xfce4-settings -xklavier -libnotify
+xfce-base/xfwm4 -startup-notification
+x11-base/xorg-server udev kdrive
+x11-libs/libwnck -startup-notification
+x11-misc/xdg-utils -perl
+www-client/firefox bindist gstreamer
+www-client/links -X -tiff -jpeg -deprecated
+www-client/midori -libnotify
+www-servers/apache -ldap
+www-servers/nginx http -pcre ssl vim-syntax -rtmp syslog
+

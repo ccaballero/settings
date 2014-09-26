@@ -13,3 +13,17 @@ gentoo/main/stage*
 gentoo/main/sys
 gentoo/main/var
 
+gentoo/minot/bin
+gentoo/minot/dev
+gentoo/minot/lib
+gentoo/minot/lib32
+gentoo/minot/lib64
+gentoo/minot/media
+gentoo/minot/mnt
+gentoo/minot/portage*
+gentoo/minot/run
+gentoo/minot/sbin
+gentoo/minot/stage*
+gentoo/minot/sys
+gentoo/minot/var
+
