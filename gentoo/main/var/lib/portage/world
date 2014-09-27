@@ -12,6 +12,7 @@ app-emulation/libvirt
 app-emulation/qemu
 app-emulation/virt-manager
 app-portage/gentoolkit
+app-portage/mirrorselect
 app-shells/bash
 app-text/evince
 app-text/libebook
@@ -23,7 +24,6 @@ app-vim/vim-spell-es
 dev-cpp/libcmis
 dev-db/couchdb
 dev-db/mariadb
-dev-lang/perl
 dev-lang/python
 dev-lang/python:2.7
 dev-lang/python:3.3
@@ -34,12 +34,6 @@ dev-libs/liborcus
 dev-libs/nspr
 dev-libs/nss
 dev-libs/openssl
-dev-perl/Locale-gettext
-dev-perl/Text-Unidecode
-dev-perl/Unicode-EastAsianWidth
-dev-perl/Unicode-Map
-dev-perl/XML-Parser
-dev-perl/libintl-perl
 dev-python/numpy
 dev-python/pygtk
 dev-ruby/rubygems
@@ -68,10 +62,12 @@ media-sound/gmpc
 media-sound/mpc
 media-sound/mpd
 media-sound/ncmpc
+media-video/ffmpeg
 media-video/gnome-mplayer
 media-video/mplayer
 media-video/vlc
 net-analyzer/nmap
+net-dns/bind-tools
 net-dns/dnsmasq
 net-firewall/iptables
 net-fs/nfs-utils
@@ -104,9 +100,6 @@ sys-libs/gpm
 sys-power/acpi
 sys-power/acpid
 sys-process/dcron
-virtual/latex-base
-virtual/perl-Locale-Maketext
-virtual/perl-Locale-Maketext-Simple
 www-client/firefox
 www-client/links
 www-plugins/adobe-flash
