@@ -44,7 +44,7 @@ media-plugins/gst-plugins-meta ffmpeg -cdda
 media-sound/mpc iconv
 media-sound/mpd -ffmpeg
 media-sound/ncmpc -help-screen colors mouse
-media-video/ffmpeg opus rtmp v4l threads -X x264 x265
+media-video/ffmpeg opus rtmp v4l threads -X x264 x265 vdpau vaapi libass
 media-video/gnome-mplayer -libnotify
 media-video/mjpegtools v4l
 media-video/mplayer win32codecs mmxext
@@ -75,6 +75,7 @@ xfce-base/xfdesktop -libnotify
 xfce-base/xfce4-session -xscreensaver
 xfce-base/xfce4-settings -xklavier -libnotify
 xfce-base/xfwm4 -startup-notification
+xfce-extra/tumbler -pdf
 x11-base/xorg-server udev kdrive
 x11-libs/libwnck -startup-notification
 x11-misc/xdg-utils -perl

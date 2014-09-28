@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo Create a CBR file for $1
+
+if [ $# == 1 ]; then
+    rar a -r -m0 -df $1.cbr $1
+fi
+
+if [ $# == 2 ]; then
+    rar a -r -m0 -df $2.cbr $1
+fi
+
