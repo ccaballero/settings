@@ -21,7 +21,7 @@
 proc          /proc           proc     defaults                                    0 0
 shm           /dev/shm        tmpfs    nodev,nosuid,noexec                         0 0
 
-/var/lib/mpd/playlists            /bckp/playlists        none bind 0 0
+/var/lib/mpd/playlists            /bckp/playlists         none bind 0 0
 /etc                              /bckp/gentoo/minot/etc  none bind 0 0
 /var                              /bckp/gentoo/minot/var  none bind 0 0
 /home/jacobian/.config/awesome    /bckp/awesome/minot     none bind 0 0

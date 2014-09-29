@@ -2,6 +2,7 @@ app-accessibility/espeak
 app-accessibility/speech-dispatcher
 app-admin/conky
 app-admin/eselect-pinentry
+app-admin/logrotate
 app-admin/sudo
 app-admin/syslog-ng
 app-admin/testdisk
@@ -107,7 +108,6 @@ media-gfx/fontforge
 media-gfx/gimp
 media-gfx/inkscape
 media-gfx/librecad
-media-gfx/rawstudio
 media-gfx/ristretto
 media-gfx/ufraw
 media-gfx/uniconvertor
@@ -117,6 +117,7 @@ media-libs/gegl
 media-libs/harfbuzz
 media-libs/libcdr
 media-libs/libpng
+media-libs/libpostproc
 media-libs/libvisio
 media-libs/mesa
 media-libs/opus
@@ -137,6 +138,7 @@ media-sound/ripperx
 media-sound/sonata
 media-tv/v4l-utils
 media-video/mjpegtools
+media-video/mplayer
 net-analyzer/nmap
 net-analyzer/traceroute
 net-fs/nfs-utils
@@ -147,6 +149,7 @@ net-libs/nodejs
 net-libs/obby
 net-misc/curl
 net-misc/dhcp
+net-misc/dhcpcd
 net-misc/openssh
 net-misc/wicd
 net-print/cups
@@ -187,9 +190,11 @@ sys-fs/udev-init-scripts
 sys-fs/yaffs2-utils
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
+sys-kernel/linux-headers
 sys-libs/gpm
 sys-libs/ncurses
 sys-power/acpi
+sys-power/acpid
 sys-power/hibernate-script
 sys-process/dcron
 sys-process/lsof
