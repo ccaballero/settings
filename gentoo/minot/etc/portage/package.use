@@ -1,4 +1,4 @@
-app-admin/conky imlib iostats lua lua-cairo lua-imlib math mpd rss truetype vim-syntax nvidia wifi hddtemp 
+app-admin/conky imlib iostats lua lua-cairo lua-imlib math mpd rss truetype vim-syntax -nvidia wifi hddtemp 
 app-admin/eselect-php fpm -apache
 app-admin/sudo -ldap -sendmail
 app-editors/gobby gnome
@@ -53,7 +53,7 @@ net-analyzer/nmap -gtk -lua
 net-dns/dnsmasq dbus dhcp script
 net-im/pidgin -spell -xscreensaver
 net-misc/curl -ldap
-net-misc/dhcp -ldap server ssl vim-syntax
+net-misc/dhcp -ldap -server ssl vim-syntax
 net-misc/spice-gtk python gtk3 usbredir
 net-libs/libpcap -bluetooth
 net-libs/nodejs npm
