@@ -1,16 +1,11 @@
-app-accessibility/espeak
-app-accessibility/speech-dispatcher
 app-admin/conky
 app-admin/eselect-pinentry
 app-admin/logrotate
 app-admin/sudo
 app-admin/syslog-ng
-app-admin/testdisk
 app-arch/rar
 app-arch/xarchiver
-app-cdr/cdrkit
 app-cdr/xfburn
-app-editors/gobby
 app-editors/leafpad
 app-editors/vim
 app-emulation/virtualbox
@@ -21,8 +16,8 @@ app-laptop/i8kutils
 app-laptop/laptop-mode-tools
 app-portage/gentoolkit
 app-shells/bash
-app-shells/ccsh
 app-text/asciidoc
+app-text/dvipdfm
 app-text/evince
 app-text/libebook
 app-text/libmspub
@@ -48,7 +43,6 @@ dev-cpp/libcmis
 dev-cpp/libcmis:0.2
 dev-db/couchdb
 dev-db/mariadb
-dev-java/sun-jdk
 dev-lang/erlang
 dev-lang/ruby
 dev-lang/v8
@@ -70,7 +64,10 @@ dev-libs/nss
 dev-libs/protobuf
 dev-libs/pth
 dev-libs/vala-common
+dev-python/Babel
+dev-python/docutils
 dev-python/mygpoclient
+dev-python/pillow
 dev-python/pygtksourceview
 dev-python/python-exec
 dev-python/setuptools
@@ -109,7 +106,6 @@ media-gfx/gimp
 media-gfx/inkscape
 media-gfx/librecad
 media-gfx/ristretto
-media-gfx/ufraw
 media-gfx/uniconvertor
 media-libs/alsa-lib
 media-libs/freetype
@@ -124,6 +120,8 @@ media-libs/opus
 media-libs/raptor
 media-libs/sk1libs
 media-libs/x264
+media-plugins/gst-plugins-libnice
+media-plugins/gst-plugins-libnice:0.10
 media-plugins/gst-plugins-x
 media-sound/alsa-utils
 media-sound/audacity
@@ -141,6 +139,7 @@ media-video/mjpegtools
 media-video/mplayer
 net-analyzer/nmap
 net-analyzer/traceroute
+net-dns/dnsmasq
 net-fs/nfs-utils
 net-im/pidgin
 net-libs/gnutls
@@ -201,6 +200,7 @@ sys-process/lsof
 sys-process/time
 virtual/latex-base
 virtual/mysql
+virtual/python-imaging
 virtual/udev
 www-client/firefox
 www-client/links
@@ -229,6 +229,7 @@ x11-terms/xfce4-terminal
 x11-themes/gtk-theme-switch
 x11-themes/xfwm4-themes
 x11-wm/awesome
+xfce-base/libxfcegui4
 xfce-base/thunar
 xfce-base/xfce4-meta
 xfce-extra/thunar-archive-plugin
@@ -236,13 +237,11 @@ xfce-extra/thunar-media-tags-plugin
 xfce-extra/thunar-shares-plugin
 xfce-extra/thunar-volman
 xfce-extra/xfce4-battery-plugin
-xfce-extra/xfce4-cellmodem-plugin
 xfce-extra/xfce4-cpufreq-plugin
 xfce-extra/xfce4-cpugraph-plugin
 xfce-extra/xfce4-datetime-plugin
 xfce-extra/xfce4-diskperf-plugin
 xfce-extra/xfce4-fsguard-plugin
-xfce-extra/xfce4-mailwatch-plugin
 xfce-extra/xfce4-mount-plugin
 xfce-extra/xfce4-mpc-plugin
 xfce-extra/xfce4-netload-plugin
