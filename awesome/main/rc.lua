@@ -97,13 +97,13 @@ app_gmpc = "gmpc"
 
 mymainmenu = awful.menu({ items = { --{ "awesome", myawesomemenu, beautiful.awesome_icon },
                                     { 'terminal',        terminal,          beautiful.terminal_icon },
-				    { 'thunar',          app_thunar,        beautiful.thunar_icon },
-				    { 'firefox',         app_firefox,       beautiful.firefox_icon },
-				    { 'pidgin',          app_pidgin,        beautiful.pidgin_icon },
-				    { 'transmission',    app_transmission,  beautiful.transmission_icon },
-				    { 'gmpc',            app_gmpc,          beautiful.gmpc_icon },
-				    { 'reiniciar',       awesome.restart },
-				    { 'salir',           awesome.quit }
+                                    { 'thunar',          app_thunar,        beautiful.thunar_icon },
+                                    { 'firefox',         app_firefox,       beautiful.firefox_icon },
+                                    { 'pidgin',          app_pidgin,        beautiful.pidgin_icon },
+                                    { 'transmission',    app_transmission,  beautiful.transmission_icon },
+                                    { 'gmpc',            app_gmpc,          beautiful.gmpc_icon },
+                                    { 'reiniciar',       awesome.restart },
+                                    { 'salir',           awesome.quit }
                                   }
                         })
 
@@ -253,6 +253,7 @@ globalkeys = awful.util.table.join(
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey,           }, "e",      function () awful.util.spawn(app_thunar) end),
+    awful.key({ modkey,           }, "y",      function () awful.util.spawn_with_shell("thunar-terminal.sh") end),
 
     awful.key({ "Mod1", "Control" }, "Insert", function () awful.util.spawn_with_shell("mpc toggle") end),
     awful.key({ "Mod1", "Control" }, "Home",   function () awful.util.spawn_with_shell("mpc stop") end),

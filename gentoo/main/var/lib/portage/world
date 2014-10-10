@@ -119,7 +119,9 @@ x11-drivers/xf86-input-evdev
 x11-drivers/xf86-video-nouveau
 x11-libs/libXfont
 x11-misc/slim
+x11-misc/xclip
 x11-misc/xcompmgr
+x11-misc/xdotool
 x11-proto/fontsproto
 x11-terms/xfce4-terminal::gentoo
 x11-wm/awesome
