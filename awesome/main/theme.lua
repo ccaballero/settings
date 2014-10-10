@@ -1,7 +1,7 @@
 
 -- {{{ Main
 theme = {}
-theme.wallpaper = '/home/jacobian/.config/awesome/background-1920x1080.nisekoi.jpg'
+theme.wallpaper = '/home/jacobian/.config/awesome/background-1920x1080.nisekoi.png'
 -- }}}
 
 -- {{{ Styles
