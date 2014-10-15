@@ -74,6 +74,7 @@ media-video/gnome-mplayer
 media-video/mplayer
 media-video/vlc
 net-analyzer/nmap
+net-analyzer/traceroute
 net-dns/bind-tools
 net-dns/dnsmasq
 net-firewall/iptables
