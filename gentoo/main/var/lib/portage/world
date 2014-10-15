@@ -85,6 +85,7 @@ net-libs/libsoup-gnome
 net-libs/nodejs
 net-misc/bridge-utils
 net-misc/spice-gtk
+net-misc/tigervnc
 net-p2p/transmission
 net-wireless/wpa_supplicant
 sys-apps/lm_sensors
