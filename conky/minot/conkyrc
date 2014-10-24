@@ -42,7 +42,7 @@ ${image /home/jacobian/.conky/img/bat.png -p 185,370 -s 17x26}
 ${image /home/jacobian/.conky/img/fan.png -p 178,465 -s 30x30}
 
 ${voffset -64}
-#${font LivingTogether:size=44}$nodename ${exec whoami}${font}
+${font LivingTogether:size=44}$nodename ${exec whoami}${font}
 
 ${voffset 10}
 ${font GeosansLight:size=14}kernel: $sysname $kernel${font}
@@ -84,7 +84,7 @@ ${font GeosansLight:size=14}BATTERY:${font}
 ${alignr 620}${voffset -20}${font GeosansLight:size=14}$battery_percent%${font}
 
 adapter:
-#${alignr 620}${voffset -10}${exec acpi -a | awk '{print $3}'}
+${alignr 620}${voffset -10}${exec acpi -a | awk '{print $3}'}
 time:
 ${alignr 620}${voffset -10}$battery_time
 
@@ -92,9 +92,9 @@ ${voffset 15}
 ${font GeosansLight:size=14}SENSORS:${font}
 
 core 0:
-#${alignr 620}${voffset -10}${exec sensors coretemp-isa-0000 | grep 'Core 0' | awk '{print $3}'}
+${alignr 620}${voffset -10}${exec sensors coretemp-isa-0000 | grep 'Core 0' | awk '{print $3}'}
 core 1:
-#${alignr 620}${voffset -10}${exec sensors coretemp-isa-0000 | grep 'Core 1' | awk '{print $3}'}
+${alignr 620}${voffset -10}${exec sensors coretemp-isa-0000 | grep 'Core 1' | awk '{print $3}'}
 i8k temp:
 ${alignr 620}${voffset -10}${i8k_cpu_temp} °C
 i8k status:
