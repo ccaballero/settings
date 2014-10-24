@@ -74,6 +74,7 @@ media-video/gnome-mplayer
 media-video/mplayer
 media-video/vlc
 net-analyzer/nmap
+net-analyzer/traceroute
 net-dns/bind-tools
 net-dns/dnsmasq
 net-firewall/iptables
@@ -85,8 +86,8 @@ net-libs/libsoup-gnome
 net-libs/nodejs
 net-misc/bridge-utils
 net-misc/spice-gtk
+net-misc/tigervnc
 net-p2p/transmission
-net-wireless/hostapd
 net-wireless/wpa_supplicant
 sys-apps/lm_sensors
 sys-apps/man-db

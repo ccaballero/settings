@@ -27,3 +27,17 @@ gentoo/minot/stage*
 gentoo/minot/sys
 gentoo/minot/var
 
+gentoo/smith/bin
+gentoo/smith/dev
+gentoo/smith/lib
+gentoo/smith/lib32
+gentoo/smith/lib64
+gentoo/smith/media
+gentoo/smith/mnt
+gentoo/smith/portage*
+gentoo/smith/run
+gentoo/smith/sbin
+gentoo/smith/stage*
+gentoo/smith/sys
+gentoo/smith/var
+

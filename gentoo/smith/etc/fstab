@@ -1,0 +1,19 @@
+# /etc/fstab: static file system information.
+
+# <fs>          <mountpoint>    <type>    <opts>                <dump/pass>
+
+/dev/sda1       /boot           ext3      defaults,noatime      1 2
+/dev/sda2       none            swap      sw                    0 0
+/dev/sda3       /               ext4      noatime               0 1
+
+/dev/vg/usr     /usr            ext4      noatime               0 1
+
+proc            /proc           proc      defaults              0 0
+shm             /dev/shm        tmpfs     nodev,nosuid,noexec   0 0
+
+/etc                   /bckp/gentoo/smith/etc    none bind 0 0
+/var                   /bckp/gentoo/smith/var    none bind 0 0
+#/home/jacobian/.vim    /bckp/vim/smith           none bind 0 0
+#/home/jacobian/.bash   /bckp/bash/smith          none bind 0 0
+/root/kernel           /bckp/kernel/smith        none bind 0 0
+

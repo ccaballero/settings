@@ -11,14 +11,14 @@
 # See the manpage fstab(5) for more information.
 #
 
-# <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
+# <fs>            <mountpoint>    <type>        <opts>        <dump/pass>
 
 # NOTE: If your BOOT partition is ReiserFS, add the notail option to opts.
-#/dev/BOOT		/boot		ext2		noauto,noatime	1 2
-#/dev/ROOT		/		ext3		noatime		0 1
-#/dev/SWAP		none		swap		sw		0 0
-#/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
-#/dev/fd0		/mnt/floppy	auto		noauto		0 0
+#/dev/BOOT        /boot         ext2        noauto,noatime    1 2
+#/dev/ROOT        /             ext3        noatime           0 1
+#/dev/SWAP        none          swap        sw                0 0
+#/dev/cdrom       /mnt/cdrom    auto        noauto,ro         0 0
+#/dev/fd0        /mnt/floppy    auto        noauto            0 0
 
 /dev/sda2         /boot            ext2    defaults,noatime                          1 2
 #/dev/sda2        none             swap    sw                                        0 0
@@ -47,7 +47,7 @@ shm               /dev/shm         tmpfs   nodev,nosuid,noexec                  
 /home/jacobian/.config/awesome    /bckp/awesome/main     none bind 0 0
 /home/jacobian/.conky             /bckp/conky/main       none bind 0 0
 /home/jacobian/.vim               /bckp/vim/main         none bind 0 0
-/home/jacobian/.bash		  /bckp/bash/main        none bind 0 0
+/home/jacobian/.bash              /bckp/bash/main        none bind 0 0
 /root/kernel                      /bckp/kernel/main      none bind 0 0
 /root/notes                       /bckp/notes            none bind 0 0
 

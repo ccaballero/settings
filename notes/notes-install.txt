@@ -1,0 +1,4 @@
+
+mkfs.ext4 -i2048 /dev/vg/usr
+
+
