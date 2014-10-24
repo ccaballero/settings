@@ -29,9 +29,6 @@ app-vim/extra-syntax
 app-vim/gentoo-syntax
 app-vim/nerdtree
 app-vim/pathogen
-app-vim/snipmate
-app-vim/surround
-app-vim/tcomment
 app-vim/udev-syntax
 app-vim/vim-latex
 app-vim/vim-spell-en
@@ -43,6 +40,7 @@ dev-cpp/libcmis
 dev-cpp/libcmis:0.2
 dev-db/couchdb
 dev-db/mariadb
+dev-java/icedtea-bin
 dev-lang/erlang
 dev-lang/ruby
 dev-lang/v8
@@ -150,6 +148,7 @@ net-misc/curl
 net-misc/dhcp
 net-misc/dhcpcd
 net-misc/openssh
+net-misc/tigervnc
 net-misc/wicd
 net-print/cups
 net-print/cups-filters

@@ -62,7 +62,7 @@ net-wireless/blueman -policykit network -sendto
 # bluez5 net-wireless/bluez obex readline udev
 net-wireless/bluez alsa readline usb hid2hci
 sys-boot/grub -multislot -truetype
-sys-devel/gcc gcj
+sys-devel/gcc -gcj
 sys-devel/llvm clang
 sys-fs/lvm2 -udev -thin
 sys-fs/udev -introspection -gudev
