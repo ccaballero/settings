@@ -9,6 +9,7 @@ app-editors/leafpad
 app-editors/vim
 app-editors/vim-core
 app-emulation/libvirt
+app-emulation/libvirt-glib
 app-emulation/qemu
 app-emulation/virt-manager
 app-portage/gentoolkit
@@ -24,6 +25,7 @@ app-vim/vim-spell-es
 dev-cpp/libcmis
 dev-db/couchdb
 dev-db/mariadb
+dev-java/icedtea-bin
 dev-lang/python
 dev-lang/python:2.7
 dev-lang/python:3.3
@@ -34,6 +36,7 @@ dev-libs/liborcus
 dev-libs/nspr
 dev-libs/nss
 dev-libs/openssl
+dev-python/libvirt-python
 dev-python/numpy
 dev-python/pygtk
 dev-ruby/rubygems
@@ -88,7 +91,6 @@ net-misc/bridge-utils
 net-misc/spice-gtk
 net-misc/tigervnc
 net-p2p/transmission
-net-wireless/hostapd
 net-wireless/wpa_supplicant
 sys-apps/lm_sensors
 sys-apps/man-db
