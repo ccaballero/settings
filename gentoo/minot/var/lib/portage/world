@@ -40,7 +40,6 @@ dev-cpp/libcmis
 dev-cpp/libcmis:0.2
 dev-db/couchdb
 dev-db/mariadb
-dev-java/icedtea-bin
 dev-lang/erlang
 dev-lang/ruby
 dev-lang/v8
@@ -177,7 +176,6 @@ sys-boot/unetbootin
 sys-devel/bc
 sys-devel/flex
 sys-devel/gcc
-sys-devel/gcc:4.6
 sys-devel/make::gentoo
 sys-fs/dosfstools
 sys-fs/eudev
