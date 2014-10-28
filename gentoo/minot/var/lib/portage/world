@@ -8,8 +8,6 @@ app-arch/xarchiver
 app-cdr/xfburn
 app-editors/leafpad
 app-editors/vim
-app-emulation/virtualbox
-app-emulation/virtualbox-modules
 app-i18n/ibus-qt
 app-i18n/poedit
 app-laptop/i8kutils
@@ -21,7 +19,6 @@ app-text/dvipdfm
 app-text/evince
 app-text/libebook
 app-text/libmspub
-app-text/pdftk
 app-text/texlive-core
 app-vim/airline
 app-vim/colorschemes
