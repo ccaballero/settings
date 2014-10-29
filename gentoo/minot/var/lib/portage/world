@@ -135,7 +135,6 @@ net-analyzer/nmap
 net-analyzer/traceroute
 net-dns/dnsmasq
 net-fs/nfs-utils
-net-im/pidgin
 net-libs/gnutls
 net-libs/net6
 net-libs/nodejs
@@ -170,10 +169,10 @@ sys-apps/usbutils
 sys-auth/consolekit
 sys-boot/grub
 sys-boot/unetbootin
+sys-devel/autoconf
 sys-devel/bc
 sys-devel/flex
 sys-devel/gcc
-sys-devel/make::gentoo
 sys-fs/dosfstools
 sys-fs/eudev
 sys-fs/lvm2
