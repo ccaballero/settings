@@ -26,6 +26,7 @@ dev-cpp/libcmis
 dev-db/couchdb
 dev-db/mariadb
 dev-java/icedtea-bin
+dev-lang/erlang
 dev-lang/python
 dev-lang/python:2.7
 dev-lang/python:3.3
@@ -83,15 +84,19 @@ net-dns/dnsmasq
 net-firewall/iptables
 net-fs/nfs-utils
 net-im/pidgin
+net-libs/gnutls
 net-libs/gtk-vnc
 net-libs/libsoup
 net-libs/libsoup-gnome
 net-libs/nodejs
 net-misc/bridge-utils
+net-misc/openssh
 net-misc/spice-gtk
 net-misc/tigervnc
 net-p2p/transmission
+net-print/cups
 net-wireless/wpa_supplicant
+sys-apps/hwids
 sys-apps/lm_sensors
 sys-apps/man-db
 sys-apps/mlocate
@@ -99,6 +104,7 @@ sys-apps/pciutils
 sys-apps/portage
 sys-boot/grub
 sys-boot/os-prober
+sys-devel/autoconf
 sys-devel/gcc
 sys-devel/gettext
 sys-fs/eudev
