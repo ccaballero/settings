@@ -32,6 +32,7 @@ dev-lang/python:2.7
 dev-lang/python:3.3
 dev-lang/ruby
 dev-libs/gobject-introspection
+dev-libs/libebml
 dev-libs/libixion
 dev-libs/liborcus
 dev-libs/nspr
@@ -63,6 +64,7 @@ media-gfx/inkscape
 media-gfx/librecad
 media-gfx/ristretto::gentoo
 media-libs/libcdr
+media-libs/libmatroska
 media-libs/mesa
 media-libs/x264
 media-libs/x265

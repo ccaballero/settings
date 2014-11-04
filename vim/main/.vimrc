@@ -31,6 +31,9 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
+" folding
+set nofoldenable
+
 " search
 set ignorecase
 set smartcase
@@ -91,4 +94,7 @@ let NERDTreeMapJumpFirstChild = 'gK'
 
 " pathogen
 call pathogen#infect()
+
+" vim markdown
+let g:vim_markdown_folding_disabled=1
 
