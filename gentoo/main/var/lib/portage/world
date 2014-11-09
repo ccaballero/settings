@@ -12,6 +12,7 @@ app-emulation/libvirt
 app-emulation/libvirt-glib
 app-emulation/qemu
 app-emulation/virt-manager
+app-office/libreoffice-bin
 app-portage/gentoolkit
 app-portage/mirrorselect
 app-shells/bash
@@ -22,7 +23,6 @@ app-vim/airline
 app-vim/nerdtree
 app-vim/pathogen
 app-vim/vim-spell-es
-dev-cpp/libcmis
 dev-db/couchdb
 dev-db/mariadb
 dev-java/icedtea-bin
@@ -31,6 +31,7 @@ dev-lang/python
 dev-lang/python:2.7
 dev-lang/python:3.3
 dev-lang/ruby
+dev-libs/boost
 dev-libs/gobject-introspection
 dev-libs/libebml
 dev-libs/libixion
@@ -42,6 +43,7 @@ dev-python/libvirt-python
 dev-python/numpy
 dev-python/pygtk
 dev-ruby/rubygems
+dev-tex/bibtexu
 dev-texlive/texlive-fontsextra
 dev-texlive/texlive-langspanish
 dev-texlive/texlive-latexextra

@@ -19,6 +19,8 @@ npm install -g yo
 		npm install -g generator-meteor
 	generator-ember
 		npm install -g generator-ember
+	generator-mdpress
+		npm install -g generator-mdpress
 
 Grunt client:
 npm install -g grunt-cli
