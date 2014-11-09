@@ -15,7 +15,6 @@ app-laptop/laptop-mode-tools
 app-portage/gentoolkit
 app-shells/bash
 app-text/asciidoc
-app-text/dvipdfm
 app-text/evince
 app-text/libebook
 app-text/libmspub
@@ -46,6 +45,7 @@ dev-libs/boost
 dev-libs/dotconf
 dev-libs/gobject-introspection
 dev-libs/icu
+dev-libs/kpathsea
 dev-libs/libassuan
 dev-libs/libcdio-paranoia
 dev-libs/libixion
@@ -107,13 +107,13 @@ media-libs/gegl
 media-libs/harfbuzz
 media-libs/libcdr
 media-libs/libpng
-media-libs/libpostproc
 media-libs/libvisio
 media-libs/mesa
 media-libs/opus
 media-libs/raptor
 media-libs/sk1libs
 media-libs/x264
+media-plugins/gst-plugins-libav
 media-plugins/gst-plugins-libnice
 media-plugins/gst-plugins-libnice:0.10
 media-plugins/gst-plugins-x
@@ -129,8 +129,10 @@ media-sound/ncmpc
 media-sound/ripperx
 media-sound/sonata
 media-tv/v4l-utils
+media-video/ffmpeg
 media-video/mjpegtools
 media-video/mplayer
+media-video/vlc
 net-analyzer/nmap
 net-analyzer/traceroute
 net-dns/dnsmasq
@@ -191,6 +193,7 @@ sys-power/hibernate-script
 sys-process/dcron
 sys-process/lsof
 sys-process/time
+virtual/ffmpeg
 virtual/latex-base
 virtual/mysql
 virtual/python-imaging

@@ -9,6 +9,13 @@ PS1="\n\[\033[01;33m\](\A) \[\033[01;32m\]\h!\u \[\033[01;36m\]\w \[\033[01;37m\
 export CDPATH=.:~:/mnt/:~/Proyectos/
 export PATH=$PATH:~/.bash
 
+# bash history
+export HISTFILESIZE=
+export HISTSIZE=
+export HISTTIMEFORMAT="[%F %T] "
+export HISTFILE=~/.bash_eternal_history
+PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
 if [ -f ~/.bash_aliases ]
 then
     . ~/.bash_aliases

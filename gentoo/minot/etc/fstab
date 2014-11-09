@@ -28,3 +28,5 @@ shm           /dev/shm        tmpfs    nodev,nosuid,noexec                      
 /home/jacobian/.conky             /bckp/conky/minot       none bind 0 0
 /root/kernel                      /bckp/kernel/minot      none bind 0 0
 
+/bckp/bash/main                   /home/jacobian/.bash    none bind 0 0
+
