@@ -125,6 +125,7 @@ www-client/firefox
 www-client/links
 www-plugins/adobe-flash
 www-servers/nginx
+x11-apps/setxkbmap
 x11-apps/xclock
 x11-apps/xkill
 x11-apps/xrandr
