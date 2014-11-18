@@ -100,6 +100,8 @@ net-misc/tigervnc
 net-p2p/transmission
 net-print/cups
 net-wireless/wpa_supplicant
+sci-geosciences/josm
+sci-geosciences/josm-plugins
 sys-apps/hwids
 sys-apps/lm_sensors
 sys-apps/man-db
@@ -134,6 +136,7 @@ x11-drivers/xf86-input-evdev
 x11-drivers/xf86-video-nouveau
 x11-libs/libXfont
 x11-misc/slim
+x11-misc/wmname
 x11-misc/xclip
 x11-misc/xcompmgr
 x11-misc/xdotool
