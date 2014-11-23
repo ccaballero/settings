@@ -12,6 +12,7 @@ app-i18n/ibus-qt
 app-i18n/poedit
 app-laptop/i8kutils
 app-laptop/laptop-mode-tools
+app-office/libreoffice-bin
 app-portage/gentoolkit
 app-shells/bash
 app-text/asciidoc
