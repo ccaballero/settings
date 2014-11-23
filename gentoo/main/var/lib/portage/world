@@ -2,6 +2,7 @@ app-admin/conky
 app-admin/logrotate
 app-admin/sudo
 app-admin/syslog-ng
+app-arch/p7zip
 app-arch/rar
 app-arch/xarchiver
 app-cdr/xfburn
