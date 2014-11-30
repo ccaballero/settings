@@ -19,6 +19,7 @@ app-portage/mirrorselect
 app-shells/bash
 app-text/evince
 app-text/libebook
+app-text/libetonyek
 app-text/poppler
 app-vim/airline
 app-vim/nerdtree
@@ -40,6 +41,7 @@ dev-libs/liborcus
 dev-libs/nspr
 dev-libs/nss
 dev-libs/openssl
+dev-perl/Unicode-EastAsianWidth
 dev-python/libvirt-python
 dev-python/numpy
 dev-python/pygtk
@@ -117,6 +119,7 @@ sys-devel/gettext
 sys-fs/eudev
 sys-fs/lvm2
 sys-fs/ntfs3g
+sys-fs/sshfs-fuse
 sys-fs/udev-init-scripts
 sys-kernel/gentoo-sources
 sys-libs/e2fsprogs-libs
