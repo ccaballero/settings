@@ -1,6 +1,7 @@
 app-admin/conky imlib iostats lua lua-cairo lua-imlib math mpd rss truetype vim-syntax -nvidia wifi hddtemp 
 app-admin/eselect-php fpm -apache
 app-admin/sudo -ldap -sendmail
+app-admin/syslog-ng ssl tcpd json
 app-editors/gobby gnome
 app-editors/gvim netbeans
 app-editors/vim -X python
@@ -55,6 +56,7 @@ net-im/pidgin -spell -xscreensaver
 net-misc/curl -ldap
 net-misc/dhcp -ldap -server ssl vim-syntax
 net-misc/spice-gtk python gtk3 usbredir
+net-misc/tightvnc server
 net-libs/libpcap -bluetooth
 net-libs/nodejs npm
 net-print/cups-filters -dbus -foomatic

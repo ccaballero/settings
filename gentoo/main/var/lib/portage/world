@@ -99,7 +99,7 @@ net-libs/nodejs
 net-misc/bridge-utils
 net-misc/openssh
 net-misc/spice-gtk
-net-misc/tigervnc
+net-misc/tightvnc
 net-p2p/transmission
 net-print/cups
 net-wireless/wpa_supplicant
