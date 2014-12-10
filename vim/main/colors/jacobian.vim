@@ -118,6 +118,12 @@ call s:ColorDictParser({
     \ , 'Ignore'                     : [ 'none',      5,           'none']
     \ , 'Error'                      : [ 'none',      5,           'none']
     \ , 'Todo'                       : [ 'none',      5,           'none']
+    \
+    \ , 'SignColumn'                 : [    243,    235,           'none']
+    \ , 'GitGutterAdd'               : [    154, 'none',           'none']
+    \ , 'GitGutterDelete'            : [    160, 'none',           'none']
+    \ , 'GitGutterChangeDelete'      : [     91, 'none',           'none']
+    \ , 'GitGutterChange'            : [    226, 'none',           'none']
 \ })
 
 " XML

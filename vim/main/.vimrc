@@ -98,3 +98,8 @@ call pathogen#infect()
 " vim markdown
 let g:vim_markdown_folding_disabled=1
 
+" vim gitgutter
+let g:gitgutter_sign_added='▸'
+let g:gitgutter_sign_removed='◂'
+let g:gitgutter_sign_modified='◆'
+
