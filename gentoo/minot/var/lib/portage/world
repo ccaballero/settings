@@ -18,6 +18,7 @@ app-shells/bash
 app-text/asciidoc
 app-text/evince
 app-text/libebook
+app-text/libetonyek
 app-text/libmspub
 app-text/texlive-core
 app-vim/airline
@@ -33,6 +34,7 @@ app-vim/vim-spell-es
 app-vim/xquery-syntax
 app-vim/xsl-syntax
 dev-cpp/gflags
+dev-cpp/libcmis
 dev-db/couchdb
 dev-db/mariadb
 dev-java/icedtea-bin
@@ -41,12 +43,14 @@ dev-lang/ruby
 dev-lang/v8
 dev-lang/vala
 dev-lang/vala:0.20
+dev-libs/boost
 dev-libs/dotconf
 dev-libs/gobject-introspection
 dev-libs/icu
 dev-libs/kpathsea
 dev-libs/libassuan
 dev-libs/libcdio-paranoia
+dev-libs/libixion
 dev-libs/libksba
 dev-libs/libnl
 dev-libs/liborcus
@@ -93,7 +97,6 @@ media-fonts/ttf-bitstream-vera
 media-fonts/unifont
 media-gfx/blender
 media-gfx/comix
-media-gfx/fontforge
 media-gfx/gimp
 media-gfx/inkscape
 media-gfx/librecad
@@ -135,6 +138,7 @@ net-analyzer/nmap
 net-analyzer/traceroute
 net-dns/dnsmasq
 net-fs/nfs-utils
+net-im/pidgin
 net-libs/gnutls
 net-libs/net6
 net-libs/nodejs
@@ -182,6 +186,7 @@ sys-fs/eudev
 sys-fs/lvm2
 sys-fs/ntfs3g
 sys-fs/obexfs
+sys-fs/sshfs-fuse
 sys-fs/udev-init-scripts
 sys-fs/yaffs2-utils
 sys-kernel/gentoo-sources
