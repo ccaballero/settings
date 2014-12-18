@@ -1,6 +1,7 @@
 app-admin/conky imlib iostats lua lua-cairo lua-imlib math mpd rss truetype vim-syntax -nvidia wifi hddtemp 
 app-admin/eselect-php fpm -apache
 app-admin/sudo -ldap -sendmail
+app-admin/syslog-ng ssl tcpd json
 app-editors/gobby gnome
 app-editors/gvim netbeans
 app-editors/vim -X python
@@ -48,7 +49,7 @@ media-video/ffmpeg opus rtmp v4l threads -X x264 x265 vdpau vaapi libass
 media-video/gnome-mplayer -libnotify
 media-video/mjpegtools v4l
 media-video/mplayer win32codecs mmxext
-media-video/vlc fontconfig matroska mpeg qt4 svga truetype vorbis win32codecs wma-fixed x264 -cdda -dvbpsi -gcrypt -ncurses -opengl vdpau
+media-video/vlc fontconfig libass matroska mpeg qt4 svga truetype vorbis win32codecs wma-fixed x264 -cdda -dvbpsi -gcrypt -ncurses -opengl vdpau
 net-analyzer/nmap -gtk -lua
 net-dns/dnsmasq dbus dhcp script
 net-im/pidgin -spell -xscreensaver
