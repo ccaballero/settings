@@ -16,6 +16,8 @@ export HISTTIMEFORMAT="[%F %T] "
 export HISTFILE=~/.bash_eternal_history
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
+setxkbmap -option keypad:pointerkeys
+
 if [ -f ~/.bash_aliases ]
 then
     . ~/.bash_aliases

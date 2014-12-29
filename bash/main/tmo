@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo Create a CBR file for $1
+
+rar a -r -m0 -df Tomo\ $1.cbr Tomo\ $1
+

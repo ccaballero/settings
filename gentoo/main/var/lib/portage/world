@@ -20,6 +20,7 @@ app-shells/bash
 app-text/evince
 app-text/libebook
 app-text/libetonyek
+app-text/po4a
 app-text/poppler
 app-vim/airline
 app-vim/nerdtree
@@ -41,6 +42,7 @@ dev-libs/liborcus
 dev-libs/nspr
 dev-libs/nss
 dev-libs/openssl
+dev-perl/Locale-gettext
 dev-perl/Unicode-EastAsianWidth
 dev-python/libvirt-python
 dev-python/numpy
