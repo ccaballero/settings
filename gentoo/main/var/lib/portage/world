@@ -105,6 +105,7 @@ net-misc/tightvnc
 net-p2p/transmission
 net-print/cups
 net-wireless/wpa_supplicant
+sci-geosciences/googleearth
 sci-geosciences/josm
 sci-geosciences/josm-plugins
 sys-apps/hwids
