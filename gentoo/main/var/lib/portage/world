@@ -1,4 +1,5 @@
 app-admin/conky
+app-admin/eselect-opengl
 app-admin/logrotate
 app-admin/sudo
 app-admin/syslog-ng
@@ -9,6 +10,7 @@ app-cdr/xfburn
 app-editors/leafpad
 app-editors/vim
 app-editors/vim-core
+app-emulation/emul-linux-x86-opengl
 app-emulation/libvirt
 app-emulation/libvirt-glib
 app-emulation/qemu
@@ -35,6 +37,7 @@ dev-lang/python:2.7
 dev-lang/python:3.3
 dev-lang/ruby
 dev-libs/boost
+dev-libs/glib
 dev-libs/gobject-introspection
 dev-libs/libebml
 dev-libs/libixion
@@ -53,6 +56,7 @@ dev-texlive/texlive-fontsextra
 dev-texlive/texlive-langspanish
 dev-texlive/texlive-latexextra
 dev-texlive/texlive-pstricks
+dev-util/gdbus-codegen
 dev-util/meld
 dev-vcs/git
 media-fonts/corefonts
@@ -104,6 +108,7 @@ net-misc/spice-gtk
 net-misc/tightvnc
 net-p2p/transmission
 net-print/cups
+net-wireless/hostapd
 net-wireless/wpa_supplicant
 sci-geosciences/googleearth
 sci-geosciences/josm
