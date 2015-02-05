@@ -8,11 +8,11 @@ app-arch/xarchiver
 app-cdr/xfburn
 app-editors/leafpad
 app-editors/vim
+app-editors/vim-core
 app-i18n/ibus-qt
 app-i18n/poedit
 app-laptop/i8kutils
 app-laptop/laptop-mode-tools
-app-office/libreoffice-bin
 app-portage/gentoolkit
 app-shells/bash
 app-text/asciidoc
@@ -40,11 +40,14 @@ dev-db/mariadb
 dev-java/icedtea-bin
 dev-lang/erlang
 dev-lang/ruby
+dev-lang/ruby:2.1
 dev-lang/v8
 dev-lang/vala
 dev-lang/vala:0.20
+dev-lang/vala:0.24
 dev-libs/boost
 dev-libs/dotconf
+dev-libs/glib
 dev-libs/gobject-introspection
 dev-libs/icu
 dev-libs/kpathsea
@@ -75,6 +78,7 @@ dev-texlive/texlive-latexextra
 dev-texlive/texlive-pstricks
 dev-util/android-tools
 dev-util/ccache
+dev-util/gdbus-codegen
 dev-util/meld
 dev-vcs/git
 gnome-base/gvfs
@@ -190,6 +194,9 @@ sys-fs/sshfs-fuse
 sys-fs/udev-init-scripts
 sys-fs/yaffs2-utils
 sys-kernel/gentoo-sources
+sys-kernel/gentoo-sources:3.17.1-r1
+sys-kernel/gentoo-sources:3.17.2
+sys-kernel/gentoo-sources:3.18.0
 sys-kernel/linux-firmware
 sys-kernel/linux-headers
 sys-libs/gpm
@@ -205,6 +212,7 @@ virtual/latex-base
 virtual/mysql
 virtual/python-imaging
 virtual/udev
+www-client/chromium
 www-client/firefox
 www-client/links
 www-plugins/adobe-flash

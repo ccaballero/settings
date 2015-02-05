@@ -88,3 +88,43 @@ www-client/midori -libnotify
 www-servers/apache -ldap
 www-servers/nginx http -pcre ssl vim-syntax -rtmp syslog
 
+# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby22]
+# required by dev-lang/ruby-2.2.0
+# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby22]
+# required by virtual/rubygems-8
+# required by dev-ruby/racc-1.4.12[ruby_targets_ruby22,-test]
+>=dev-ruby/json-1.8.2 ruby_targets_ruby22
+# required by dev-lang/ruby-2.2.0
+# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby22]
+# required by dev-lang/ruby-2.1.5[rdoc]
+# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby21]
+# required by virtual/rubygems-8
+# required by dev-ruby/racc-1.4.12[ruby_targets_ruby22,-test]
+>=dev-ruby/rake-10.4.2 ruby_targets_ruby22
+# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby22]
+# required by dev-lang/ruby-2.2.0
+# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby22]
+# required by virtual/rubygems-8
+# required by dev-ruby/rake-10.4.2[ruby_targets_ruby22,-test]
+# required by dev-ruby/json-1.8.2[ruby_targets_ruby22,-doc,-test]
+# required by dev-lang/ruby-2.1.5
+# required by virtual/rubygems-7
+>=dev-ruby/racc-1.4.12 ruby_targets_ruby22
+# required by dev-ruby/json-1.8.2[ruby_targets_ruby22,-test]
+# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby22]
+# required by dev-lang/ruby-2.2.0
+# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby22]
+# required by virtual/rubygems-7
+# required by dev-ruby/racc-1.4.12[ruby_targets_ruby21,-test]
+>=virtual/rubygems-8 ruby_targets_ruby22
+# required by dev-lang/ruby-2.2.0
+# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby22]
+# required by virtual/rubygems-8
+# required by dev-ruby/racc-1.4.12[ruby_targets_ruby22,-test]
+>=dev-ruby/rdoc-4.1.2 ruby_targets_ruby22
+# required by virtual/rubygems-8
+# required by dev-lang/ruby-2.2.0
+# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby22]
+# required by dev-lang/ruby-2.1.5[rdoc]
+# required by dev-ruby/racc-1.4.12[ruby_targets_ruby21]
+>=dev-ruby/rubygems-2.4.5 ruby_targets_ruby22
