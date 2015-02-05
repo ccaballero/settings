@@ -29,6 +29,7 @@ app-vim/pathogen
 app-vim/vim-spell-es
 dev-db/couchdb
 dev-db/mariadb
+dev-db/redis
 dev-java/icedtea-bin
 dev-lang/erlang
 dev-lang/python
@@ -116,7 +117,6 @@ net-p2p/transmission
 net-print/cups
 net-wireless/hostapd
 net-wireless/wpa_supplicant
-sci-geosciences/googleearth
 sci-geosciences/josm
 sci-geosciences/josm-plugins
 sys-apps/hwids
@@ -130,6 +130,7 @@ sys-boot/grub
 sys-boot/os-prober
 sys-devel/autoconf
 sys-devel/gcc
+sys-devel/gcc:4.8
 sys-devel/gettext
 sys-fs/eudev
 sys-fs/lvm2
@@ -144,6 +145,7 @@ sys-power/acpi
 sys-power/acpid
 sys-process/dcron
 sys-process/lsof
+www-client/chromium
 www-client/firefox
 www-client/links
 www-plugins/adobe-flash

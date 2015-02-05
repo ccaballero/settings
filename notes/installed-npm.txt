@@ -21,6 +21,10 @@ npm install -g yo
 		npm install -g generator-ember
 	generator-mdpress
 		npm install -g generator-mdpress
+	generator-angular-fullstack
+		npm install -g generator-angular-fullstack
+	generator-mean
+		npm install -g generator-mean
 
 Grunt client:
 npm install -g grunt-cli

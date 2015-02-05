@@ -62,6 +62,7 @@ net-libs/nodejs npm
 net-print/cups-filters -dbus -foomatic
 net-wireless/blueman -policykit network -sendto
 net-wireless/bluez alsa readline usb hid2hci
+sci-geosciences/googleearth bundled-libs
 sys-boot/grub -multislot -truetype
 sys-devel/gcc gcj awt
 sys-devel/llvm clang
