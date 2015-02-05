@@ -212,6 +212,7 @@ virtual/latex-base
 virtual/mysql
 virtual/python-imaging
 virtual/udev
+www-client/chromium
 www-client/firefox
 www-client/links
 www-plugins/adobe-flash
