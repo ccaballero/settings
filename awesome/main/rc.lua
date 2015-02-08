@@ -91,6 +91,7 @@ end
 -- Create a laucher widget and a main menu
 app_thunar = "thunar"
 app_firefox = "firefox"
+app_chromium = "chromium"
 app_pidgin = "pidgin"
 app_transmission = "transmission-gtk"
 app_gmpc = "gmpc"
@@ -99,6 +100,7 @@ mymainmenu = awful.menu({ items = { --{ "awesome", myawesomemenu, beautiful.awes
                                     { 'terminal',        terminal,          beautiful.terminal_icon },
                                     { 'thunar',          app_thunar,        beautiful.thunar_icon },
                                     { 'firefox',         app_firefox,       beautiful.firefox_icon },
+                                    { 'chromium',        app_chromium,      beautiful.chromium_icon },
                                     { 'pidgin',          app_pidgin,        beautiful.pidgin_icon },
                                     { 'transmission',    app_transmission,  beautiful.transmission_icon },
                                     { 'gmpc',            app_gmpc,          beautiful.gmpc_icon },

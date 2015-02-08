@@ -90,6 +90,7 @@ media-plugins/gmpc-tagedit
 media-sound/alsa-utils
 media-sound/easytag
 media-sound/gmpc
+media-sound/gpodder
 media-sound/mpc
 media-sound/mpd
 media-sound/ncmpc
