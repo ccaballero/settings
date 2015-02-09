@@ -130,9 +130,11 @@ sys-apps/usbutils
 sys-boot/grub
 sys-boot/os-prober
 sys-devel/autoconf
+sys-devel/clang
 sys-devel/gcc
 sys-devel/gcc:4.8
 sys-devel/gettext
+sys-devel/llvm
 sys-fs/eudev
 sys-fs/lvm2
 sys-fs/ntfs3g
@@ -155,10 +157,12 @@ x11-apps/setxkbmap
 x11-apps/xclock
 x11-apps/xkill
 x11-apps/xrandr
+x11-base/xorg-drivers
 x11-base/xorg-server
 x11-drivers/xf86-input-evdev
 x11-drivers/xf86-video-nouveau
 x11-libs/libXfont
+x11-libs/libva
 x11-misc/slim
 x11-misc/wmname
 x11-misc/xclip

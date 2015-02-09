@@ -38,7 +38,9 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("/home/jacobian/.config/awesome/theme.lua")
+--switch = os.date("%a",os.time())
+switch = 'Tue'
+beautiful.init("/home/jacobian/.config/awesome/themes/" .. switch .. "/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "xfce4-terminal"
