@@ -39,7 +39,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 --switch = os.date("%a",os.time())
-switch = 'Sat'
+switch = 'Fri'
 beautiful.init("/home/jacobian/.config/awesome/themes/" .. switch .. "/theme-1920x1080.lua")
 
 -- This is used later as the default terminal and editor to run.
@@ -478,7 +478,8 @@ end
 
 --awful.util.spawn_with_shell("xcompmgr -cF &")
 --awful.util.spawn_with_shell("wmname LG3D &")
-run_once("conky -c ~/.conky/.conkyrc")
+awful.util.spawn_with_shell("ln -sf /home/jacobian/.conky/conkyrc."..switch.." /home/jacobian/.conkyrc")
+run_once("conky")
 
 --awful.util.spawn_with_shell("conky")
 --awful.util.spawn_with_shell("liferea")
