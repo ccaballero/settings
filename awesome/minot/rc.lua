@@ -38,7 +38,9 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("/home/jacobian/.config/awesome/theme.lua")
+--switch = os.date("%a",os.time())
+switch = "Thu"
+beautiful.init("/home/jacobian/.config/awesome/themes/" .. switch .. "/theme-1366x768.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "xfce4-terminal"
@@ -91,19 +93,21 @@ end
 -- Create a laucher widget and a main menu
 app_thunar = "thunar"
 app_firefox = "firefox"
+app_chromium = "chromium"
 app_pidgin = "pidgin"
 app_transmission = "transmission-gtk"
 app_gmpc = "gmpc"
 
 mymainmenu = awful.menu({ items = { --{ "awesome", myawesomemenu, beautiful.awesome_icon },
                                     { 'terminal',        terminal,          beautiful.terminal_icon },
-				    { 'thunar',          app_thunar,        beautiful.thunar_icon },
-				    { 'firefox',         app_firefox,       beautiful.firefox_icon },
-				    { 'pidgin',          app_pidgin,        beautiful.pidgin_icon },
-				    { 'transmission',    app_transmission,  beautiful.transmission_icon },
-				    { 'gmpc',            app_gmpc,          beautiful.gmpc_icon },
-				    { 'reiniciar',       awesome.restart },
-				    { 'salir',           awesome.quit }
+                                    { 'thunar',          app_thunar,        beautiful.thunar_icon },
+                                    { 'firefox',         app_firefox,       beautiful.firefox_icon },
+                                    { 'chromium',        app_chromium,      beautiful.chromium_icon },
+                                    { 'pidgin',          app_pidgin,        beautiful.pidgin_icon },
+                                    { 'transmission',    app_transmission,  beautiful.transmission_icon },
+                                    { 'gmpc',            app_gmpc,          beautiful.gmpc_icon },
+                                    { 'reiniciar',       awesome.restart },
+                                    { 'salir',           awesome.quit }
                                   }
                         })
 
@@ -154,7 +158,9 @@ mytasklist.buttons = awful.util.table.join(
                                                   instance:hide()
                                                   instance = nil
                                               else
-                                                  instance = awful.menu.clients({ width=250 })
+                                                  instance = awful.menu.clients({
+                                                      theme = { width = 250 }
+                                                  })
                                               end
                                           end),
                      awful.button({ }, 4, function ()
@@ -342,17 +348,21 @@ for i = 1, 9 do
         -- Move client to tag.
         awful.key({ modkey, "Shift" }, "#" .. i + 9,
                   function ()
-                      local tag = awful.tag.gettags(client.focus.screen)[i]
-                      if client.focus and tag then
-                          awful.client.movetotag(tag)
+                      if client.focus then
+                          local tag = awful.tag.gettags(client.focus.screen)[i]
+                          if tag then
+                              awful.client.movetotag(tag)
+                          end
                      end
                   end),
         -- Toggle tag.
         awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
                   function ()
-                      local tag = awful.tag.gettags(client.focus.screen)[i]
-                      if client.focus and tag then
-                          awful.client.toggletag(tag)
+                      if client.focus then
+                          local tag = awful.tag.gettags(client.focus.screen)[i]
+                          if tag then
+                              awful.client.toggletag(tag)
+                          end
                       end
                   end))
 end
@@ -374,6 +384,7 @@ awful.rules.rules = {
       properties = { border_width = beautiful.border_width,
                      border_color = beautiful.border_normal,
                      focus = awful.client.focus.filter,
+                     raise = true,
                      keys = clientkeys,
                      buttons = clientbuttons } },
     { rule = { class = "MPlayer" },
@@ -469,7 +480,6 @@ end
 --awful.util.spawn_with_shell("wmname LG3D &")
 run_once("conky")
 
---awful.util.spawn_with_shell("conky")
 --awful.util.spawn_with_shell("liferea")
 --awful.util.spawn_with_shell("pidgin")
 --awful.util.spawn_with_shell("transmission-gtk")

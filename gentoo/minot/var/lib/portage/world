@@ -9,6 +9,8 @@ app-cdr/xfburn
 app-editors/leafpad
 app-editors/vim
 app-editors/vim-core
+app-emulation/libvirt
+app-emulation/virt-manager
 app-i18n/ibus-qt
 app-i18n/poedit
 app-laptop/i8kutils
@@ -37,6 +39,7 @@ dev-cpp/gflags
 dev-cpp/libcmis
 dev-db/couchdb
 dev-db/mariadb
+dev-db/redis
 dev-java/icedtea-bin
 dev-lang/erlang
 dev-lang/ruby
@@ -162,7 +165,6 @@ net-wireless/iw
 net-wireless/rfkill
 net-wireless/ussp-push
 net-wireless/wpa_supplicant
-sci-astronomy/stellarium
 sci-geosciences/googleearth
 sci-geosciences/josm
 sci-geosciences/josm-plugins
@@ -183,8 +185,10 @@ sys-boot/grub
 sys-boot/unetbootin
 sys-devel/autoconf
 sys-devel/bc
+sys-devel/clang
 sys-devel/flex
 sys-devel/gcc
+sys-devel/llvm
 sys-fs/dosfstools
 sys-fs/eudev
 sys-fs/lvm2
@@ -197,6 +201,8 @@ sys-kernel/gentoo-sources
 sys-kernel/gentoo-sources:3.17.1-r1
 sys-kernel/gentoo-sources:3.17.2
 sys-kernel/gentoo-sources:3.18.0
+sys-kernel/gentoo-sources:3.18.2
+sys-kernel/gentoo-sources:3.18.3
 sys-kernel/linux-firmware
 sys-kernel/linux-headers
 sys-libs/gpm
@@ -230,12 +236,14 @@ x11-drivers/xf86-input-evdev
 x11-drivers/xf86-input-synaptics
 x11-drivers/xf86-video-intel
 x11-libs/cairo
+x11-libs/libdrm
 x11-libs/pango
 x11-misc/arandr
 x11-misc/slim
 x11-misc/wmname
 x11-misc/xcompmgr
 x11-misc/xdg-user-dirs-gtk
+x11-proto/xcb-proto
 x11-terms/xfce4-terminal
 x11-themes/gtk-theme-switch
 x11-themes/xfwm4-themes

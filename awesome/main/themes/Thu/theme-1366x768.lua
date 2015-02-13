@@ -1,61 +1,66 @@
 
 -- {{{ Main
 theme = {}
-theme.wallpaper = '/home/jacobian/.config/awesome/wallpapers/02/background-1366x768.png'
+theme.wallpaper = '/home/jacobian/.config/awesome/themes/Thu/background-1366x768.png'
 -- }}}
 
 -- {{{ Styles
 theme.font = 'Helvetica 35 Thin 8'
 
--- {{{ Colors
-theme.bg_normal   = '#cca67d'
-theme.bg_focus    = '#b1906c'
-theme.bg_urgent   = '#cca67d'
-theme.bg_minimize = '#cca67d'
+color1 = '#d00c23'
+color2 = '#e32656'
+color3 = '#ffc566'
+color4 = '#ffffff'
 
-theme.fg_normal   = '#482b25'
-theme.fg_focus    = '#482b25'
-theme.fg_urgent   = '#482b25'
-theme.fg_minimize = '#482b25'
+-- {{{ Colors
+theme.bg_normal   = color1
+theme.bg_focus    = color2
+theme.bg_urgent   = color1
+theme.bg_minimize = color1
+
+theme.fg_normal   = color3
+theme.fg_focus    = color3
+theme.fg_urgent   = color3
+theme.fg_minimize = color3
 -- }}}
 
 -- {{{ Borders
 theme.border_width  = '3'
-theme.border_normal = '#ffffff'
-theme.border_focus  = '#cca67d'
-theme.border_marked = '#ffffff'
+theme.border_normal = color4
+theme.border_focus  = color1
+theme.border_marked = color4
 -- }}}
 
 -- {{{ Tasklist
-theme.tasklist_bg_normal   = '#cca67d'
-theme.tasklist_bg_focus    = '#b1906c'
-theme.tasklist_bg_minimize = '#cca67d'
-theme.tasklist_bg_urgent   = '#cca67d'
+theme.tasklist_bg_normal   = color1
+theme.tasklist_bg_focus    = color2
+theme.tasklist_bg_minimize = color1
+theme.tasklist_bg_urgent   = color1
 
-theme.tasklist_fg_normal   = '#482b25'
-theme.tasklist_fg_focus    = '#482b25'
-theme.tasklist_fg_minimize = '#482b25'
-theme.tasklist_fg_urgent   = '#482b25'
+theme.tasklist_fg_normal   = color3
+theme.tasklist_fg_focus    = color3
+theme.tasklist_fg_minimize = color3
+theme.tasklist_fg_urgent   = color3
 
 theme.tasklist_disable_icon = true
 -- }}}
 
 -- {{{ Taglist
-theme.taglist_bg_normal   = '#cca67d'
-theme.taglist_bg_focus    = '#b1906c'
-theme.taglist_bg_minimize = '#cca67d'
-theme.taglist_bg_urgent   = '#cca67d'
+theme.taglist_bg_normal   = color1
+theme.taglist_bg_focus    = color2
+theme.taglist_bg_minimize = color1
+theme.taglist_bg_urgent   = color1
 
-theme.taglist_fg_normal   = '#482b25'
-theme.taglist_fg_focus    = '#482b25'
-theme.taglist_fg_minimize = '#482b25'
-theme.taglist_fg_urgent   = '#482b25'
+theme.taglist_fg_normal   = color3
+theme.taglist_fg_focus    = color3
+theme.taglist_fg_minimize = color3
+theme.taglist_fg_urgent   = color3
 -- }}}
 
 -- {{{
-theme.menu_bg_normal = '#b1906c'
-theme.menu_bg_normal = '#cca67d'
-theme.menu_border_color = '#cca67d'
+theme.menu_bg_normal = color2
+theme.menu_bg_normal = color1
+theme.menu_border_color = color1
 -- }}}
 
 -- {{{ Tooltip
@@ -84,7 +89,7 @@ theme.menu_border_color = '#cca67d'
 -- }}}
 
 -- {{{ Misc
-theme.awesome_icon           = '/home/jacobian/.config/awesome/awesome-icon.png'
+theme.awesome_icon           = '/home/jacobian/.config/awesome/themes/Thu/awesome-icon.png'
 theme.menu_submenu_icon      = '/usr/share/awesome/themes/default/submenu.png'
 theme.tasklist_floating_icon = '/usr/share/awesome/themes/default/tasklist/floatingw.png'
 -- }}}
