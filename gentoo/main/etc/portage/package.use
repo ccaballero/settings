@@ -50,6 +50,7 @@ media-video/gnome-mplayer -libnotify
 media-video/mjpegtools v4l
 media-video/mplayer win32codecs mmxext
 media-video/vlc fontconfig libass matroska mpeg qt4 svga truetype vorbis win32codecs wma-fixed x264 -cdda -dvbpsi -gcrypt -ncurses -opengl vdpau
+net-analyzer/netcat6 -bluetooth
 net-analyzer/nmap -gtk -lua
 net-dns/dnsmasq dbus dhcp script
 net-im/pidgin -spell -xscreensaver
