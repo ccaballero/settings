@@ -1,7 +1,7 @@
 app-admin/conky imlib iostats lua lua-cairo lua-imlib math mpd rss truetype vim-syntax -nvidia wifi hddtemp 
 app-admin/eselect-php fpm -apache
 app-admin/sudo -ldap -sendmail
-app-admin/syslog-ng ssl tcpd json
+app-admin/syslog-ng ssl tcpd json redis
 app-editors/gobby gnome
 app-editors/gvim netbeans
 app-editors/vim -X python
@@ -21,7 +21,7 @@ dev-cpp/glog gflags
 dev-db/mariadb -berkdb -pam -perl static-libs -xml
 dev-db/mysql -berkdb -perl
 dev-java/icedtea -webstart -nsplugin
-dev-lang/php -apache2 -berkdb curl -fpm -ftp gd intl json -mysql -mysqli nls -pdo -postgres sockets truetype -xmlreader -xmlwriter -xslt zip
+dev-lang/php -apache2 -berkdb curl fpm -ftp gd intl json -mysql mysqli nls pdo -postgres sockets truetype -xmlreader -xmlwriter -xslt zip
 dev-lang/python sqlite
 dev-libs/apr-util -berkdb -ldap
 dev-libs/libnl utils
@@ -40,7 +40,7 @@ media-gfx/comix rar
 media-libs/freetype bindist
 media-libs/harfbuzz icu
 media-libs/lcms python
-media-libs/mesa gles2
+media-libs/mesa gles2 bindist
 media-plugins/gst-plugins-meta ffmpeg -cdda
 media-sound/mpc iconv
 media-sound/mpd -ffmpeg
@@ -48,8 +48,8 @@ media-sound/ncmpc -help-screen colors mouse
 media-video/ffmpeg opus rtmp v4l threads -X x264 x265 vdpau vaapi libass
 media-video/gnome-mplayer -libnotify
 media-video/mjpegtools v4l
-media-video/mplayer win32codecs mmxext
-media-video/vlc fontconfig libass matroska mpeg qt4 svga truetype vorbis win32codecs wma-fixed x264 -cdda -dvbpsi -gcrypt -ncurses -opengl vdpau
+media-video/mplayer win32codecs mmxext bindist
+media-video/vlc bluray fontconfig libass matroska mpeg qt4 svga truetype vorbis win32codecs wma-fixed x264 -cdda dvbpsi -gcrypt -ncurses -opengl vdpau
 net-analyzer/netcat6 -bluetooth
 net-analyzer/nmap -gtk -lua
 net-dns/dnsmasq dbus dhcp script
@@ -58,13 +58,13 @@ net-misc/curl -ldap
 net-misc/dhcp -ldap -server ssl vim-syntax
 net-misc/spice-gtk python gtk3 usbredir
 net-misc/tightvnc server
+net-libs/gtk-vnc python
 net-libs/libpcap -bluetooth
 net-libs/nodejs npm
 net-print/cups-filters -dbus -foomatic
 net-wireless/blueman -policykit network -sendto
 net-wireless/bluez alsa readline usb hid2hci
 sci-geosciences/googleearth bundled-libs
-#sci-geosciences/mapnik python_single_target_python2_7 python_targets_python2_7
 sci-geosciences/mapnik python
 sys-boot/grub -multislot fonts themes truetype
 sys-devel/gcc gcj awt
@@ -91,56 +91,3 @@ www-client/links -X -tiff -jpeg -deprecated
 www-client/midori -libnotify
 www-servers/apache -ldap
 www-servers/nginx http -pcre ssl vim-syntax -rtmp syslog
-
-# required by dev-ruby/rdoc-4.1.2[-test,ruby_targets_ruby22]
-# required by dev-lang/ruby-2.2.0[rdoc]
-# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby22]
-# required by @selected
-# required by @world (argument)
->=virtual/rubygems-8 ruby_targets_ruby22
-# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby22]
-# required by dev-lang/ruby-2.2.0[rdoc]
-# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby22]
-# required by virtual/rubygems-8
-# required by dev-ruby/json-1.8.2[-test,ruby_targets_ruby22]
-# required by dev-lang/ruby-2.1.5
-# required by dev-ruby/rake-10.4.2[ruby_targets_ruby21]
->=dev-ruby/racc-1.4.12 ruby_targets_ruby22
-# required by virtual/rubygems-8
-# required by dev-ruby/json-1.8.2[-test,ruby_targets_ruby22]
-# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby22]
-# required by dev-lang/ruby-2.2.0[rdoc]
-# required by dev-ruby/rake-10.4.2[ruby_targets_ruby22]
-# required by dev-ruby/racc-1.4.12[-test,ruby_targets_ruby22]
->=dev-ruby/rubygems-2.4.5 ruby_targets_ruby22
-# required by dev-lang/ruby-2.2.0
-# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby22]
-# required by dev-lang/ruby-2.1.5[rdoc]
-# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby21]
-# required by virtual/rubygems-8
-# required by dev-ruby/json-1.8.2[-test,ruby_targets_ruby22]
->=dev-ruby/rake-10.4.2 ruby_targets_ruby22
-# required by app-emulation/virt-manager-1.1.0-r1[gtk]
-# required by @selected
-# required by @world (argument)
->=net-libs/gtk-vnc-0.5.3 python
-# required by dev-lang/ruby-2.2.0[rdoc]
-# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby22]
-# required by virtual/rubygems-8
-# required by dev-ruby/json-1.8.2[-test,ruby_targets_ruby22]
-# required by dev-lang/ruby-2.1.5
-# required by dev-ruby/rake-10.4.2[ruby_targets_ruby21]
-# required by dev-ruby/racc-1.4.12[-test,ruby_targets_ruby22]
->=dev-ruby/rdoc-4.1.2 ruby_targets_ruby22
-# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby22]
-# required by dev-lang/ruby-2.2.0[rdoc]
-# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby22]
-# required by virtual/rubygems-8
-# required by dev-ruby/racc-1.4.12[-test,ruby_targets_ruby22]
->=dev-ruby/json-1.8.2 ruby_targets_ruby22
-# required by sci-geosciences/mapnik-2.2.0[python_single_target_python3_3]
-# required by mapnik (argument)
->=dev-libs/boost-1.56.0-r1 python_targets_python3_3
-# required by sci-geosciences/mapnik-2.2.0
-# required by mapnik (argument)
->=dev-libs/boost-1.56.0-r1 python

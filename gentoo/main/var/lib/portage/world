@@ -32,10 +32,10 @@ dev-db/mariadb
 dev-db/redis
 dev-java/icedtea-bin
 dev-lang/erlang
+dev-lang/php
 dev-lang/python
 dev-lang/python:2.7
 dev-lang/python:3.3
-dev-lang/ruby
 dev-libs/boost
 dev-libs/glib
 dev-libs/gobject-introspection
@@ -52,7 +52,6 @@ dev-python/libvirt-python
 dev-python/numpy
 dev-python/pygtk
 dev-python/setuptools
-dev-ruby/rubygems
 dev-tex/bibtexu
 dev-texlive/texlive-fontsextra
 dev-texlive/texlive-langspanish
@@ -104,6 +103,7 @@ net-dns/bind-tools
 net-dns/dnsmasq
 net-firewall/iptables
 net-fs/nfs-utils
+net-ftp/filezilla
 net-im/pidgin
 net-libs/gnutls
 net-libs/gtk-vnc
@@ -116,7 +116,7 @@ net-misc/spice-gtk
 net-misc/tightvnc
 net-p2p/transmission
 net-print/cups
-net-wireless/hostapd
+net-print/cups-filters
 net-wireless/wpa_supplicant
 sci-geosciences/josm
 sci-geosciences/josm-plugins
@@ -148,7 +148,6 @@ sys-power/acpi
 sys-power/acpid
 sys-process/dcron
 sys-process/lsof
-www-client/chromium
 www-client/firefox
 www-client/links
 www-plugins/adobe-flash
