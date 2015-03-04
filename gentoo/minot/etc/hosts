@@ -24,6 +24,8 @@
 167.157.28.35   rineheart.scesi     rineheart
 167.157.27.22   jalapeno.scesi      jalapeno
 
+#64.22.112.82    academy.novusproject.org
+
 # Working address
 192.3.27.103    hiperborea.com.bo   hiperborea
 
@@ -35,4 +37,5 @@
 127.0.0.1       hiperborea.local
 127.0.0.1       galao.local
 127.0.0.1       cappuccino.local
+127.0.0.1       novusacademy.local
 
