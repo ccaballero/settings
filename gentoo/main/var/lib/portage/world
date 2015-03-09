@@ -79,6 +79,10 @@ media-gfx/inkscape
 media-gfx/librecad
 media-gfx/ristretto::gentoo
 media-libs/freetype
+media-libs/gst-plugins-base
+media-libs/gst-plugins-base:0.10
+media-libs/gstreamer
+media-libs/gstreamer:0.10
 media-libs/harfbuzz
 media-libs/libcdr
 media-libs/libmatroska
@@ -86,6 +90,8 @@ media-libs/mesa
 media-libs/x264
 media-libs/x265
 media-plugins/gmpc-tagedit
+media-plugins/gst-plugins-ffmpeg
+media-plugins/gst-plugins-libav
 media-sound/alsa-utils
 media-sound/easytag
 media-sound/gmpc
@@ -114,9 +120,11 @@ net-misc/bridge-utils
 net-misc/openssh
 net-misc/spice-gtk
 net-misc/tightvnc
+net-misc/wicd
 net-p2p/transmission
 net-print/cups
 net-print/cups-filters
+net-wireless/aircrack-ng
 net-wireless/wpa_supplicant
 sci-geosciences/josm
 sci-geosciences/josm-plugins
