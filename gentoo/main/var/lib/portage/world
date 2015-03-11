@@ -29,6 +29,7 @@ app-vim/pathogen
 app-vim/vim-spell-es
 dev-db/couchdb
 dev-db/mariadb
+dev-db/mongodb
 dev-db/redis
 dev-java/icedtea-bin
 dev-lang/erlang
@@ -115,6 +116,7 @@ net-libs/gnutls
 net-libs/gtk-vnc
 net-libs/libsoup
 net-libs/libsoup-gnome
+net-libs/neon
 net-libs/nodejs
 net-misc/bridge-utils
 net-misc/openssh
