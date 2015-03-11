@@ -49,7 +49,7 @@ media-video/ffmpeg opus rtmp v4l threads -X x264 x265 vdpau vaapi libass
 media-video/gnome-mplayer -libnotify
 media-video/mjpegtools v4l
 media-video/mplayer win32codecs mmxext bindist
-media-video/vlc bluray fontconfig libass matroska mpeg qt4 svga truetype vorbis win32codecs wma-fixed x264 -cdda dvbpsi -gcrypt -ncurses -opengl vdpau
+media-video/vlc bluray -cdda dvbpsi fontconfig -gcrypt libass matroska mpeg -ncurses -opengl postproc qt4 svga truetype vorbis win32codecs vdpau wma-fixed x264
 net-analyzer/netcat6 -bluetooth
 net-analyzer/nmap -gtk -lua
 net-dns/dnsmasq dbus dhcp script
@@ -91,3 +91,6 @@ www-client/links -X -tiff -jpeg -deprecated
 www-client/midori -libnotify
 www-servers/apache -ldap
 www-servers/nginx http -pcre ssl vim-syntax -rtmp syslog
+# required by net-wireless/aircrack-ng-1.2_rc1-r1::gentoo[airdrop-ng]
+# required by aircrack-ng (argument)
+>=net-wireless/lorcon-0.0_p20130212-r1 python

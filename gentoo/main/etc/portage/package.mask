@@ -1,0 +1,2 @@
+>dev-db/mongodb-2.6.7
+>dev-db/mongodb-2.6.7::gentoo
