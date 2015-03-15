@@ -41,6 +41,7 @@ dev-libs/boost
 dev-libs/glib
 dev-libs/gobject-introspection
 dev-libs/icu
+dev-libs/libbson
 dev-libs/libebml
 dev-libs/libixion
 dev-libs/liborcus
