@@ -39,6 +39,7 @@ dev-cpp/gflags
 dev-cpp/libcmis
 dev-db/couchdb
 dev-db/mariadb
+dev-db/mongodb
 dev-db/redis
 dev-java/icedtea-bin
 dev-lang/erlang
