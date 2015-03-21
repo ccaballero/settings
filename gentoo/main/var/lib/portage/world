@@ -22,7 +22,6 @@ app-text/evince
 app-text/libebook
 app-text/libetonyek
 app-text/po4a
-app-text/poppler
 app-vim/airline
 app-vim/nerdtree
 app-vim/pathogen
@@ -37,7 +36,6 @@ dev-lang/php
 dev-lang/python
 dev-lang/python:2.7
 dev-lang/python:3.3
-dev-libs/boost
 dev-libs/glib
 dev-libs/gobject-introspection
 dev-libs/icu
@@ -77,7 +75,6 @@ media-fonts/unifont
 media-gfx/blender
 media-gfx/comix
 media-gfx/gimp
-media-gfx/inkscape
 media-gfx/librecad
 media-gfx/ristretto::gentoo
 media-libs/freetype

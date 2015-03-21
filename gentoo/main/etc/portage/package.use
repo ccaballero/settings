@@ -24,6 +24,7 @@ dev-java/icedtea -webstart -nsplugin
 dev-lang/php -apache2 -berkdb curl fpm -ftp gd intl json -mysql mysqli nls pdo -postgres sockets truetype -xmlreader -xmlwriter -xslt zip
 dev-lang/python sqlite
 dev-libs/apr-util -berkdb -ldap
+dev-libs/boost python
 dev-libs/libnl utils
 dev-libs/libxml2 icu
 dev-python/django mysql vhosts
@@ -94,3 +95,10 @@ www-servers/nginx http -pcre ssl vim-syntax -rtmp syslog
 # required by net-wireless/aircrack-ng-1.2_rc1-r1::gentoo[airdrop-ng]
 # required by aircrack-ng (argument)
 >=net-wireless/lorcon-0.0_p20130212-r1 python
+# required by virtual/mpi-2.0-r3::gentoo
+# required by dev-libs/boost-1.56.0-r1::gentoo[mpi]
+# required by boost (argument)
+>=sys-cluster/openmpi-1.8.4-r2 threads
+# required by dev-libs/boost-1.56.0-r1::gentoo[mpi]
+# required by boost (argument)
+>=virtual/mpi-2.0-r3 threads
