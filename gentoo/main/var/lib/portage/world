@@ -15,12 +15,12 @@ app-emulation/libvirt
 app-emulation/libvirt-glib
 app-emulation/qemu
 app-emulation/virt-manager
+app-office/libreoffice-bin
 app-portage/gentoolkit
 app-portage/mirrorselect
 app-shells/bash
 app-text/evince
 app-text/libebook
-app-text/libetonyek
 app-text/po4a
 app-vim/airline
 app-vim/nerdtree
@@ -36,13 +36,12 @@ dev-lang/php
 dev-lang/python
 dev-lang/python:2.7
 dev-lang/python:3.3
+dev-libs/boost
 dev-libs/glib
 dev-libs/gobject-introspection
 dev-libs/icu
 dev-libs/libbson
 dev-libs/libebml
-dev-libs/libixion
-dev-libs/liborcus
 dev-libs/nspr
 dev-libs/nss
 dev-libs/openssl
@@ -75,6 +74,7 @@ media-fonts/unifont
 media-gfx/blender
 media-gfx/comix
 media-gfx/gimp
+media-gfx/inkscape
 media-gfx/librecad
 media-gfx/ristretto::gentoo
 media-libs/freetype
