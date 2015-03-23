@@ -20,6 +20,7 @@ app-portage/gentoolkit
 app-portage/mirrorselect
 app-shells/bash
 app-text/evince
+app-text/ghostscript-gpl
 app-text/libebook
 app-text/po4a
 app-vim/airline
@@ -78,6 +79,7 @@ media-gfx/inkscape
 media-gfx/librecad
 media-gfx/ristretto::gentoo
 media-libs/freetype
+media-libs/gegl
 media-libs/gst-plugins-base
 media-libs/gst-plugins-base:0.10
 media-libs/gstreamer
@@ -97,6 +99,7 @@ media-sound/gmpc
 media-sound/gpodder
 media-sound/mpc
 media-sound/mpd
+media-sound/mpg123
 media-sound/ncmpc
 media-video/ffmpeg
 media-video/gnome-mplayer
@@ -154,6 +157,7 @@ sys-libs/e2fsprogs-libs
 sys-libs/gpm
 sys-power/acpi
 sys-power/acpid
+sys-power/pm-utils
 sys-process/dcron
 sys-process/lsof
 www-client/firefox
@@ -181,6 +185,9 @@ x11-wm/awesome
 x11-wm/awesome::gentoo
 xfce-base/thunar
 xfce-base/xfce4-meta
+xfce-base/xfce4-session
+xfce-base/xfce4-settings
+xfce-base/xfdesktop
 xfce-extra/thunar-archive-plugin
 xfce-extra/thunar-volman
 xfce-extra/tumbler
