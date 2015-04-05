@@ -1,5 +1,4 @@
 app-admin/conky
-app-admin/eselect-opengl
 app-admin/logrotate
 app-admin/sudo
 app-admin/syslog-ng
@@ -15,6 +14,7 @@ app-emulation/libvirt
 app-emulation/libvirt-glib
 app-emulation/qemu
 app-emulation/virt-manager
+app-eselect/eselect-opengl
 app-mobilephone/obexftp
 app-office/libreoffice-bin
 app-portage/gentoolkit

@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="awesome-icon.svg"
-   inkscape:export-filename="/home/jacobian/.config/awesome/themes/Sat/awesome-icon.png"
+   inkscape:export-filename="/home/jacobian/.config/awesome/themes/Sun/awesome-icon.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -27,19 +27,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.919596"
-     inkscape:cx="24.943662"
-     inkscape:cy="21.212208"
+     inkscape:zoom="12.520508"
+     inkscape:cx="20.857914"
+     inkscape:cy="14.908011"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:showpageshadow="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1013"
-     inkscape:window-height="785"
-     inkscape:window-x="756"
-     inkscape:window-y="202"
+     inkscape:window-width="1446"
+     inkscape:window-height="848"
+     inkscape:window-x="359"
+     inkscape:window-y="174"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
@@ -59,7 +59,7 @@
      id="layer1"
      transform="translate(0,-1020.3622)">
     <path
-       style="fill:#8e8e8e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#58b5b3;fill-opacity:1;fill-rule:evenodd;stroke:none"
        d="m 0,0 32,0 0,32 -10,0 0,-12 -12,0 0,2 10,0 0,10 -20,0 0,-20 22,0 0,-2 -22,0 z"
        id="path3082"
        inkscape:connector-curvature="0"
