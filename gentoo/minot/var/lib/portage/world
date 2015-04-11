@@ -1,5 +1,4 @@
 app-admin/conky
-app-admin/eselect-pinentry
 app-admin/logrotate
 app-admin/sudo
 app-admin/syslog-ng
@@ -11,6 +10,7 @@ app-editors/vim
 app-editors/vim-core
 app-emulation/libvirt
 app-emulation/virt-manager
+app-eselect/eselect-pinentry
 app-i18n/poedit
 app-laptop/i8kutils
 app-laptop/laptop-mode-tools
