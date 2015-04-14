@@ -154,6 +154,7 @@ sys-apps/portage
 sys-apps/usbutils
 sys-boot/grub
 sys-boot/os-prober
+sys-boot/unetbootin
 sys-devel/autoconf
 sys-devel/clang
 sys-devel/gcc
