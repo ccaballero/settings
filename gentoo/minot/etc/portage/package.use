@@ -1,5 +1,6 @@
 app-admin/conky imlib iostats lua lua-cairo lua-imlib math mpd rss truetype vim-syntax -nvidia wifi hddtemp 
-app-admin/eselect-php fpm -apache
+# move app-admin/eselect-php app-eselect/eselect-php
+app-eselect/eselect-php fpm -apache
 app-admin/sudo -ldap -sendmail
 app-admin/syslog-ng ssl tcpd json redis
 app-editors/gobby gnome
