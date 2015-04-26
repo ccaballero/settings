@@ -126,7 +126,6 @@ media-libs/libvisio
 media-libs/mesa
 media-libs/opus
 media-libs/raptor
-media-libs/sk1libs
 media-libs/x264
 media-plugins/gst-plugins-ffmpeg
 media-plugins/gst-plugins-libav
@@ -235,7 +234,6 @@ virtual/libiconv
 virtual/mysql
 virtual/python-imaging
 virtual/udev
-www-client/chromium
 www-client/firefox
 www-client/links
 www-plugins/adobe-flash
