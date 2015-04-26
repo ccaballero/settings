@@ -1,4 +1,5 @@
 app-admin/conky
+app-admin/eselect
 app-admin/logrotate
 app-admin/sudo
 app-admin/syslog-ng
@@ -45,7 +46,9 @@ dev-libs/gobject-introspection
 dev-libs/icu
 dev-libs/libbson
 dev-libs/libebml
+dev-libs/libnl
 dev-libs/libxml2
+dev-libs/nettle
 dev-libs/nspr
 dev-libs/nss
 dev-libs/openobex
@@ -57,8 +60,10 @@ dev-python/libvirt-python
 dev-python/mygpoclient
 dev-python/numpy
 dev-python/pillow
+dev-python/pygments
 dev-python/pygtk
 dev-python/setuptools
+dev-python/simplejson
 dev-ruby/rubygems
 dev-tex/bibtexu
 dev-texlive/texlive-fontsextra
@@ -98,6 +103,7 @@ media-libs/gstreamer:0.10
 media-libs/harfbuzz
 media-libs/libcdr
 media-libs/libmatroska
+media-libs/libpng
 media-libs/mesa
 media-libs/x264
 media-libs/x265
@@ -124,6 +130,7 @@ net-firewall/iptables
 net-fs/nfs-utils
 net-ftp/filezilla
 net-im/pidgin
+net-libs/farstream
 net-libs/gnutls
 net-libs/gtk-vnc
 net-libs/libsoup
@@ -131,7 +138,9 @@ net-libs/libsoup-gnome
 net-libs/neon
 net-libs/nodejs
 net-misc/bridge-utils
+net-misc/curl
 net-misc/dhcp
+net-misc/dhcpcd
 net-misc/openssh
 net-misc/spice-gtk
 net-misc/tightvnc
@@ -141,16 +150,19 @@ net-print/cups
 net-print/cups-filters
 net-wireless/aircrack-ng
 net-wireless/hostapd
+net-wireless/iw
 net-wireless/wpa_supplicant
 sci-geosciences/googleearth
 sci-geosciences/josm
 sci-geosciences/josm-plugins
+sys-apps/hdparm
 sys-apps/hwids
 sys-apps/lm_sensors
 sys-apps/man-db
 sys-apps/mlocate
 sys-apps/pciutils
 sys-apps/portage
+sys-apps/sdparm
 sys-apps/usbutils
 sys-boot/grub
 sys-boot/os-prober
@@ -161,6 +173,7 @@ sys-devel/gcc
 sys-devel/gcc:4.8
 sys-devel/gettext
 sys-devel/llvm
+sys-fs/dosfstools
 sys-fs/eudev
 sys-fs/lvm2
 sys-fs/ntfs3g
@@ -169,8 +182,10 @@ sys-fs/udev-init-scripts
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
 sys-kernel/linux-headers
+sys-libs/cracklib
 sys-libs/e2fsprogs-libs
 sys-libs/gpm
+sys-libs/timezone-data
 sys-power/acpi
 sys-power/acpid
 sys-power/pm-utils
@@ -212,3 +227,4 @@ xfce-extra/thunar-archive-plugin
 xfce-extra/thunar-volman
 xfce-extra/tumbler
 xfce-extra/xfce4-screenshooter
+xfce-extra/xfce4-taskmanager

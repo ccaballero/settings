@@ -1,4 +1,2 @@
 >=www-plugins/adobe-flash-11.2.202.378 AdobeFlash-11.x
-
-# required by googleearth (argument)
 >=sci-geosciences/googleearth-7.1.2.2041 googleearth

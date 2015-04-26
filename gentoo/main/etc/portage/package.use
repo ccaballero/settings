@@ -1,5 +1,4 @@
 app-admin/conky imlib iostats lua lua-cairo lua-imlib math mpd rss truetype vim-syntax -nvidia wifi hddtemp 
-# move app-admin/eselect-php app-eselect/eselect-php
 app-eselect/eselect-php fpm -apache
 app-admin/sudo -ldap -sendmail
 app-admin/syslog-ng ssl tcpd json redis
@@ -66,6 +65,7 @@ net-libs/nodejs npm
 net-print/cups-filters -dbus -foomatic
 net-wireless/blueman -policykit network -sendto
 net-wireless/bluez alsa readline usb hid2hci
+net-wireless/lorcon python
 sci-geosciences/googleearth bundled-libs
 sci-geosciences/mapnik python gdal geos
 sys-boot/grub -multislot fonts themes truetype
@@ -93,6 +93,3 @@ www-client/links -X -tiff -jpeg -deprecated
 www-client/midori -libnotify
 www-servers/apache -ldap
 www-servers/nginx http -pcre ssl vim-syntax -rtmp syslog
-# required by net-wireless/aircrack-ng-1.2_rc1-r1::gentoo[airdrop-ng]
-# required by aircrack-ng (argument)
->=net-wireless/lorcon-0.0_p20130212-r1 python
