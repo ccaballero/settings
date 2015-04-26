@@ -45,6 +45,7 @@ dev-db/redis
 dev-java/icedtea-bin
 dev-lang/erlang
 dev-lang/php
+dev-lang/ruby
 dev-lang/v8
 dev-lang/vala
 dev-lang/vala:0.20
@@ -77,6 +78,9 @@ dev-python/pillow
 dev-python/pygtksourceview
 dev-python/python-exec
 dev-python/setuptools
+dev-ruby/json
+dev-ruby/racc
+dev-ruby/rdoc
 dev-ruby/rubygems
 dev-tex/bibtexu
 dev-texlive/texlive-fontsextra
@@ -155,6 +159,7 @@ net-fs/nfs-utils
 net-ftp/filezilla
 net-im/pidgin
 net-libs/gnutls
+net-libs/http-parser
 net-libs/libnice
 net-libs/net6
 net-libs/nodejs
@@ -233,6 +238,7 @@ virtual/latex-base
 virtual/libiconv
 virtual/mysql
 virtual/python-imaging
+virtual/rubygems
 virtual/udev
 www-client/firefox
 www-client/links
