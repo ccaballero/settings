@@ -38,8 +38,8 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-switch = os.date("%a",os.time())
---switch = 'Sat'
+--switch = os.date("%a",os.time())
+switch = '08'
 beautiful.init("/home/jacobian/.config/awesome/themes/" .. switch .. "/theme-1920x1080.lua")
 
 -- This is used later as the default terminal and editor to run.
