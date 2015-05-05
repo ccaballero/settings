@@ -280,4 +280,3 @@ ${endif}${else}
 ${image /home/jacobian/.conky/themes/08/stop.png -p 266,669 -s 48x48}
 ${endif}
 
-

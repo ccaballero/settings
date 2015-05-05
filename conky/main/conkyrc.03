@@ -33,13 +33,13 @@ out_to_stderr no
 uppercase no
 use_spacer none
 
-lua_load ~/.conky/themes/Wed/widgets.lua
+lua_load ~/.conky/themes/03/widgets.lua
 lua_draw_hook_pre widgets
 
 TEXT
-${image /home/jacobian/.conky/themes/Wed/cpu.png -p 255,186 -s 32x32}
-${image /home/jacobian/.conky/themes/Wed/mem.png -p 258,325 -s 26x26}
-${image /home/jacobian/.conky/themes/Wed/fan.png -p 256,418 -s 30x30}
+${image /home/jacobian/.conky/themes/03/cpu.png -p 255,186 -s 32x32}
+${image /home/jacobian/.conky/themes/03/mem.png -p 258,325 -s 26x26}
+${image /home/jacobian/.conky/themes/03/fan.png -p 256,418 -s 30x30}
 
 ${voffset -52}
 ${offset 30}${font LivingTogether:size=44}$nodename!${exec whoami}${font}
@@ -310,10 +310,10 @@ ${voffset 3}${offset 580}${font GeosansLight:size=11}$mpd_album${font}
 ${voffset 1}${offset 580}${font GeosansLight:size=11}$mpd_artist${font}
 ${if_mpd_playing}
 ${if_match "$mpd_status" == "Playing"}
-${image /home/jacobian/.conky/themes/Wed/play.png -p 516,969 -s 48x48}
+${image /home/jacobian/.conky/themes/03/play.png -p 516,969 -s 48x48}
 ${endif}${if_match "$mpd_status" == "Paused"}
-${image /home/jacobian/.conky/themes/Wed/pause.png -p 516,969 -s 48x48}
+${image /home/jacobian/.conky/themes/03/pause.png -p 516,969 -s 48x48}
 ${endif}${else}
-${image /home/jacobian/.conky/themes/Wed/stop.png -p 516,969 -s 48x48}
+${image /home/jacobian/.conky/themes/03/stop.png -p 516,969 -s 48x48}
 ${endif}
 
