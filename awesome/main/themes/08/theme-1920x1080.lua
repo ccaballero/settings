@@ -7,9 +7,9 @@ theme.wallpaper = '/home/jacobian/.config/awesome/themes/08/background-1920x1080
 -- {{{ Styles
 theme.font = 'Helvetica 35 Thin 8'
 
-color1 = '#cca67d'
-color2 = '#b1906c'
-color3 = '#482b25'
+color1 = '#8f3b3b'
+color2 = '#751a17'
+color3 = '#ffffff'
 color4 = '#ffffff'
 
 -- {{{ Colors

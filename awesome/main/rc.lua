@@ -38,8 +38,9 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
---switch = os.date("%a",os.time())
-switch = '08'
+count = 8
+switch = string.format('%02d',math.floor(math.random()*count)+1)
+--switch = '08'
 beautiful.init("/home/jacobian/.config/awesome/themes/" .. switch .. "/theme-1920x1080.lua")
 
 -- This is used later as the default terminal and editor to run.
@@ -257,7 +258,6 @@ globalkeys = awful.util.table.join(
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey,           }, "e",      function () awful.util.spawn(app_thunar) end),
-    awful.key({ modkey,           }, "y",      function () awful.util.spawn_with_shell("thunar-terminal.sh") end),
 
     awful.key({ "Mod1", "Control" }, "Insert", function () awful.util.spawn_with_shell("mpc toggle") end),
     awful.key({ "Mod1", "Control" }, "Home",   function () awful.util.spawn_with_shell("mpc stop") end),
@@ -286,6 +286,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "space", function () awful.layout.inc(layouts,  1) end),
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
 
+    --    awful.key({ modkey,           }, "F1",    function () awful.layout.set(layouts, 'floating') end),
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
 
     -- Prompt
