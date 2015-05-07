@@ -27,17 +27,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98873291"
-     inkscape:cx="237.36"
-     inkscape:cy="15.01837"
+     inkscape:zoom="0.91898642"
+     inkscape:cx="302.31457"
+     inkscape:cy="-10.601213"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1286"
-     inkscape:window-height="775"
-     inkscape:window-x="438"
-     inkscape:window-y="190"
+     inkscape:window-width="1376"
+     inkscape:window-height="839"
+     inkscape:window-x="237"
+     inkscape:window-y="117"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
@@ -57,7 +57,7 @@
      id="layer1"
      transform="translate(0,-924.36218)">
     <path
-       style="fill:#aa6b43;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#934310;fill-opacity:1;fill-rule:evenodd;stroke:none"
        d="M 64,0 C 28.653777,0 0,28.653777 0,64 0,99.346223 28.653777,128 64,128 99.346223,128 128,99.346223 128,64 128,28.653777 99.346223,0 64,0 z M 44.4375,33.375 97.5,64 44.4375,94.625 l 0,-61.25 z"
        transform="translate(0,924.36218)"
        id="path2985"
@@ -66,7 +66,7 @@
        inkscape:export-ydpi="90"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#aa6b43;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#934310;fill-opacity:1;fill-rule:evenodd;stroke:none"
        d="M 192 0 C 156.65378 0 128 28.65378 128 64 C 128 99.34622 156.65378 128 192 128 C 227.34622 128 256 99.34622 256 64 C 256 28.65378 227.34622 0 192 0 z M 171.03125 33.4375 L 184.4375 33.4375 L 184.4375 94.5625 L 171.03125 94.5625 L 171.03125 33.4375 z M 199.5625 33.4375 L 212.96875 33.4375 L 212.96875 94.5625 L 199.5625 94.5625 L 199.5625 33.4375 z "
        transform="translate(0,924.36218)"
        id="path3779"
@@ -74,7 +74,7 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:#aa6b43;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#934310;fill-opacity:1;fill-rule:evenodd;stroke:none"
        d="M 320 0 C 284.65378 0 256 28.65378 256 64 C 256 99.34622 284.65378 128 320 128 C 355.34622 128 384 99.34622 384 64 C 384 28.65378 355.34622 0 320 0 z M 294.625 37.625 L 345.375 37.625 L 345.375 90.375 L 294.625 90.375 L 294.625 37.625 z "
        transform="translate(0,924.36218)"
        id="path3781"

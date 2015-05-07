@@ -23,7 +23,7 @@ draw_graph_borders yes
 draw_outline no
 draw_shades no
 
-default_color 8a7054
+default_color 934310
 
 cpu_avg_samples 2
 net_avg_samples 2
