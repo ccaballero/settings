@@ -141,6 +141,7 @@ net-misc/bridge-utils
 net-misc/curl
 net-misc/dhcp
 net-misc/dhcpcd
+net-misc/ntpclient
 net-misc/openssh
 net-misc/spice-gtk
 net-misc/tightvnc
@@ -155,6 +156,7 @@ net-wireless/wpa_supplicant
 sci-geosciences/googleearth
 sci-geosciences/josm
 sci-geosciences/josm-plugins
+sys-apps/attr
 sys-apps/hdparm
 sys-apps/hwids
 sys-apps/lm_sensors
