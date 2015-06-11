@@ -29,7 +29,14 @@ dev-libs/libnl utils
 dev-libs/libxml2 icu
 dev-python/django mysql vhosts
 dev-python/PyQt4 webkit
-dev-qt/qtwebkit -gstreamer -jit
+dev-qt/qt3support abi_x86_32
+dev-qt/qtcore abi_x86_32
+dev-qt/qtdbus abi_x86_32
+dev-qt/qtgui abi_x86_32
+dev-qt/qtscript abi_x86_32
+dev-qt/qtsql abi_x86_32
+dev-qt/qtwebkit -gstreamer -jit abi_x86_32
+dev-qt/qtxmlpatterns abi_x86_32
 dev-vcs/git -pcre -perl -gtk -python
 gnome-base/gnome-menus python
 gnome-base/gvfs archive -cdda
@@ -54,7 +61,9 @@ media-video/vlc bluray -cdda dvbpsi fontconfig -gcrypt libass matroska mpeg -ncu
 net-analyzer/netcat6 -bluetooth
 net-analyzer/nmap -gtk -lua
 net-dns/dnsmasq dbus dhcp script
+net-firewall/iptables ipv6
 net-im/pidgin -spell -xscreensaver
+net-im/skype -pulseaudio
 net-misc/curl -ldap
 net-misc/dhcp -ldap -server ssl vim-syntax
 net-misc/spice-gtk python gtk3 usbredir
@@ -93,3 +102,37 @@ www-client/links -X -tiff -jpeg -deprecated
 www-client/midori -libnotify
 www-servers/apache -ldap
 www-servers/nginx http -pcre ssl vim-syntax -rtmp syslog
+# required by dev-qt/qtgui-4.8.7::gentoo
+# required by dev-qt/qtwebkit-4.8.7::gentoo
+# required by net-im/skype-4.3.0.37-r5::gentoo
+# required by skype (argument)
+>=dev-qt/qtscript-4.8.7:4 abi_x86_32
+# required by dev-qt/qtcore-4.8.7::gentoo[qt3support]
+# required by dev-qt/qtsql-4.8.7::gentoo
+# required by dev-qt/qt3support-4.8.7::gentoo
+>=dev-qt/qtgui-4.8.7:4 abi_x86_32
+# required by dev-qt/qtwebkit-4.8.7::gentoo
+# required by net-im/skype-4.3.0.37-r5::gentoo
+# required by skype (argument)
+>=dev-qt/qtcore-4.8.7:4 abi_x86_32
+# required by net-im/skype-4.3.0.37-r5::gentoo
+# required by skype (argument)
+>=dev-qt/qtdbus-4.8.7:4 abi_x86_32
+# required by dev-qt/qtgui-4.8.7::gentoo[qt3support]
+# required by dev-qt/qtwebkit-4.8.7::gentoo
+# required by net-im/skype-4.3.0.37-r5::gentoo
+# required by skype (argument)
+>=dev-qt/qt3support-4.8.7 abi_x86_32
+# required by net-im/skype-4.3.0.37-r5::gentoo
+# required by skype (argument)
+>=dev-qt/qtwebkit-4.8.7:4 abi_x86_32
+# required by dev-qt/qt3support-4.8.7::gentoo
+# required by dev-qt/qtgui-4.8.7::gentoo[qt3support]
+# required by dev-qt/qtwebkit-4.8.7::gentoo
+# required by net-im/skype-4.3.0.37-r5::gentoo
+# required by skype (argument)
+>=dev-qt/qtsql-4.8.7:4 abi_x86_32
+# required by dev-qt/qtwebkit-4.8.7::gentoo
+# required by net-im/skype-4.3.0.37-r5::gentoo
+# required by skype (argument)
+>=dev-qt/qtxmlpatterns-4.8.7:4 abi_x86_32
