@@ -16,3 +16,4 @@
 >dev-qt/qtdbus-4.8.6-r1
 >dev-qt/qtxmlpatterns-4.8.6-r1
 >dev-qt/qtwebkit-4.8.6-r1
+

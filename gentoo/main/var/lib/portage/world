@@ -17,7 +17,6 @@ app-emulation/virt-manager
 app-eselect/eselect-opengl
 app-i18n/enca
 app-mobilephone/obexftp
-app-office/libreoffice-bin
 app-portage/gentoolkit
 app-portage/mirrorselect
 app-shells/bash
@@ -44,7 +43,6 @@ dev-lang/python:2.7
 dev-lang/python:3.3
 dev-libs/boost
 dev-libs/fribidi
-dev-libs/glib
 dev-libs/gmp
 dev-libs/gobject-introspection
 dev-libs/icu
@@ -216,6 +214,7 @@ sys-kernel/linux-firmware
 sys-kernel/linux-headers
 sys-libs/cracklib
 sys-libs/e2fsprogs-libs
+sys-libs/glibc
 sys-libs/gpm
 sys-libs/ncurses
 sys-libs/readline
@@ -228,8 +227,10 @@ sys-process/lsof
 sys-process/time
 virtual/libffi
 virtual/libiconv
+virtual/libudev
 virtual/opengl
 virtual/pkgconfig
+virtual/udev
 www-client/firefox
 www-client/links
 www-plugins/adobe-flash
@@ -254,6 +255,7 @@ x11-libs/libXfont
 x11-libs/libXft
 x11-libs/libXi
 x11-libs/libXrandr
+x11-libs/libXtst
 x11-libs/libXv
 x11-libs/libXxf86vm
 x11-libs/libdrm
