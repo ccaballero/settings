@@ -3,11 +3,8 @@
 >virtual/jre-1.7.0
 >virtual/jdk-1.7.0
 
-#>sys-devel/clang-3.6.0
-#>sys-devel/llvm-3.6.0
 >dev-libs/nettle-2.7.1-r4
 
->dev-libs/boost-1.55.0-r2
->dev-qt/qtwebkit-4.8.7
->www-client/firefox-37.0.2
->media-gfx/inkscape-0.91
+#>dev-libs/boost-1.55.0-r2
+#>dev-qt/qtwebkit-4.8.7
+

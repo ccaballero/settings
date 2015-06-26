@@ -170,6 +170,7 @@ media-libs/freetype
 media-libs/gegl
 media-libs/gegl:0
 media-libs/glew
+media-libs/glu
 media-libs/gst-plugins-base
 media-libs/gst-plugins-base:0.10
 media-libs/gstreamer
