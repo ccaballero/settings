@@ -144,6 +144,7 @@ x11-proto/dri2proto abi_x86_32
 x11-proto/dri3proto abi_x86_32
 x11-proto/fixesproto abi_x86_32
 x11-proto/glproto abi_x86_32
+x11-proto/kbproto abi_x86_32
 x11-proto/inputproto abi_x86_32
 x11-proto/presentproto abi_x86_32
 x11-proto/randrproto abi_x86_32
