@@ -32,6 +32,7 @@ dev-libs/libffi abi_x86_32
 dev-libs/glib abi_x86_32
 dev-libs/icu abi_x86_32
 dev-libs/libnl utils
+dev-libs/libpcre pcre16
 dev-libs/libpthread-stubs abi_x86_32
 dev-libs/libxml2 icu
 dev-libs/nspr abi_x86_32
