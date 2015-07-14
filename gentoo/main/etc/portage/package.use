@@ -125,12 +125,14 @@ x11-base/xorg-server udev kdrive
 x11-libs/libdrm abi_x86_32
 x11-libs/libpciaccess abi_x86_32
 x11-libs/libSM abi_x86_32
-x11-libs/libXcursor abi_x86_32
-x11-libs/libXdmcp abi_x86_32
-x11-libs/libXfixes abi_x86_32
 x11-libs/libX11 abi_x86_32
+x11-libs/libXau abi_x86_32
+x11-libs/libxcb abi_x86_32
+x11-libs/libXcursor abi_x86_32
 x11-libs/libXdamage abi_x86_32
+x11-libs/libXdmcp abi_x86_32
 x11-libs/libXext abi_x86_32
+x11-libs/libXfixes abi_x86_32
 x11-libs/libXi abi_x86_32
 x11-libs/libXrandr abi_x86_32
 x11-libs/libXrender abi_x86_32
@@ -153,6 +155,7 @@ x11-proto/scrnsaverproto abi_x86_32
 x11-proto/videoproto abi_x86_32
 x11-proto/xcb-proto abi_x86_32
 x11-proto/xextproto abi_x86_32
+x11-proto/xf86bigfontproto abi_x86_32
 x11-proto/xf86driproto abi_x86_32
 x11-proto/xf86vidmodeproto abi_x86_32
 x11-proto/xproto abi_x86_32

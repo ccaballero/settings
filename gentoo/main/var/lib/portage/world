@@ -22,6 +22,7 @@ app-emulation/virt-manager
 app-eselect/eselect-opengl
 app-eselect/eselect-pinentry
 app-i18n/enca
+app-laptop/laptop-mode-tools
 app-misc/ca-certificates
 app-mobilephone/obexftp
 app-portage/gentoolkit
@@ -351,6 +352,7 @@ x11-libs/cairo
 x11-libs/gtksourceview
 x11-libs/libSM
 x11-libs/libXScrnSaver
+x11-libs/libXau
 x11-libs/libXcomposite
 x11-libs/libXcursor
 x11-libs/libXdamage
@@ -366,6 +368,7 @@ x11-libs/libdrm
 x11-libs/libpciaccess
 x11-libs/libva
 x11-libs/libvdpau
+x11-libs/libxcb
 x11-libs/libxshmfence
 x11-libs/pixman
 x11-libs/vte
