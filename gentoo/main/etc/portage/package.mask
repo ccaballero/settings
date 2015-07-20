@@ -10,4 +10,3 @@
 
 #>dev-libs/boost-1.55.0-r2
 >dev-qt/qtwebkit-4.8.7
-

@@ -48,6 +48,7 @@ dev-qt/qtscript abi_x86_32
 dev-qt/qtsql abi_x86_32
 dev-qt/qtwebkit -gstreamer -jit abi_x86_32
 dev-qt/qtxmlpatterns abi_x86_32
+dev-util/pkgconfig abi_x86_32
 dev-vcs/git -pcre -perl -gtk -python
 gnome-base/gnome-menus python
 gnome-base/gvfs archive -cdda
@@ -124,6 +125,7 @@ xfce-base/xfwm4 -startup-notification
 xfce-extra/tumbler -pdf
 x11-base/xorg-server udev kdrive
 x11-libs/libdrm abi_x86_32
+x11-libs/libICE abi_x86_32
 x11-libs/libpciaccess abi_x86_32
 x11-libs/libSM abi_x86_32
 x11-libs/libX11 abi_x86_32
@@ -152,6 +154,7 @@ x11-proto/kbproto abi_x86_32
 x11-proto/inputproto abi_x86_32
 x11-proto/presentproto abi_x86_32
 x11-proto/randrproto abi_x86_32
+x11-proto/renderproto abi_x86_32
 x11-proto/scrnsaverproto abi_x86_32
 x11-proto/videoproto abi_x86_32
 x11-proto/xcb-proto abi_x86_32

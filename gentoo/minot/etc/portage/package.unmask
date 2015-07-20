@@ -1,15 +1,1 @@
-# required by googleearth (argument)
-# /usr/portage/profiles/package.mask:
-# Julian Ospald <hasufell@gentoo.org> (21 Jul 2013)
-# Mask all unfetchable versions and those with tons of random
-# bugs and segfaults (all). Don't ask for a version bump unless
-# there is a working release.
 =sci-geosciences/googleearth-7.1.2.2041
-
-# required by @selected
-# required by @world (argument)
-# /usr/portage/profiles/package.mask:
-# Pacho Ramos <pacho@gentoo.org> (01 Dec 2014)
-# No updates since 2009, doesn't build (#531110).
-# Removal in a month.
-=net-wireless/ussp-push-0.11

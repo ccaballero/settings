@@ -1,7 +1,12 @@
 >net-wireless/bluez-4.101-r9
 >dev-db/mongodb-2.6.7
->dev-libs/boost-1.55.0-r2
->app-office/libreoffice-4.3.5.2
->www-client/chromium-42.0.2311.90
->virtual/jdk-1.7.0
 >virtual/jre-1.7.0
+>virtual/jdk-1.7.0
+
+>app-office/libreoffice-4.4.4.3
+>www-client/chromium-44.0.2403.81
+
+>dev-libs/nettle-2.7.1-r4
+
+#>dev-libs/boost-1.55.0-r2
+>dev-qt/qtwebkit-4.8.7

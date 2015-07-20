@@ -27,10 +27,11 @@
 #64.22.112.82    academy.novusproject.org
 
 # Working address
-192.3.27.103    hiperborea.com.bo   hiperborea
+198.23.177.25    hiperborea.com.bo   hiperborea
+198.23.177.25    db.hiperborea.com.bo db
 
 # Personal address
-181.177.142.72  jacobian.com.bo     jacobian
+181.177.142.72  jacobian.main   jacobian
 
 # Projects address
 127.0.0.1       gentoo.local
