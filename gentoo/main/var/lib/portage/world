@@ -25,6 +25,7 @@ app-i18n/enca
 app-laptop/laptop-mode-tools
 app-misc/ca-certificates
 app-mobilephone/obexftp
+app-office/libreoffice
 app-portage/gentoolkit
 app-portage/mirrorselect
 app-portage/portage-utils
@@ -33,6 +34,7 @@ app-text/asciidoc
 app-text/evince
 app-text/ghostscript-gpl
 app-text/libebook
+app-text/libetonyek
 app-text/opensp
 app-text/po4a
 app-text/poppler
@@ -42,6 +44,7 @@ app-vim/nerdtree
 app-vim/pathogen
 app-vim/vim-spell-es
 dev-cpp/glibmm
+dev-cpp/gtkmm
 dev-cpp/pangomm
 dev-db/couchdb
 dev-db/mariadb
@@ -58,6 +61,7 @@ dev-lang/python
 dev-lang/python-exec
 dev-lang/python:2.7
 dev-lang/python:3.3
+dev-lang/ruby
 dev-lang/swig
 dev-libs/boost
 dev-libs/elfutils
@@ -217,6 +221,7 @@ media-sound/mpg123
 media-sound/ncmpc
 media-video/ffmpeg
 media-video/gnome-mplayer
+media-video/mjpegtools
 media-video/mplayer
 media-video/rtmpdump
 media-video/vlc
@@ -308,6 +313,7 @@ sys-libs/gpm
 sys-libs/libcap
 sys-libs/libcap-ng
 sys-libs/libosinfo
+sys-libs/libseccomp
 sys-libs/ncurses
 sys-libs/pam
 sys-libs/readline
@@ -334,12 +340,14 @@ virtual/perl-version
 virtual/pkgconfig
 virtual/rubygems
 virtual/udev
+www-client/chromium
 www-client/firefox
 www-client/links
 www-plugins/adobe-flash
 www-servers/nginx
 x11-apps/setxkbmap
 x11-apps/xclock
+x11-apps/xev
 x11-apps/xkill
 x11-apps/xrandr
 x11-base/xorg-drivers

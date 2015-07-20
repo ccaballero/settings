@@ -67,6 +67,7 @@ media-libs/libjpeg abi_x86_32
 media-libs/libjpeg-turbo abi_x86_32
 media-libs/libmng abi_x86_32
 media-libs/libpng abi_x86_32
+media-libs/libvpx postproc
 media-libs/libwebp abi_x86_32
 media-libs/mesa abi_x86_32 gles2 bindist
 media-libs/tiff abi_x86_32
