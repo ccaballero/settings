@@ -1,6 +1,4 @@
 >=www-plugins/adobe-flash-11.2.202.310 AdobeFlash-11.x
-# required by googleearth (argument)
 >=sci-geosciences/googleearth-7.1.2.2041 googleearth
-# required by app-emulation/virtualbox-4.3.20-r1[extensions]
-# required by virtualbox (argument)
->=app-emulation/virtualbox-extpack-oracle-4.3.20.96996 PUEL
+>=net-im/skype-4.3.0.37-r5 skype-4.0.0.7-copyright
+
