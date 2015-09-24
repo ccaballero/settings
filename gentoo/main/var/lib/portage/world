@@ -387,6 +387,7 @@ www-client/chromium
 www-client/firefox
 www-client/links
 www-plugins/adobe-flash
+www-servers/lighttpd
 www-servers/nginx
 x11-apps/mkfontscale
 x11-apps/setxkbmap
