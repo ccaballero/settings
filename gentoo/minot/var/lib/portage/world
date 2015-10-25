@@ -128,6 +128,7 @@ dev-perl/XML-Parser
 dev-perl/XML-SAX-Base
 dev-perl/XML-XPath
 dev-perl/libintl-perl
+dev-php/pecl-imagick
 dev-python/Babel
 dev-python/dbus-python
 dev-python/docutils

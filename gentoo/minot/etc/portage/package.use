@@ -23,7 +23,7 @@ dev-db/mariadb -berkdb -pam -perl static-libs -xml
 dev-db/mysql -berkdb -perl
 dev-db/sqlite abi_x86_32
 dev-java/icedtea -webstart -nsplugin
-dev-lang/php -apache2 -berkdb curl fpm -ftp gd intl json -mysql mysqli nls pdo -postgres sockets truetype -xmlreader -xmlwriter -xslt zip
+dev-lang/php -apache2 -berkdb curl fpm -ftp gd intl json mysql mysqli nls pdo pdo_mysql -postgres sockets truetype -xmlreader -xmlwriter -xslt zip
 dev-lang/python sqlite
 dev-libs/apr-util -berkdb -ldap
 dev-libs/boost python
@@ -57,6 +57,7 @@ media-fonts/kochi-substitute X
 media-fonts/ttf-bitstreamvera X
 media-gfx/blender python_single_target_python3_4
 media-gfx/comix rar
+media-gfx/imagemagick -openmp
 media-libs/alsa-lib abi_x86_32
 media-libs/fontconfig abi_x86_32
 media-libs/freeglut abi_x86_32
