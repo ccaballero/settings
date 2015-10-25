@@ -36,6 +36,7 @@ app-portage/mirrorselect
 app-portage/portage-utils
 app-shells/bash
 app-text/asciidoc
+app-text/docbook-xsl-stylesheets
 app-text/evince
 app-text/ghostscript-gpl
 app-text/iso-codes
@@ -77,7 +78,9 @@ dev-lang/python
 dev-lang/python-exec
 dev-lang/python:2.7
 dev-lang/python:3.3
+dev-lang/python:3.4
 dev-lang/ruby
+dev-lang/scala
 dev-lang/swig
 dev-lang/vala
 dev-libs/boost
@@ -94,6 +97,7 @@ dev-libs/keybinder
 dev-libs/libassuan
 dev-libs/libbson
 dev-libs/libburn
+dev-libs/libcdio
 dev-libs/libcroco
 dev-libs/libebml
 dev-libs/libevdev
@@ -130,6 +134,7 @@ dev-perl/Text-Unidecode
 dev-perl/URI
 dev-perl/Unicode-EastAsianWidth
 dev-perl/XML-LibXML
+dev-php/pecl-imagick
 dev-python/Babel
 dev-python/cffi
 dev-python/cryptography
@@ -172,14 +177,17 @@ dev-qt/qtwebkit
 dev-qt/qtxmlpatterns
 dev-ruby/json
 dev-ruby/minitest
+dev-ruby/racc
 dev-ruby/rubygems
 dev-ruby/test-unit
+dev-scheme/guile
 dev-tex/bibtexu
 dev-tex/pgf
 dev-texlive/texlive-basic
 dev-texlive/texlive-fontsextra
 dev-texlive/texlive-langspanish
 dev-texlive/texlive-latexextra
+dev-texlive/texlive-latexrecommended
 dev-texlive/texlive-pstricks
 dev-util/boost-build
 dev-util/ccache
@@ -322,6 +330,7 @@ net-misc/tightvnc
 net-misc/wicd
 net-nds/openldap
 net-nds/rpcbind
+net-p2p/transmission
 net-print/cups
 net-print/cups-filters
 net-wireless/aircrack-ng
@@ -352,6 +361,7 @@ sys-apps/sandbox
 sys-apps/sdparm
 sys-apps/texinfo
 sys-apps/usbutils
+sys-auth/consolekit
 sys-auth/polkit
 sys-block/parted
 sys-boot/gnu-efi
@@ -403,6 +413,7 @@ sys-process/time
 virtual/libffi
 virtual/libgudev
 virtual/libiconv
+virtual/libintl
 virtual/libmysqlclient
 virtual/libudev
 virtual/linux-sources
@@ -433,6 +444,7 @@ x11-apps/xkill
 x11-apps/xrandr
 x11-base/xorg-drivers
 x11-base/xorg-server
+x11-drivers/nvidia-drivers
 x11-drivers/xf86-input-evdev
 x11-drivers/xf86-input-synaptics
 x11-drivers/xf86-video-intel
@@ -481,6 +493,7 @@ x11-misc/xclip
 x11-misc/xcompmgr
 x11-misc/xdg-utils
 x11-misc/xdotool
+x11-misc/xkeyboard-config
 x11-misc/xsnap
 x11-proto/compositeproto
 x11-proto/damageproto
@@ -499,6 +512,7 @@ x11-terms/xfce4-terminal
 x11-terms/xfce4-terminal::gentoo
 x11-terms/xterm
 x11-themes/adwaita-icon-theme
+x11-themes/slim-themes
 x11-wm/awesome
 x11-wm/awesome::gentoo
 xfce-base/exo
