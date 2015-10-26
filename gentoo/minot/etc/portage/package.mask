@@ -1,12 +1,21 @@
->net-wireless/bluez-4.101-r9
 >dev-db/mongodb-2.6.7
 >virtual/jre-1.7.0
 >virtual/jdk-1.7.0
 
->app-office/libreoffice-4.4.4.3
->www-client/chromium-44.0.2403.81
+>=x11-drivers/nvidia-drivers-341.0.0
+
+>dev-libs/liborcus-0.7.1
+
+#>www-client/chromium-44.0.2403.81
 
 >dev-libs/nettle-2.7.1-r4
 
 #>dev-libs/boost-1.55.0-r2
 >dev-qt/qtwebkit-4.8.7
+
+>net-wireless/bluez-4.101-r9
+>net-wireless/blueman-1.98_p20150105
+>dev-libs/openobex-1.5
+
+>dev-db/couchdb-1.6.1
+

@@ -23,7 +23,7 @@ dev-db/mariadb -berkdb -pam -perl static-libs -xml
 dev-db/mysql -berkdb -perl
 dev-db/sqlite abi_x86_32
 dev-java/icedtea -webstart -nsplugin
-dev-lang/php -apache2 -berkdb curl fpm -ftp gd intl json mysql mysqli nls pdo pdo_mysql -postgres sockets truetype -xmlreader -xmlwriter -xslt zip
+dev-lang/php -apache2 -berkdb curl fpm -ftp gd intl json mysql mysqli nls pdo -postgres sockets truetype -xmlreader -xmlwriter -xslt zip
 dev-lang/python sqlite
 dev-libs/apr-util -berkdb -ldap
 dev-libs/boost python
@@ -34,7 +34,7 @@ dev-libs/icu abi_x86_32
 dev-libs/libnl utils
 dev-libs/libpcre pcre16
 dev-libs/libpthread-stubs abi_x86_32
-dev-libs/libxml2 icu
+dev-libs/libxml2 icu abi_x86_32
 dev-libs/nspr abi_x86_32
 dev-libs/nss abi_x86_32
 dev-libs/openssl abi_x86_32
@@ -62,6 +62,7 @@ media-libs/alsa-lib abi_x86_32
 media-libs/fontconfig abi_x86_32
 media-libs/freeglut abi_x86_32
 media-libs/freetype abi_x86_32 bindist
+media-libs/gd fontconfig
 media-libs/glu abi_x86_32
 media-libs/harfbuzz icu
 media-libs/lcms abi_x86_32 python
@@ -77,7 +78,7 @@ media-plugins/gst-plugins-meta ffmpeg -cdda
 media-sound/mpc iconv
 media-sound/mpd -ffmpeg
 media-sound/ncmpc -help-screen colors mouse
-media-video/ffmpeg opus rtmp v4l threads -X x264 x265 vdpau vaapi libass
+media-video/ffmpeg libass opus rtmp threads v4l vaapi vdpau vpx -X x264 x265
 media-video/gnome-mplayer -libnotify
 media-video/mjpegtools v4l
 media-video/mplayer win32codecs mmxext bindist
@@ -101,6 +102,7 @@ net-wireless/bluez alsa readline usb hid2hci
 net-wireless/lorcon python
 sci-geosciences/googleearth -bundled-libs
 sci-geosciences/mapnik python gdal geos
+sys-apps/attr abi_x86_32
 sys-apps/dbus abi_x86_32
 sys-apps/util-linux abi_x86_32
 sys-boot/grub -multislot fonts themes truetype
