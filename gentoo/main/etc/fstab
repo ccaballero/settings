@@ -38,6 +38,8 @@
 /dev/sda1         /mnt/win         ntfs-3g uid=000,gid=100,umask=002                 0 0
 /dev/cdrom        /mnt/cdrom       auto    noauto,uid=000,gid=000,umask=023,users,ro 0 0
 
+/dev/sdb1         /mnt/usb         auto    noauto,uid=000,gid=100,umask=002          0 0
+
 proc              /proc            proc    defaults                                  0 0
 shm               /dev/shm         tmpfs   nodev,nosuid,noexec                       0 0
 

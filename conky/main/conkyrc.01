@@ -33,13 +33,13 @@ out_to_stderr no
 uppercase no
 use_spacer none
 
-lua_load ~/.conky/themes/01/widgets.lua
+lua_load ~/.conky/themes/01-widgets.lua
 lua_draw_hook_pre widgets
 
 TEXT
-${image /home/jacobian/.conky/themes/01/cpu.png -p 255,186 -s 32x32}
-${image /home/jacobian/.conky/themes/01/mem.png -p 258,325 -s 26x26}
-${image /home/jacobian/.conky/themes/01/fan.png -p 256,418 -s 30x30}
+${image /home/jacobian/.conky/themes/01-cpu.png -p 255,186 -s 32x32}
+${image /home/jacobian/.conky/themes/01-mem.png -p 258,325 -s 26x26}
+${image /home/jacobian/.conky/themes/01-fan.png -p 256,418 -s 30x30}
 
 ${voffset -52}
 ${offset 30}${font LivingTogether:size=44}$nodename!${exec whoami}${font}
@@ -48,11 +48,11 @@ ${voffset -8}
 ${voffset 24}${offset 70}${font GeosansLight:size=14}kernel: $sysname $kernel${font}
 ${voffset 4}${offset 70}${font GeosansLight:size=14}uptime: $uptime${font}
 
-${voffset -107}
-${offset 1100}${font GeosansLight:size=21}${time %d %B}${font}
-${offset 1100}${font GeosansLight:size=21}${time %A}${font}
+${voffset 40}
+${offset 460}${font GeosansLight:size=21}${time %d %B}${font}
+${offset 460}${font GeosansLight:size=21}${time %A}${font}
 
-${voffset 68}
+${voffset -80}
 ${offset 70}${font GeosansLight:size=14}CPU:${font}
 ${voffset -20}${alignr 1730}${font GeosansLight:size=14}${cpu cpu0}%${font}
 ${voffset -2}
@@ -310,10 +310,10 @@ ${voffset 3}${offset 580}${font GeosansLight:size=11}$mpd_album${font}
 ${voffset 1}${offset 580}${font GeosansLight:size=11}$mpd_artist${font}
 ${if_mpd_playing}
 ${if_match "$mpd_status" == "Playing"}
-${image /home/jacobian/.conky/themes/01/play.png -p 516,969 -s 48x48}
+${image /home/jacobian/.conky/themes/01-play.png -p 516,969 -s 48x48}
 ${endif}${if_match "$mpd_status" == "Paused"}
-${image /home/jacobian/.conky/themes/01/pause.png -p 516,969 -s 48x48}
+${image /home/jacobian/.conky/themes/01-pause.png -p 516,969 -s 48x48}
 ${endif}${else}
-${image /home/jacobian/.conky/themes/01/stop.png -p 516,969 -s 48x48}
+${image /home/jacobian/.conky/themes/01-stop.png -p 516,969 -s 48x48}
 ${endif}
 

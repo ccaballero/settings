@@ -288,6 +288,7 @@ media-video/ffmpeg
 media-video/gnome-mplayer
 media-video/mjpegtools
 media-video/mplayer
+media-video/nvidia-settings
 media-video/rtmpdump
 media-video/vlc
 net-analyzer/nmap
@@ -405,6 +406,7 @@ sys-libs/readline
 sys-libs/timezone-data
 sys-power/acpi
 sys-power/acpid
+sys-power/hibernate-script
 sys-power/pm-utils
 sys-process/cronbase
 sys-process/dcron
@@ -436,6 +438,7 @@ www-client/links
 www-plugins/adobe-flash
 www-servers/lighttpd
 www-servers/nginx
+x11-apps/mesa-progs
 x11-apps/mkfontscale
 x11-apps/setxkbmap
 x11-apps/xclock
