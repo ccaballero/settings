@@ -1,5 +1,40 @@
+--[[
+Conky Widgets by londonali1010 (2009)
+
+This script is meant to be a "shell" to hold a suite of widgets for use in
+Conky.
+
+To configure:
++ Copy the widget's code block (will be framed by --(( WIDGET NAME )) and
+(( END WIDGET NAME )), with "[" instead of "(") somewhere between "require
+'cairo'" and "function conky_widgets()", ensuring not to paste into another
+widget's code block
++ To call the widget, add the following between "cr = cairo_create(cs)" and
+"cairo_destroy(cr)" at the end of the script:
+    NAME_OF_FUNCTION(cr, OPTIONS)
++ Replace OPTIONS with the options for your widget (should be specified in the
+widget's code block) 
+
+Call this script in Conky using the following before TEXT (assuming you save
+this script to ~/scripts/conky_widgets.lua):
+    lua_load ~/scripts/conky_widgets.lua
+    lua_draw_hook_pre widgets
+
+Changelog:
++ v1.1 -- Simplified calls to widgets by implementing a global drawing surface,
+and included imlib2 by default (03.11.2009)
++ v1.0 -- Original release (17.10.2009)
+]]
+
 require 'cairo'
 require 'imlib2'
+
+--[[ AIR CLOCK WIDGET ]]
+--[[ v1.1 by londonali1010 (2009) ]]
+--[[ Options (xc, yc, size):
+    "xc" and "yc" are the x and y coordinates of the centre of the clock, in
+    pixels, relative to the top left of the Conky window
+    "size" is the total size of the widget, in pixels ]]
 
 function air_clock(xc, yc, size)
     local offset = 0
@@ -125,6 +160,20 @@ function air_clock(xc, yc, size)
     cairo_set_line_cap(cr, CAIRO_LINE_CAP_BUTT)
 end
 
+--[[ END AIR CLOCK WIDGET ]]
+
+--[[ CLOCK HANDS WIDGET ]]
+--[[ v1.1 by londonali1010 (2009) ]]
+--[[ Options (xc, yc, colour, alpha, show_secs, size):
+    "xc" and "yc" are the x and y coordinates of the centre of the clock hands,
+    in pixels, relative to the top left corner of the Conky window
+    "colour" is the colour of the clock hands, in Ox33312c formate
+    "alpha" is the alpha of the hands, between 0 and 1
+    "show_secs" is a boolean; set to TRUE to show the seconds hand, otherwise
+    set to FALSE
+    "size" is the total size of the widget (e.g. twice the length of the minutes
+    hand), in pixels ]]
+
 function clock_hands(xc, yc, colour, alpha, show_secs, size)
     local function rgb_to_r_g_b(colour,alpha)
         return ((colour / 0x10000) % 0x100) / 255.,
@@ -173,6 +222,21 @@ function clock_hands(xc, yc, colour, alpha, show_secs, size)
 
     cairo_set_line_cap(cr,CAIRO_LINE_CAP_BUTT)
 end
+
+--[[ END CLOCK HANDS WIDGET ]]
+
+--[[ PHOTO ALBUM WIDGET ]]
+--[[ v1.0 by londonali1010 (2009) ]]
+--[[ Options (album_dir, xc, yc, w_max, h_max, t, update_interval)
+    "album_dir" is the directory containing the images for your photo album;
+    please note that the path must be absolute (e.g. no "~")
+    "xc" and "yc" are the coordinates of the centre of the photo album, relative
+    to the top left corner of the Conky window, in pixels
+    "w_max" and "h_max" are the maximum dimensions, in pixels, that you want the
+    widget to be.  The script will ensure that the photo
+    album fits inside the box bounded by w_max and h_max
+    "t" is the thickness of the frame, in pixels
+    "update_interval" is the number of Conky updates between refreshes ]]
 
 function photo_album(album_dir, xc, yc, w_max, h_max, t, update_interval)
     local function get_file_to_use()
@@ -250,6 +314,33 @@ function photo_album(album_dir, xc, yc, w_max, h_max, t, update_interval)
     end
 end
 
+--[[ END PHOTO ALBUM WIDGET ]]
+
+--[[ RING WIDGET ]]
+--[[ v1.1 by londonali1010 (2009) ]]
+--[[ Options (name, arg, max, bg_colour, bg_alpha, xc, yc, radius, thickness,
+--   start_angle, end_angle):
+    "name" is the type of stat to display; you can choose from 'cpu', 'memperc',
+    'fs_used_perc', 'battery_used_perc'.
+    "arg" is the argument to the stat type, e.g. if in Conky you would write
+    ${cpu cpu0}, 'cpu0' would be the argument.
+        "If you would not use an argument in the Conky variable, use ''.
+    "max" is the maximum value of the ring. If the Conky variable outputs a
+    percentage, use 100.
+    "bg_colour" is the colour of the base ring.
+    "bg_alpha" is the alpha value of the base ring.
+    "fg_colour" is the colour of the indicator part of the ring.
+    "fg_alpha" is the alpha value of the indicator part of the ring.
+    "x" and "y" are the x and y coordinates of the centre of the ring, relative
+    to the top left corner of the Conky window.
+    "radius" is the radius of the ring.
+    "thickness" is the thickness of the ring, centred around the radius.
+    "start_angle" is the starting angle of the ring, in degrees, clockwise from
+    top. Value can be either positive or negative.
+    "end_angle" is the ending angle of the ring, in degrees, clockwise from top.
+    Value can be either positive or negative,
+        "but must be larger (e.g. more clockwise) than start_angle. ]]
+
 function ring(name, arg, max, bgc, bga, fgc, fga, xc, yc, r, t, sa, ea)
     local function rgb_to_r_g_b(colour, alpha)
         return ((colour / 0x10000) % 0x100) / 255.,
@@ -295,6 +386,33 @@ function ring(name, arg, max, bgc, bga, fgc, fga, xc, yc, r, t, sa, ea)
     
     if update_num > 5 then setup_ring() end
 end
+
+--[[ END RING WIDGET ]]
+
+--[[ RING (COUNTER-CLOCKWISE) WIDGET ]]
+--[[ v1.1 by londonali1010 (2009) ]]
+--[[ Options (name, arg, max, bg_colour, bg_alpha, xc, yc, radius, thickness,
+--   start_angle, end_angle):
+    "name" is the type of stat to display; you can choose from 'cpu', 'memperc',
+    'fs_used_perc', 'battery_used_perc'.
+    "arg" is the argument to the stat type, e.g. if in Conky you would write
+    ${cpu cpu0}, 'cpu0' would be the argument. If you would not use an argument
+    in the Conky variable, use ''.
+    "max" is the maximum value of the ring. If the Conky variable outputs a
+    percentage, use 100.
+    "bg_colour" is the colour of the base ring.
+    "bg_alpha" is the alpha value of the base ring.
+    "fg_colour" is the colour of the indicator part of the ring.
+    "fg_alpha" is the alpha value of the indicator part of the ring.
+    "x" and "y" are the x and y coordinates of the centre of the ring, relative
+    to the top left corner of the Conky window.
+    "radius" is the radius of the ring.
+    "thickness" is the thickness of the ring, centred around the radius.
+    "start_angle" is the starting angle of the ring, in degrees,
+    counter-clockwise from top. Value can be either positive or negative.
+    "end_angle" is the ending angle of the ring, in degrees, counter-clockwise
+    from top. Value can be either positive or negative, but must be larger
+    (e.g. more counter-clockwise) than start_angle. ]]
 
 function ring_ccw(name, arg, max, bgc, bga, fgc, fga, xc, yc, r, t, sa, ea)
     local function rgb_to_r_g_b(colour, alpha)
@@ -342,6 +460,20 @@ function ring_ccw(name, arg, max, bgc, bga, fgc, fga, xc, yc, r, t, sa, ea)
     if update_num > 5 then setup_ring() end
 end
 
+--[[ END RING (COUNTER-CLOCKWISE) WIDGET ]]
+
+--[[ ROUNDED RECTANGLE WIDGET ]]
+--[[ v1.0 by londonali1010 (2009) ]]
+--[[ Options (x0, y0, width, height, radius, colour, alpha):
+    "x0" and "y0" are the coordinates (in pixels) of the top left of the
+    rectangle, relative to the top left of the Conky window.
+    "width" and "height" are the width and height of the rectangle,
+    respectively.
+    "radius" is the rounding radius of the corners, in pixels.
+    "colour" is the colour of the rectangle, in format 0xRRGGBB.
+    "alpha" is the transparency of the rectangle,
+    from 0.0 (transparent) -> 1.0 (opaque) ]]
+
 function round_rect(x0, y0, w, h, r, colour, alpha)
     local function rgb_to_r_g_b(colour, alpha)
         return ((colour / 0x10000) % 0x100) / 255.,
@@ -365,6 +497,11 @@ function round_rect(x0, y0, w, h, r, colour, alpha)
     cairo_fill(cr)
 end
     
+--[[ END ROUNDED RECTANGLE WIDGET ]]
+
+--cairo_move_to (cr, 900, 700)
+--cairo_show_text (cr, cover)
+--cairo_fill(cr)
 function draw_cover(xc, yc, width, height, t, color)
     cover=string.reverse('/media/music/'..conky_parse('${mpd_file}'))
     index=string.find(cover,'/')
@@ -407,7 +544,7 @@ function conky_widgets()
     cr = cairo_create(cs)
 
     r = 128
-    color = 0x8e8e8e
+    color = 0xa0a0a0
 
     round_rect(70, 204, 130, 1, 0, color, 0.5)
     round_rect(70, 340, 130, 1, 0, color, 0.5)
@@ -417,14 +554,19 @@ function conky_widgets()
 
     round_rect(350, 489, 280, 1, 0, color, 0.5)
     round_rect(350, 657, 280, 1, 0, color, 0.5)
-    round_rect(350, 954, 130, 1, 0, color, 0.5)
+    round_rect(350, 954, 280, 1, 0, color, 0.5)
 
-    round_rect(519, 954, 130, 1, 0, color, 0.5)
+    clock_hands(694, 220, color, 0.8, true, 100)
+    ring('time', '%I', 12, color, 0.2, color, 0.8, 694, 220, 36, 5, 0, 360)
+    ring('time', '%M', 60, color, 0.2, color, 0.8, 694, 220, 26, 5, 0, 360)
+    ring('time', '%S', 60, color, 0.2, color, 0.8, 694, 220, 16, 5, 0, 360)
 
-    clock_hands(960, 540, color, 0.8, true, 160)
-    ring('time', '%I', 12, color, 0, 0x000000, 0.05, 960, 540, 600, 1000, 0, 360)
-    ring('time', '%M', 60, color, 0, 0x000000, 0.05, 960, 540, 600, 900, 0, 360)
-    ring('time', '%S', 60, color, 0, 0x000000, 0.05, 960, 540, 600, 800, 0, 360)
+    ring('','',12,color,0.8,color,0.8,694,220,46,5,  0, 30)
+    ring('','',12,color,0.8,color,0.8,694,220,46,5, 60, 90)
+    ring('','',12,color,0.8,color,0.8,694,220,46,5,120,150)
+    ring('','',12,color,0.8,color,0.8,694,220,46,5,180,210)
+    ring('','',12,color,0.8,color,0.8,694,220,46,5,240,270)
+    ring('','',12,color,0.8,color,0.8,694,220,46,5,300,330)
 
     ring('cpu', 'cpu0', 100, color, 0.2, color, 0.8, 276, 207, r-(15*7)+3, 5,   0, 360)
     ring('cpu', 'cpu1', 100, color, 0.2, color, 0.8, 276, 207, r-(14*7)+3, 5,  30,  90)
@@ -439,23 +581,23 @@ function conky_widgets()
     ring('memperc',  '', 100, color, 0.2, color, 0.8, 276, 343, r-(15*7), 5, 0, 360)
     ring('swapperc', '', 100, color, 0.2, color, 0.8, 276, 343, r-(14*7), 5, 90, 270)
 
-    ring('fs_used_perc', '/',                100, color, 0.2, color, 0.6, 694, 511, r-(15*7), 5,   0, 120)
-    ring('fs_used_perc', '/boot',            100, color, 0.2, color, 0.6, 694, 511, r-(14*7), 5,  60, 180)
-    ring('fs_used_perc', '/home',            100, color, 0.2, color, 0.6, 694, 511, r-(13*7), 5, 120, 240)
-    ring('fs_used_perc', '/usr',             100, color, 0.2, color, 0.6, 694, 511, r-(15*7), 5, 180, 300)
-    ring('fs_used_perc', '/var',             100, color, 0.2, color, 0.6, 694, 511, r-(14*7), 5, 240, 360)
-    ring('fs_used_perc', '/opt',             100, color, 0.2, color, 0.6, 694, 511, r-(13*7), 5, 300, 420)
-    ring('fs_used_perc', '/usr/portage',     100, color, 0.2, color, 0.6, 694, 611, r-(15*7), 5,   0,  90)
-    ring('fs_used_perc', '/media/music',     100, color, 0.2, color, 0.6, 694, 611, r-(14*7), 5,  90, 180)
-    ring('fs_used_perc', '/media/books',     100, color, 0.2, color, 0.6, 694, 611, r-(15*7), 5, 180, 270)
-    ring('fs_used_perc', '/media/resources', 100, color, 0.2, color, 0.6, 694, 611, r-(14*7), 5, 270, 360)
+    ring('fs_used_perc', '/',                100, color, 0.2, color, 0.8, 694, 511, r-(15*7), 5,   0, 120)
+    ring('fs_used_perc', '/boot',            100, color, 0.2, color, 0.8, 694, 511, r-(14*7), 5,  60, 180)
+    ring('fs_used_perc', '/home',            100, color, 0.2, color, 0.8, 694, 511, r-(13*7), 5, 120, 240)
+    ring('fs_used_perc', '/usr',             100, color, 0.2, color, 0.8, 694, 511, r-(15*7), 5, 180, 300)
+    ring('fs_used_perc', '/var',             100, color, 0.2, color, 0.8, 694, 511, r-(14*7), 5, 240, 360)
+    ring('fs_used_perc', '/opt',             100, color, 0.2, color, 0.8, 694, 511, r-(13*7), 5, 300, 420)
+    ring('fs_used_perc', '/usr/portage',     100, color, 0.2, color, 0.8, 694, 611, r-(15*7), 5,   0,  90)
+    ring('fs_used_perc', '/media/music',     100, color, 0.2, color, 0.8, 694, 611, r-(14*7), 5,  90, 180)
+    ring('fs_used_perc', '/media/books',     100, color, 0.2, color, 0.8, 694, 611, r-(15*7), 5, 180, 270)
+    ring('fs_used_perc', '/media/resources', 100, color, 0.2, color, 0.8, 694, 611, r-(14*7), 5, 270, 360)
 
     if conky_parse('${mpd_status}') == 'Playing'
     then
         draw_cover(694, 900, 60, 60, 4, color)
     end
 
-    ring('mpd_percent', '', 100, color, 0.2, color, 0.8, 545, 998, r-(14*7), 5, 0, 360)
+    ring('mpd_percent', '', 100, color, 0.2, color, 0.8, 390, 998, r-(14*7), 5, 0, 360)
 
     cairo_destroy(cr)
 end

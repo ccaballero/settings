@@ -554,9 +554,7 @@ function conky_widgets()
 
     round_rect(350, 489, 280, 1, 0, color, 0.5)
     round_rect(350, 657, 280, 1, 0, color, 0.5)
-    round_rect(350, 954, 130, 1, 0, color, 0.5)
-
-    round_rect(519, 954, 130, 1, 0, color, 0.5)
+    round_rect(350, 954, 280, 1, 0, color, 0.5)
 
     clock_hands(694, 220, color, 0.8, true, 100)
     ring('time', '%I', 12, color, 0.2, color, 0.8, 694, 220, 36, 5, 0, 360)
@@ -599,7 +597,7 @@ function conky_widgets()
         draw_cover(694, 900, 60, 60, 4, color)
     end
 
-    ring('mpd_percent', '', 100, color, 0.2, color, 0.8, 545, 998, r-(14*7), 5, 0, 360)
+    ring('mpd_percent', '', 100, color, 0.2, color, 0.8, 390, 998, r-(14*7), 5, 0, 360)
 
     cairo_destroy(cr)
 end

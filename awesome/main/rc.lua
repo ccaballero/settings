@@ -40,7 +40,7 @@ end
 -- Themes define colours, icons, font and wallpapers.
 count = 14
 switch = string.format('%02d',math.floor(math.random()*count)+1)
-switch = '01'
+--switch = '14'
 beautiful.init("/home/jacobian/.config/awesome/themes/" .. switch .. "-theme-1920x1080.lua")
 
 -- This is used later as the default terminal and editor to run.

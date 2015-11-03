@@ -554,14 +554,19 @@ function conky_widgets()
 
     round_rect(350, 489, 280, 1, 0, color, 0.5)
     round_rect(350, 657, 280, 1, 0, color, 0.5)
-    round_rect(350, 954, 130, 1, 0, color, 0.5)
+    round_rect(350, 954, 280, 1, 0, color, 0.5)
 
-    round_rect(519, 954, 130, 1, 0, color, 0.5)
+    clock_hands(694, 220, color, 0.8, true, 100)
+    ring('time', '%I', 12, color, 0.2, color, 0.8, 694, 220, 36, 5, 0, 360)
+    ring('time', '%M', 60, color, 0.2, color, 0.8, 694, 220, 26, 5, 0, 360)
+    ring('time', '%S', 60, color, 0.2, color, 0.8, 694, 220, 16, 5, 0, 360)
 
-    clock_hands(960, 540, color, 0.8, true, 160)
-    ring('time', '%I', 12, color, 0, 0x000000, 0.05, 960, 540, 600, 1000, 0, 360)
-    ring('time', '%M', 60, color, 0, 0x000000, 0.05, 960, 540, 600, 900, 0, 360)
-    ring('time', '%S', 60, color, 0, 0x000000, 0.05, 960, 540, 600, 800, 0, 360)
+    ring('','',12,color,0.8,color,0.8,694,220,46,5,  0, 30)
+    ring('','',12,color,0.8,color,0.8,694,220,46,5, 60, 90)
+    ring('','',12,color,0.8,color,0.8,694,220,46,5,120,150)
+    ring('','',12,color,0.8,color,0.8,694,220,46,5,180,210)
+    ring('','',12,color,0.8,color,0.8,694,220,46,5,240,270)
+    ring('','',12,color,0.8,color,0.8,694,220,46,5,300,330)
 
     ring('cpu', 'cpu0', 100, color, 0.2, color, 0.8, 276, 207, r-(15*7)+3, 5,   0, 360)
     ring('cpu', 'cpu1', 100, color, 0.2, color, 0.8, 276, 207, r-(14*7)+3, 5,  30,  90)
@@ -576,23 +581,23 @@ function conky_widgets()
     ring('memperc',  '', 100, color, 0.2, color, 0.8, 276, 343, r-(15*7), 5, 0, 360)
     ring('swapperc', '', 100, color, 0.2, color, 0.8, 276, 343, r-(14*7), 5, 90, 270)
 
-    ring('fs_used_perc', '/',                100, color, 0.2, color, 0.6, 694, 511, r-(15*7), 5,   0, 120)
-    ring('fs_used_perc', '/boot',            100, color, 0.2, color, 0.6, 694, 511, r-(14*7), 5,  60, 180)
-    ring('fs_used_perc', '/home',            100, color, 0.2, color, 0.6, 694, 511, r-(13*7), 5, 120, 240)
-    ring('fs_used_perc', '/usr',             100, color, 0.2, color, 0.6, 694, 511, r-(15*7), 5, 180, 300)
-    ring('fs_used_perc', '/var',             100, color, 0.2, color, 0.6, 694, 511, r-(14*7), 5, 240, 360)
-    ring('fs_used_perc', '/opt',             100, color, 0.2, color, 0.6, 694, 511, r-(13*7), 5, 300, 420)
-    ring('fs_used_perc', '/usr/portage',     100, color, 0.2, color, 0.6, 694, 611, r-(15*7), 5,   0,  90)
-    ring('fs_used_perc', '/media/music',     100, color, 0.2, color, 0.6, 694, 611, r-(14*7), 5,  90, 180)
-    ring('fs_used_perc', '/media/books',     100, color, 0.2, color, 0.6, 694, 611, r-(15*7), 5, 180, 270)
-    ring('fs_used_perc', '/media/resources', 100, color, 0.2, color, 0.6, 694, 611, r-(14*7), 5, 270, 360)
+    ring('fs_used_perc', '/',                100, color, 0.2, color, 0.8, 694, 511, r-(15*7), 5,   0, 120)
+    ring('fs_used_perc', '/boot',            100, color, 0.2, color, 0.8, 694, 511, r-(14*7), 5,  60, 180)
+    ring('fs_used_perc', '/home',            100, color, 0.2, color, 0.8, 694, 511, r-(13*7), 5, 120, 240)
+    ring('fs_used_perc', '/usr',             100, color, 0.2, color, 0.8, 694, 511, r-(15*7), 5, 180, 300)
+    ring('fs_used_perc', '/var',             100, color, 0.2, color, 0.8, 694, 511, r-(14*7), 5, 240, 360)
+    ring('fs_used_perc', '/opt',             100, color, 0.2, color, 0.8, 694, 511, r-(13*7), 5, 300, 420)
+    ring('fs_used_perc', '/usr/portage',     100, color, 0.2, color, 0.8, 694, 611, r-(15*7), 5,   0,  90)
+    ring('fs_used_perc', '/media/music',     100, color, 0.2, color, 0.8, 694, 611, r-(14*7), 5,  90, 180)
+    ring('fs_used_perc', '/media/books',     100, color, 0.2, color, 0.8, 694, 611, r-(15*7), 5, 180, 270)
+    ring('fs_used_perc', '/media/resources', 100, color, 0.2, color, 0.8, 694, 611, r-(14*7), 5, 270, 360)
 
     if conky_parse('${mpd_status}') == 'Playing'
     then
         draw_cover(694, 900, 60, 60, 4, color)
     end
 
-    ring('mpd_percent', '', 100, color, 0.2, color, 0.8, 545, 998, r-(14*7), 5, 0, 360)
+    ring('mpd_percent', '', 100, color, 0.2, color, 0.8, 390, 998, r-(14*7), 5, 0, 360)
 
     cairo_destroy(cr)
 end
