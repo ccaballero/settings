@@ -22,7 +22,7 @@ draw_graph_borders yes
 draw_outline no
 draw_shades no
 
-default_color 934310
+default_color 8f3b3b
 
 cpu_avg_samples 2
 net_avg_samples 2
@@ -32,14 +32,14 @@ out_to_stderr no
 uppercase no
 use_spacer none
 
-lua_load ~/.conky/themes/08/widgets.lua
+lua_load ~/.conky/themes/08-widgets-1366x768.lua
 lua_draw_hook_pre widgets
 
 TEXT
-${image /home/jacobian/.conky/themes/08/cpu.png -p 177,176 -s 32x32}
-${image /home/jacobian/.conky/themes/08/mem.png -p 180,275 -s 26x26}
-${image /home/jacobian/.conky/themes/08/bat.png -p 185,370 -s 17x26}
-${image /home/jacobian/.conky/themes/08/fan.png -p 178,465 -s 30x30}
+${image /home/jacobian/.conky/themes/08-cpu.png -p 177,176 -s 32x32}
+${image /home/jacobian/.conky/themes/08-mem.png -p 180,275 -s 26x26}
+${image /home/jacobian/.conky/themes/08-bat.png -p 185,370 -s 17x26}
+${image /home/jacobian/.conky/themes/08-fan.png -p 178,465 -s 30x30}
 
 ${voffset -64}
 ${font LivingTogether:size=44}$nodename ${exec whoami}${font}
@@ -273,10 +273,10 @@ ${voffset 3}${offset 335}${font GeosansLight:size=11}$mpd_album${font}
 ${voffset 1}${offset 335}${font GeosansLight:size=11}$mpd_artist${font}
 ${if_mpd_playing}
 ${if_match "$mpd_status" == "Playing"}
-${image /home/jacobian/.conky/themes/08/play.png -p 266,669 -s 48x48}
+${image /home/jacobian/.conky/themes/08-play.png -p 266,669 -s 48x48}
 ${endif}${if_match "$mpd_status" == "Paused"}
-${image /home/jacobian/.conky/themes/08/pause.png -p 266,669 -s 48x48}
+${image /home/jacobian/.conky/themes/08-pause.png -p 266,669 -s 48x48}
 ${endif}${else}
-${image /home/jacobian/.conky/themes/08/stop.png -p 266,669 -s 48x48}
+${image /home/jacobian/.conky/themes/08-stop.png -p 266,669 -s 48x48}
 ${endif}
 

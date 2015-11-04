@@ -9,7 +9,7 @@ theme.font = 'Helvetica 35 Thin 8'
 
 color1 = '#eda792'
 color2 = '#ce8d7d'
-color3 = '#9b3938'
+color3 = '#d00c23'
 color4 = '#ffffff'
 
 -- {{{ Colors

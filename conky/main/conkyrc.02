@@ -33,7 +33,7 @@ out_to_stderr no
 uppercase no
 use_spacer none
 
-lua_load ~/.conky/themes/02-widgets.lua
+lua_load ~/.conky/themes/02-widgets-1920x1080.lua
 lua_draw_hook_pre widgets
 
 TEXT

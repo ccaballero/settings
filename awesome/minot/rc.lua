@@ -38,9 +38,10 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-count = 11
+count = 14
 switch = string.format('%02d',math.floor(math.random()*count)+1)
-beautiful.init("/home/jacobian/.config/awesome/themes/" .. switch .. "/theme-1366x768.lua")
+--switch = '14'
+beautiful.init("/home/jacobian/.config/awesome/themes/" .. switch .. "-theme-1366x768.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "xfce4-terminal"
@@ -59,15 +60,15 @@ local layouts =
 {
     awful.layout.suit.floating,
     awful.layout.suit.tile,
---    awful.layout.suit.tile.left,
---    awful.layout.suit.tile.bottom,
+    awful.layout.suit.tile.left,
+    awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
---    awful.layout.suit.fair,
+    awful.layout.suit.fair,
     awful.layout.suit.fair.horizontal,
---    awful.layout.suit.spiral,
---    awful.layout.suit.spiral.dwindle,
---    awful.layout.suit.max,
---    awful.layout.suit.max.fullscreen,
+    awful.layout.suit.spiral,
+    awful.layout.suit.spiral.dwindle,
+    awful.layout.suit.max,
+    awful.layout.suit.max.fullscreen,
     awful.layout.suit.magnifier
 }
 -- }}}
