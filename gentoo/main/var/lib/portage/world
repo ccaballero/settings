@@ -140,6 +140,7 @@ dev-python/cffi
 dev-python/cryptography
 dev-python/cython
 dev-python/dbus-python
+dev-python/feedparser
 dev-python/ipaddress
 dev-python/jinja
 dev-python/libvirt-python
@@ -161,6 +162,7 @@ dev-python/pygobject:2
 dev-python/pygtk
 dev-python/pygtksourceview
 dev-python/pyopenssl
+dev-python/pyparsing
 dev-python/pytest
 dev-python/python-dateutil
 dev-python/pytz
@@ -168,6 +170,7 @@ dev-python/requests
 dev-python/setuptools
 dev-python/simplejson
 dev-python/six
+dev-python/urwid
 dev-qt/qtcore
 dev-qt/qtdbus
 dev-qt/qtgui
@@ -177,7 +180,9 @@ dev-qt/qtwebkit
 dev-qt/qtxmlpatterns
 dev-ruby/json
 dev-ruby/minitest
+dev-ruby/power_assert
 dev-ruby/racc
+dev-ruby/rdoc
 dev-ruby/rubygems
 dev-ruby/test-unit
 dev-scheme/guile
@@ -192,6 +197,7 @@ dev-texlive/texlive-pstricks
 dev-util/boost-build
 dev-util/ccache
 dev-util/cmake
+dev-util/ctags
 dev-util/dialog
 dev-util/gdbus-codegen
 dev-util/gtk-doc-am
@@ -241,6 +247,8 @@ media-libs/glm
 media-libs/glu
 media-libs/gst-plugins-base
 media-libs/gst-plugins-base:0.10
+media-libs/gst-plugins-good
+media-libs/gst-plugins-good:0.10
 media-libs/gstreamer
 media-libs/gstreamer:0.10
 media-libs/harfbuzz
@@ -268,12 +276,14 @@ media-libs/xvid
 media-plugins/gmpc-tagedit
 media-plugins/gst-plugins-a52dec
 media-plugins/gst-plugins-dts
+media-plugins/gst-plugins-dts:0.10
 media-plugins/gst-plugins-dvdread
 media-plugins/gst-plugins-faad
 media-plugins/gst-plugins-ffmpeg
 media-plugins/gst-plugins-libav
 media-plugins/gst-plugins-mad
 media-plugins/gst-plugins-mpeg2dec
+media-plugins/gst-plugins-mpeg2dec:0.10
 media-plugins/gst-plugins-x264
 media-sound/alsa-utils
 media-sound/easytag
@@ -360,6 +370,7 @@ sys-apps/pciutils
 sys-apps/portage
 sys-apps/sandbox
 sys-apps/sdparm
+sys-apps/shadow
 sys-apps/texinfo
 sys-apps/usbutils
 sys-auth/consolekit
@@ -511,6 +522,7 @@ x11-proto/scrnsaverproto
 x11-proto/videoproto
 x11-proto/xf86driproto
 x11-proto/xf86vidmodeproto
+x11-proto/xproto
 x11-terms/xfce4-terminal
 x11-terms/xfce4-terminal::gentoo
 x11-terms/xterm

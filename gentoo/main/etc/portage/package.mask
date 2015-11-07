@@ -1,13 +1,12 @@
->dev-db/mongodb-2.6.7
+#>dev-db/mongodb-2.6.7
 >virtual/jre-1.7.0
 >virtual/jdk-1.7.0
 
 >=x11-drivers/nvidia-drivers-341.0.0
 >=media-video/nvidia-settings-341.0.0
 
->dev-libs/liborcus-0.7.1
-
->dev-libs/nettle-2.7.1-r4
+#>dev-libs/liborcus-0.7.1
+#>dev-libs/nettle-2.7.1-r4
 
 >dev-qt/qtwebkit-4.8.7
 
@@ -15,25 +14,25 @@
 >net-wireless/blueman-1.98_p20150105
 >dev-libs/openobex-1.5
 
->dev-db/couchdb-1.6.1
+#>dev-db/couchdb-1.6.1
 
-=sys-libs/ncurses-6.0-r1
-=sys-libs/ncurses-5.9-r5
-=sys-block/parted-3.2-r1
-=x11-terms/xterm-320
-=media-sound/alsa-utils-1.0.29
-=app-emulation/qemu-2.4.0.1-r1
-=sys-apps/util-linux-2.27
-=dev-scheme/guile-1.8.8-r2
-=sys-apps/openrc-0.18.3
-=x11-libs/vte-0.36.5
-=dev-lang/ruby-2.2.3-r1
-=sys-apps/texinfo-6.0
-=sys-devel/gettext-0.19.6-r1
-=app-emulation/libvirt-1.2.19-r1
-=dev-lang/python-3.5.0-r1
-=dev-libs/libcdio-0.92
-=dev-libs/libcdio-0.93
-=dev-util/cmake-3.3.2-r1
-=sys-apps/less-481
+#=sys-libs/ncurses-6.0-r1
+#=sys-libs/ncurses-5.9-r5
+#=sys-block/parted-3.2-r1
+#=x11-terms/xterm-320
+#=media-sound/alsa-utils-1.0.29
+#=app-emulation/qemu-2.4.0.1-r1
+#=sys-apps/util-linux-2.27
+#=dev-scheme/guile-1.8.8-r2
+#=sys-apps/openrc-0.18.3
+#=x11-libs/vte-0.36.5
+#=dev-lang/ruby-2.2.3-r1
+#=sys-apps/texinfo-6.0
+#=sys-devel/gettext-0.19.6-r1
+#=app-emulation/libvirt-1.2.19-r1
+#=dev-lang/python-3.5.0-r1
+#=dev-libs/libcdio-0.92
+#=dev-libs/libcdio-0.93
+#=dev-util/cmake-3.3.2-r1
+#=sys-apps/less-481
 
