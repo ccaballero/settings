@@ -420,11 +420,6 @@ function conky_widgets()
     round_rect(260, 459, 280, 1, 0, color, 0.5)
     round_rect(260, 659, 280, 1, 0, color, 0.5)
 
-    --clock_hands(1040, 92, color, 0.5, true, r-(10*7))
-    --ring('time', '%S', 60, color, 0.2, color, 0.8, 1040, 92, r-(14*7), 5, 0, 360)
-    --ring('time', '%M', 60, color, 0.2, color, 0.8, 1040, 92, r-(13*7), 5, 0, 360)
-    --ring('time', '%I', 12, color, 0.2, color, 0.8, 1040, 92, r-(12*7), 5, 0, 360)
-
     ring('cpu', 'cpu0', 100, color, 0.2, color, 0.8, 198, 197, r-(15*7)+3, 5,   0, 360)
     ring('cpu', 'cpu1', 100, color, 0.2, color, 0.8, 198, 197, r-(14*7)+3, 5,  30,  90)
     ring('cpu', 'cpu2', 100, color, 0.2, color, 0.8, 198, 197, r-(14*7)+3, 5, 120, 180)
@@ -452,7 +447,7 @@ function conky_widgets()
 --        draw_cover(366, 208, 72, 72, 3)
 --    end
 
-    ring('mpd_percent', '', 100, color, 0.2, color, 0.8, 295, 698, r-(14*7), 5, 0, 360)
+    ring('mpd_percent', '', 100, color, 0.2, color, 0.8, 295, 708, r-(14*7), 5, 0, 360)
 
     cairo_destroy(cr)
 end

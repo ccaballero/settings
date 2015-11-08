@@ -22,7 +22,7 @@ draw_graph_borders yes
 draw_outline no
 draw_shades no
 
-default_color b2b2b2
+default_color 505661
 
 cpu_avg_samples 2
 net_avg_samples 2
@@ -32,14 +32,14 @@ out_to_stderr no
 uppercase no
 use_spacer none
 
-lua_load ~/.conky/themes/07-widgets-1366x768.lua
+lua_load ~/.conky/themes/15-widgets-1366x768.lua
 lua_draw_hook_pre widgets
 
 TEXT
-${image /home/jacobian/.conky/themes/07-cpu.png -p 177,176 -s 32x32}
-${image /home/jacobian/.conky/themes/07-mem.png -p 180,275 -s 26x26}
-${image /home/jacobian/.conky/themes/07-bat.png -p 185,370 -s 17x26}
-${image /home/jacobian/.conky/themes/07-fan.png -p 178,465 -s 30x30}
+${image /home/jacobian/.conky/themes/15-cpu.png -p 177,176 -s 32x32}
+${image /home/jacobian/.conky/themes/15-mem.png -p 180,275 -s 26x26}
+${image /home/jacobian/.conky/themes/15-bat.png -p 185,370 -s 17x26}
+${image /home/jacobian/.conky/themes/15-fan.png -p 178,465 -s 30x30}
 
 ${voffset -64}
 ${font LivingTogether:size=44}$nodename ${exec whoami}${font}
@@ -49,7 +49,11 @@ ${font GeosansLight:size=14}kernel: $sysname $kernel${font}
 ${voffset -5}
 ${font GeosansLight:size=14}uptime: $uptime${font}
 
-${voffset 15}
+${voffset -96}
+${offset 460}${font GeosansLight:size=21}${time %d %B}${font}
+${offset 460}${font GeosansLight:size=21}${time %A}${font}
+
+${voffset 37}
 ${font GeosansLight:size=14}CPU:${font}
 ${alignr 620}${voffset -20}${font GeosansLight:size=14}${cpu cpu0}%${font}
 
@@ -273,10 +277,10 @@ ${voffset 3}${offset 335}${font GeosansLight:size=11}$mpd_album${font}
 ${voffset 1}${offset 335}${font GeosansLight:size=11}$mpd_artist${font}
 ${if_mpd_playing}
 ${if_match "$mpd_status" == "Playing"}
-${image /home/jacobian/.conky/themes/07-play.png -p 266,679 -s 48x48}
+${image /home/jacobian/.conky/themes/15-play.png -p 266,679 -s 48x48}
 ${endif}${if_match "$mpd_status" == "Paused"}
-${image /home/jacobian/.conky/themes/07-pause.png -p 266,679 -s 48x48}
+${image /home/jacobian/.conky/themes/15-pause.png -p 266,679 -s 48x48}
 ${endif}${else}
-${image /home/jacobian/.conky/themes/07-stop.png -p 266,679 -s 48x48}
+${image /home/jacobian/.conky/themes/15-stop.png -p 266,679 -s 48x48}
 ${endif}
 

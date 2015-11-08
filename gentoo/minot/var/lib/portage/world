@@ -71,11 +71,14 @@ dev-lang/php
 dev-lang/python
 dev-lang/python-exec
 dev-lang/python:2.7
+dev-lang/python:3.3
+dev-lang/python:3.4
 dev-lang/ruby
 dev-lang/v8
 dev-lang/vala
 dev-lang/vala:0.20
 dev-lang/vala:0.24
+dev-lang/vala:0.26
 dev-lang/yasm
 dev-libs/boost
 dev-libs/dotconf
@@ -98,6 +101,7 @@ dev-libs/libgcrypt
 dev-libs/libgpg-error
 dev-libs/libixion
 dev-libs/libksba
+dev-libs/liblinear
 dev-libs/libltdl
 dev-libs/libnl
 dev-libs/liborcus
@@ -135,7 +139,6 @@ dev-python/dbus-python
 dev-python/docutils
 dev-python/libvirt-python
 dev-python/lxml
-dev-python/matplotlib
 dev-python/mygpoclient
 dev-python/pillow
 dev-python/pycairo
@@ -210,6 +213,7 @@ media-libs/glm
 media-libs/harfbuzz
 media-libs/id3lib
 media-libs/lcms
+media-libs/lcms:0
 media-libs/libart_lgpl
 media-libs/libbluray
 media-libs/libcdr
@@ -237,6 +241,7 @@ media-libs/tiff
 media-libs/x264
 media-libs/xvid
 media-plugins/gst-plugins-faad
+media-plugins/gst-plugins-faad:0.10
 media-plugins/gst-plugins-ffmpeg
 media-plugins/gst-plugins-libav
 media-plugins/gst-plugins-libnice
@@ -300,7 +305,6 @@ net-wireless/rfkill
 net-wireless/wireless-regdb
 net-wireless/wpa_supplicant
 sci-geosciences/googleearth
-sci-geosciences/josm
 sci-libs/libgeotiff
 sys-apps/attr
 sys-apps/dbus
@@ -357,6 +361,11 @@ sys-kernel/gentoo-sources:3.17.2
 sys-kernel/gentoo-sources:3.18.0
 sys-kernel/gentoo-sources:3.18.2
 sys-kernel/gentoo-sources:3.18.3
+sys-kernel/gentoo-sources:3.18.5
+sys-kernel/gentoo-sources:3.19.2
+sys-kernel/gentoo-sources:4.0.0
+sys-kernel/gentoo-sources:4.0.5
+sys-kernel/gentoo-sources:4.1.2
 sys-kernel/linux-firmware
 sys-kernel/linux-headers
 sys-libs/cracklib
@@ -380,6 +389,7 @@ virtual/ffmpeg
 virtual/jpeg
 virtual/latex-base
 virtual/libiconv
+virtual/libintl
 virtual/libudev
 virtual/linux-sources
 virtual/mysql
@@ -458,6 +468,7 @@ x11-libs/libpciaccess
 x11-libs/libva-intel-driver
 x11-libs/libvdpau
 x11-libs/libxcb
+x11-libs/libxkbcommon
 x11-libs/libxkbfile
 x11-libs/libxshmfence
 x11-libs/pango
