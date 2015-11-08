@@ -14,10 +14,10 @@
 >net-wireless/blueman-1.98_p20150105
 >dev-libs/openobex-1.5
 
-#>dev-db/couchdb-1.6.1
+>dev-db/couchdb-1.6.1
 
 #=sys-libs/ncurses-6.0-r1
-#=sys-libs/ncurses-5.9-r5
+#=media-sound/lame-3.99.5-r1
 #=sys-block/parted-3.2-r1
 #=x11-terms/xterm-320
 #=media-sound/alsa-utils-1.0.29

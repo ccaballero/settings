@@ -407,7 +407,7 @@ function conky_widgets()
     cr = cairo_create(cs)
 
     r = 128
-    color = 0x934310
+    color = 0x8f3b3b
 
     round_rect(70, 204, 130, 1, 0, color, 0.5)
     round_rect(70, 340, 130, 1, 0, color, 0.5)
