@@ -26,9 +26,9 @@ theme.fg_minimize = color3
 
 -- {{{ Borders
 theme.border_width  = '3'
-theme.border_normal = color4
-theme.border_focus  = color3
-theme.border_marked = color4
+theme.border_normal = color3
+theme.border_focus  = color4
+theme.border_marked = color3
 -- }}}
 
 -- {{{ Tasklist
