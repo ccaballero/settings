@@ -12,6 +12,7 @@ app-emulation/libvirt-glib python
 app-emulation/virtualbox additions alsa extensions opengl qt4
 app-emulation/virtualbox-guest-additions X
 app-laptop/laptop-mode-tools acpi bluetooth scsi
+app-mobilephone/obexd usb -server
 app-office/libreoffice pdfimport -opengl -vba -webdav
 app-text/acroread -ldap
 app-text/evince -dbus -introspection -postscript -tiff
@@ -21,6 +22,7 @@ app-text/poppler qt4
 dev-cpp/glog gflags
 dev-db/mariadb -berkdb -pam -perl static-libs -xml
 dev-db/mysql -berkdb -perl
+dev-db/mongodb -static-libs
 dev-db/sqlite abi_x86_32
 dev-java/icedtea -webstart -nsplugin
 dev-lang/php -apache2 -berkdb curl fpm -ftp gd intl json mysql mysqli nls pdo -postgres sockets truetype -xmlreader -xmlwriter -xslt zip
@@ -48,6 +50,7 @@ dev-qt/qtscript abi_x86_32
 dev-qt/qtsql abi_x86_32
 dev-qt/qtwebkit -gstreamer -jit abi_x86_32
 dev-qt/qtxmlpatterns abi_x86_32
+dev-ruby/activerecord postgres
 dev-util/pkgconfig abi_x86_32
 dev-vcs/git -pcre -perl -gtk -python
 gnome-base/gnome-menus python
@@ -114,7 +117,7 @@ sys-fs/lvm2 -udev -thin
 sys-fs/udev -introspection -gudev
 sys-fs/udisks -gptfdisk
 sys-libs/gpm abi_x86_32
-sys-libs/ncurses abi_x86_32
+sys-libs/ncurses abi_x86_32 tinfo
 sys-libs/readline abi_x86_32
 sys-libs/zlib abi_x86_32 minizip
 sys-power/cpufreqd acpi lm_sensors
@@ -174,8 +177,12 @@ virtual/libiconv abi_x86_32
 virtual/libudev abi_x86_32
 virtual/opengl abi_x86_32
 virtual/pkgconfig abi_x86_32
+www-client/chromium hangouts
 www-client/firefox bindist gstreamer
 www-client/links -X -tiff -jpeg -deprecated
 www-client/midori -libnotify
 www-servers/apache -ldap
 www-servers/nginx http -pcre ssl vim-syntax -rtmp syslog
+# required by net-analyzer/greenbone-security-assistant-6.0.6::gentoo
+# required by greenbone-security-assistant (argument)
+>=net-libs/libmicrohttpd-0.9.45-r1 messages

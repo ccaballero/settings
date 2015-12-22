@@ -36,10 +36,9 @@
 # Projects address
 127.0.0.1       gentoo.local
 127.0.0.1       hiperborea.local
-127.0.0.1       galao.local
-127.0.0.1       cappuccino.local
-127.0.0.1       novus.local
-127.0.0.1       draft.local
 
-127.0.0.1       albazul.local
+127.0.0.1       hiperborea1.local
+127.0.0.1       hiperborea2.local
+
+127.0.0.1       sugar.local
 

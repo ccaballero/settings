@@ -7,7 +7,7 @@ fi
 PS1="\n\[\033[01;33m\](\A) \[\033[01;32m\]\h!\u \[\033[01;36m\]\w \[\033[01;37m\]\$ \[\033[00m\]"
 
 export CDPATH=.:~:/mnt/:~/Proyectos/
-export PATH=/usr/local/heroku/bin:/opt/dbeaver/:/opt/ZAP_2.4.2/:$PATH:~/.bash
+export PATH=/usr/local/heroku/bin:/opt/dbeaver/:/opt/ZAP_2.4.2/:$PATH:~/.bash:~/Android/Sdk/platform-tools:~/Android/Sdk/tools
 
 # bash history
 export HISTFILESIZE=
@@ -22,4 +22,7 @@ if [ -f ~/.bash_aliases ]
 then
     . ~/.bash_aliases
 fi
+
+export ORACLE_HOME=/usr/lib64/oracle/11.2.0.4/client/
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ORACLE_HOME/lib
 
