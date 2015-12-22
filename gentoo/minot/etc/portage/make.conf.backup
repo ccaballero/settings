@@ -7,13 +7,7 @@ USE="bluetooth -cups -ipv6 -kde -libav -qt4 mmx sse sse2 static-libs truetype ud
 
 CPU_FLAGS_X86="mmx mmxext sse sse2"
 
-GENTOO_MIRRORS="
-http://gentoo.arcticnetwork.ca/
-http://gentoo.mirrors.tera-byte.com/
-http://ftp.jaist.ac.jp/pub/Linux/Gentoo/
-http://mirror.leaseweb.com/gentoo/
-http://mirror.iawnet.sandia.gov/gentoo/
-"
+GENTOO_MIRRORS="http://gentoo.main/"
 
 VIDEO_CARDS="nvidia nouveau intel"
 INPUT_DEVICES="evdev synaptics"
@@ -43,4 +37,3 @@ FEATURES="buildpkg"
 PORTAGE_BINHOST="http://gentoo.main/packages"
 
 ACCEPT_KEYWORDS="~amd64"
-
