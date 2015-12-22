@@ -15,6 +15,7 @@ app-arch/xarchiver
 app-cdr/xfburn
 app-crypt/gnupg
 app-crypt/pinentry
+app-dicts/myspell-en
 app-editors/leafpad
 app-editors/vim
 app-editors/vim-core
@@ -28,6 +29,7 @@ app-eselect/eselect-opengl
 app-eselect/eselect-pinentry
 app-i18n/enca
 app-i18n/poedit
+app-laptop/i8kutils
 app-laptop/laptop-mode-tools
 app-misc/ca-certificates
 app-misc/pax-utils
@@ -48,6 +50,7 @@ app-text/libetonyek
 app-text/libmwaw
 app-text/libwps
 app-text/opensp
+app-text/pdftk
 app-text/po4a
 app-text/poppler
 app-text/yelp-tools
@@ -73,8 +76,10 @@ dev-db/sqlite
 dev-java/ant-core
 dev-java/icedtea-bin
 dev-java/java-config
+dev-java/java-config-wrapper
 dev-java/javatoolkit
 dev-lang/erlang
+dev-lang/go
 dev-lang/orc
 dev-lang/perl
 dev-lang/php
@@ -95,6 +100,7 @@ dev-libs/gmp
 dev-libs/gobject-introspection
 dev-libs/hiredis
 dev-libs/icu
+dev-libs/jemalloc
 dev-libs/jsoncpp
 dev-libs/keybinder
 dev-libs/libassuan
@@ -210,8 +216,10 @@ dev-util/gtk-doc-am
 dev-util/gtk-update-icon-cache
 dev-util/itstool
 dev-util/meld
+dev-util/ninja
 dev-util/pkgconfig
 dev-util/ragel
+dev-util/re2c
 dev-util/scons
 dev-vcs/git
 gnome-base/dconf
@@ -240,9 +248,11 @@ media-gfx/imagemagick
 media-gfx/inkscape
 media-gfx/librecad
 media-gfx/ristretto::gentoo
+media-gfx/uniconvertor
 media-libs/alsa-lib
 media-libs/audiofile
 media-libs/babl
+media-libs/exiftool
 media-libs/flac
 media-libs/fontconfig
 media-libs/freetype
@@ -264,6 +274,7 @@ media-libs/libass
 media-libs/libbluray
 media-libs/libcdr
 media-libs/libepoxy
+media-libs/libextractor
 media-libs/libjpeg-turbo
 media-libs/libmatroska
 media-libs/libmng
@@ -274,6 +285,7 @@ media-libs/libvisio
 media-libs/libvorbis
 media-libs/mesa
 media-libs/opus
+media-libs/speex
 media-libs/tiff
 media-libs/vo-aacenc
 media-libs/x264
@@ -301,6 +313,7 @@ media-sound/mpc
 media-sound/mpd
 media-sound/mpg123
 media-sound/ncmpc
+media-sound/sox
 media-video/ffmpeg
 media-video/gnome-mplayer
 media-video/mjpegtools
@@ -455,6 +468,7 @@ virtual/udev
 www-client/chromium
 www-client/firefox
 www-client/links
+www-client/phantomjs
 www-plugins/adobe-flash
 www-servers/nginx
 x11-apps/mesa-progs

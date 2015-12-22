@@ -66,6 +66,7 @@ media-libs/gd fontconfig
 media-libs/glu abi_x86_32
 media-libs/harfbuzz icu
 media-libs/lcms abi_x86_32 python
+media-libs/libextractor archive bzip2 ffmpeg flac gif gsf gtk jpeg magic midi mp4 mpeg -tidy tiff vorbis zlib
 media-libs/libjpeg abi_x86_32
 media-libs/libjpeg-turbo abi_x86_32
 media-libs/libmng abi_x86_32
