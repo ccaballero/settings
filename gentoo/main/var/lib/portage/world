@@ -26,6 +26,7 @@ app-emulation/spice-protocol
 app-emulation/virt-manager
 app-eselect/eselect-java
 app-eselect/eselect-opengl
+app-eselect/eselect-php
 app-eselect/eselect-pinentry
 app-i18n/enca
 app-i18n/poedit
@@ -69,7 +70,6 @@ dev-cpp/pangomm
 dev-db/couchdb
 dev-db/mariadb
 dev-db/mongodb
-dev-db/mysql-connector-c
 dev-db/mysql-init-scripts
 dev-db/redis
 dev-db/sqlite
@@ -214,6 +214,7 @@ dev-util/dialog
 dev-util/gdbus-codegen
 dev-util/gtk-doc-am
 dev-util/gtk-update-icon-cache
+dev-util/intltool
 dev-util/itstool
 dev-util/meld
 dev-util/ninja
@@ -247,6 +248,7 @@ media-gfx/gimp
 media-gfx/imagemagick
 media-gfx/inkscape
 media-gfx/librecad
+media-gfx/pngquant
 media-gfx/ristretto::gentoo
 media-gfx/uniconvertor
 media-libs/alsa-lib
@@ -383,6 +385,7 @@ sys-apps/gentoo-functions
 sys-apps/hdparm
 sys-apps/help2man
 sys-apps/hwids
+sys-apps/kmod
 sys-apps/lm_sensors
 sys-apps/man-db
 sys-apps/mlocate
@@ -405,6 +408,7 @@ sys-devel/bc
 sys-devel/binutils
 sys-devel/binutils-config
 sys-devel/clang
+sys-devel/flex
 sys-devel/gcc
 sys-devel/gettext
 sys-devel/llvm
@@ -449,7 +453,6 @@ virtual/libffi
 virtual/libgudev
 virtual/libiconv
 virtual/libintl
-virtual/libmysqlclient
 virtual/libudev
 virtual/linux-sources
 virtual/mysql

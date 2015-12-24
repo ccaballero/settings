@@ -108,7 +108,7 @@ sys-apps/dbus abi_x86_32
 sys-apps/util-linux abi_x86_32
 sys-boot/grub -multislot fonts themes truetype
 sys-devel/clang abi_x86_32
-sys-devel/gcc gcj awt
+sys-devel/gcc gcj 
 sys-devel/llvm abi_x86_32 clang
 sys-fs/eudev abi_x86_32
 sys-fs/lvm2 -udev -thin
