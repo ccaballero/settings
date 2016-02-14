@@ -28,7 +28,6 @@ app-laptop/i8kutils
 app-laptop/laptop-mode-tools
 app-misc/ca-certificates
 app-misc/pax-utils
-app-mobilephone/obexd
 app-office/libreoffice
 app-portage/gentoolkit
 app-portage/mirrorselect
@@ -44,6 +43,7 @@ app-text/libebook
 app-text/libetonyek
 app-text/libmspub
 app-text/libwpd
+app-text/pdftk
 app-text/rman
 app-text/texlive-core
 app-text/xhtml1
@@ -223,6 +223,7 @@ media-gfx/comix
 media-gfx/gimp
 media-gfx/inkscape
 media-gfx/librecad
+media-gfx/pngquant
 media-gfx/ristretto
 media-gfx/uniconvertor
 media-libs/a52dec
@@ -291,6 +292,7 @@ media-video/mjpegtools
 media-video/mplayer
 media-video/vlc
 net-analyzer/greenbone-security-assistant
+net-analyzer/hydra
 net-analyzer/nessus
 net-analyzer/nikto
 net-analyzer/nmap
