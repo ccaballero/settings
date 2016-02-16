@@ -151,16 +151,20 @@ dev-perl/Unicode-EastAsianWidth
 dev-perl/XML-LibXML
 dev-php/pecl-imagick
 dev-python/Babel
+dev-python/certifi
 dev-python/cffi
 dev-python/cryptography
 dev-python/cython
 dev-python/dbus-python
+dev-python/enum34
 dev-python/feedparser
+dev-python/idna
 dev-python/ipaddress
 dev-python/jinja
 dev-python/libvirt-python
 dev-python/lxml
 dev-python/m2crypto
+dev-python/markupsafe
 dev-python/mygpoclient
 dev-python/numpy
 dev-python/packaging
@@ -170,6 +174,7 @@ dev-python/py
 dev-python/pyasn1
 dev-python/pycairo
 dev-python/pycparser
+dev-python/pycrypto
 dev-python/pycurl
 dev-python/pygments
 dev-python/pygobject
@@ -181,6 +186,7 @@ dev-python/pyparsing
 dev-python/pytest
 dev-python/python-dateutil
 dev-python/pytz
+dev-python/pyxattr
 dev-python/requests
 dev-python/setuptools
 dev-python/simplejson
@@ -491,6 +497,7 @@ virtual/perl-File-Temp
 virtual/perl-Parse-CPAN-Meta
 virtual/perl-version
 virtual/pkgconfig
+virtual/python-ipaddress
 virtual/rubygems
 virtual/udev
 www-client/chromium
