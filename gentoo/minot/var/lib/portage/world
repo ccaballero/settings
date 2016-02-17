@@ -23,12 +23,10 @@ app-eselect/eselect-opengl
 app-eselect/eselect-php
 app-eselect/eselect-pinentry
 app-i18n/enca
-app-i18n/poedit
 app-laptop/i8kutils
 app-laptop/laptop-mode-tools
 app-misc/ca-certificates
 app-misc/pax-utils
-app-office/libreoffice
 app-portage/gentoolkit
 app-portage/mirrorselect
 app-portage/portage-utils
@@ -88,6 +86,7 @@ dev-lang/python-exec
 dev-lang/python:2.7
 dev-lang/python:3.4
 dev-lang/ruby
+dev-lang/ruby:2.2
 dev-lang/v8
 dev-lang/vala
 dev-lang/vala:0.20
@@ -218,7 +217,6 @@ media-fonts/proggy-fonts
 media-fonts/terminus-font
 media-fonts/ttf-bitstream-vera
 media-fonts/unifont
-media-gfx/blender
 media-gfx/comix
 media-gfx/gimp
 media-gfx/inkscape
@@ -440,7 +438,6 @@ virtual/perl-Module-Metadata
 virtual/perl-Perl-OSType
 virtual/perl-Test-Harness
 virtual/perl-Text-ParseWords
-virtual/rubygems
 virtual/udev
 www-client/chromium
 www-client/firefox

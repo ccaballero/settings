@@ -49,16 +49,6 @@ dev-qt/qtscript abi_x86_32
 dev-qt/qtsql abi_x86_32
 dev-qt/qtwebkit -gstreamer -jit abi_x86_32 -exceptions
 dev-qt/qtxmlpatterns abi_x86_32
-dev-ruby/minitest ruby_targets_ruby23
-dev-ruby/rdoc ruby_targets_ruby23
-dev-ruby/json ruby_targets_ruby23
-dev-ruby/test-unit ruby_targets_ruby23
-dev-ruby/rake ruby_targets_ruby23
-dev-ruby/rubygems ruby_targets_ruby23
-dev-ruby/net-telnet ruby_targets_ruby23
-dev-ruby/racc ruby_targets_ruby23
-dev-ruby/power_assert ruby_targets_ruby23
-dev-ruby/did_you_mean ruby_targets_ruby23
 dev-util/pkgconfig abi_x86_32
 dev-vcs/git -pcre -perl -gtk -python
 gnome-base/gnome-menus python
