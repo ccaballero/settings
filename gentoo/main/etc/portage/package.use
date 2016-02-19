@@ -194,3 +194,6 @@ www-client/midori -libnotify
 www-servers/apache -ldap
 www-servers/nginx http -pcre ssl vim-syntax -rtmp syslog
 
+# required by net-analyzer/greenbone-security-assistant-6.0.9::gentoo
+# required by greenbone-security-assistant (argument)
+>=net-libs/libmicrohttpd-0.9.48 messages
