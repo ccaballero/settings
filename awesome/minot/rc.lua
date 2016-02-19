@@ -38,9 +38,9 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-count = 17
+count = 18
 --switch = string.format('%02d',math.floor(math.random()*count)+1)
-switch = '17'
+switch = '18'
 beautiful.init("/home/jacobian/.config/awesome/themes/" .. switch .. "-theme-1366x768.lua")
 
 -- This is used later as the default terminal and editor to run.

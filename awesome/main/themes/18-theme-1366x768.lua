@@ -1,16 +1,16 @@
 
 -- {{{ Main
 theme = {}
-theme.wallpaper = '/home/jacobian/.config/awesome/themes/17-background-1366x768.png'
+theme.wallpaper = '/home/jacobian/.config/awesome/themes/18-background-1366x768.png'
 -- }}}
 
 -- {{{ Styles
 theme.font = 'Helvetica 35 Thin 8'
 
-color1 = '#c6c0ca'
-color2 = '#a39ea6'
-color3 = '#3d3842'
-color4 = '#3d3842'
+color1 = '#0a1622'
+color2 = '#3c5060'
+color3 = '#b2b1b8'
+color4 = '#b2b1b8'
 
 -- {{{ Colors
 theme.bg_normal   = color1
@@ -89,7 +89,7 @@ theme.menu_border_color = color1
 -- }}}
 
 -- {{{ Misc
-theme.awesome_icon           = '/home/jacobian/.config/awesome/themes/17-awesome-icon.png'
+theme.awesome_icon           = '/home/jacobian/.config/awesome/themes/18-awesome-icon.png'
 theme.menu_submenu_icon      = '/usr/share/awesome/themes/default/submenu.png'
 theme.tasklist_floating_icon = '/usr/share/awesome/themes/default/tasklist/floatingw.png'
 -- }}}
