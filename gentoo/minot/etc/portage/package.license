@@ -1,3 +1,7 @@
 >=www-plugins/adobe-flash-11.2.202.378 AdobeFlash-11.x
 >=sci-geosciences/googleearth-7.1.2.2041 googleearth
 >=net-im/skype-4.3.0.37-r5 skype-4.0.0.7-copyright
+# required by www-client/google-chrome (argument)
+>=www-client/google-chrome-48.0.2564.116_p1 google-chrome
+# required by dev-java/oracle-jdk-bin (argument)
+>=dev-java/oracle-jdk-bin-1.8.0.77 Oracle-BCLA-JavaSE

@@ -8,4 +8,5 @@
 >net-wireless/blueman-1.98_p20150105
 >dev-libs/openobex-1.5
 
->app-admin/conky-1.9.0-r3
+>dev-java/java-config-2.2.0
+

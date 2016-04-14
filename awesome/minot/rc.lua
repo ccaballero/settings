@@ -39,8 +39,8 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 count = 18
---switch = string.format('%02d',math.floor(math.random()*count)+1)
-switch = '18'
+switch = string.format('%02d',math.floor(math.random()*count)+1)
+--switch = '18'
 beautiful.init("/home/jacobian/.config/awesome/themes/" .. switch .. "-theme-1366x768.lua")
 
 -- This is used later as the default terminal and editor to run.
@@ -94,7 +94,7 @@ end
 -- Create a laucher widget and a main menu
 app_thunar = "thunar"
 app_firefox = "firefox"
-app_chromium = "chromium"
+app_chromium = "google-chrome-stable"
 app_pidgin = "pidgin"
 app_transmission = "transmission-gtk"
 app_gmpc = "gmpc"
@@ -103,7 +103,7 @@ mymainmenu = awful.menu({ items = { --{ "awesome", myawesomemenu, beautiful.awes
                                     { 'terminal',        terminal,          beautiful.terminal_icon },
                                     { 'thunar',          app_thunar,        beautiful.thunar_icon },
                                     { 'firefox',         app_firefox,       beautiful.firefox_icon },
-                                    { 'chromium',        app_chromium,      beautiful.chromium_icon },
+                                    { 'chrome',          app_chromium,      beautiful.chromium_icon },
                                     { 'pidgin',          app_pidgin,        beautiful.pidgin_icon },
                                     { 'transmission',    app_transmission,  beautiful.transmission_icon },
                                     { 'gmpc',            app_gmpc,          beautiful.gmpc_icon },

@@ -1,4 +1,4 @@
-app-admin/conky imlib iostats lua lua-cairo lua-imlib math mpd rss truetype vim-syntax wifi hddtemp 
+app-admin/conky -hddtemp iconv imlib iostats lua lua-cairo lua-imlib math mpd -ncurses -portmon -rss truetype vim-syntax wifi X
 app-arch/bzip2 abi_x86_32
 app-eselect/eselect-php fpm -apache
 app-admin/sudo -ldap -sendmail
@@ -22,9 +22,10 @@ dev-cpp/glog gflags
 dev-db/mariadb -berkdb -pam -perl static-libs -xml
 dev-db/mysql -berkdb -perl
 dev-db/sqlite abi_x86_32
-dev-java/icedtea -webstart -nsplugin
-dev-java/icedtea-bin -webstart -nsplugin
-dev-lang/php -apache2 -berkdb curl fpm -ftp gd intl json mysql mysqli nls pdo -postgres sockets truetype -xmlreader -xmlwriter -xslt zip
+dev-java/icedtea webstart nsplugin
+dev-java/icedtea-bin webstart nsplugin
+dev-java/icedtea-web nsplugin
+dev-lang/php -apache2 -berkdb curl fpm -ftp gd intl json mysql mysqli nls pdo -postgres sockets threads truetype -xmlreader -xmlwriter -xslt zip
 dev-lang/python sqlite
 dev-libs/apr-util -berkdb -ldap
 dev-libs/boost python
@@ -52,7 +53,7 @@ dev-qt/qtxmlpatterns abi_x86_32
 dev-util/pkgconfig abi_x86_32
 dev-vcs/git -pcre -perl -gtk -python
 gnome-base/gnome-menus python
-gnome-base/gvfs archive -cdda
+gnome-base/gvfs archive -cdda fuse mtp
 media-fonts/hunkyfonts X
 media-fonts/kochi-substitute X
 media-fonts/ttf-bitstreamvera X
@@ -76,10 +77,12 @@ media-libs/libvpx postproc
 media-libs/libwebp abi_x86_32
 media-libs/mesa abi_x86_32 gles2 bindist
 media-libs/tiff abi_x86_32
+media-plugins/alsa-plugins pulseaudio
 media-plugins/gst-plugins-meta ffmpeg -cdda
 media-sound/mpc iconv
 media-sound/mpd -ffmpeg
 media-sound/ncmpc -help-screen colors mouse
+media-sound/pulseaudio X alsa alsa-plugin bluetooth caps dbus glib gnome gtk udev
 media-video/ffmpeg libass opus rtmp threads v4l vaapi vdpau vpx -X x264 x265
 media-video/gnome-mplayer -libnotify
 media-video/mjpegtools v4l
@@ -129,6 +132,7 @@ xfce-base/xfce4-session -xscreensaver
 xfce-base/xfce4-settings -xklavier -libnotify
 xfce-base/xfwm4 -startup-notification
 xfce-extra/tumbler -pdf
+xfce-extra/thunar-volman
 x11-base/xorg-server udev kdrive
 x11-libs/libdrm abi_x86_32
 x11-libs/libICE abi_x86_32

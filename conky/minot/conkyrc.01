@@ -22,7 +22,7 @@ draw_graph_borders yes
 draw_outline no
 draw_shades no
 
-default_color b1906c
+default_color 864a35
 
 cpu_avg_samples 2
 net_avg_samples 2
