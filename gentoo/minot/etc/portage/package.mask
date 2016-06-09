@@ -10,3 +10,5 @@
 
 >dev-java/java-config-2.2.0
 
+>dev-ruby/rkelly-remix-0.0.6
+

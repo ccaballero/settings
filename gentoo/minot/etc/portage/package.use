@@ -5,7 +5,7 @@ app-admin/sudo -ldap -sendmail
 app-admin/syslog-ng ssl tcpd json redis
 app-editors/gobby gnome
 app-editors/gvim netbeans
-app-editors/vim -X python
+app-editors/vim X python
 app-emulation/qemu -bluetooth spice usbredir
 app-emulation/libvirt -policykit virt-network
 app-emulation/libvirt-glib python
@@ -25,6 +25,7 @@ dev-db/sqlite abi_x86_32
 dev-java/icedtea webstart nsplugin
 dev-java/icedtea-bin webstart nsplugin
 dev-java/icedtea-web nsplugin
+dev-lang/perl berkdb gdbm ithreads
 dev-lang/php -apache2 -berkdb curl fpm -ftp gd intl json mysql mysqli nls pdo -postgres sockets threads truetype -xmlreader -xmlwriter -xslt zip
 dev-lang/python sqlite
 dev-libs/apr-util -berkdb -ldap
@@ -50,6 +51,12 @@ dev-qt/qtscript abi_x86_32
 dev-qt/qtsql abi_x86_32
 dev-qt/qtwebkit -gstreamer -jit abi_x86_32 -exceptions
 dev-qt/qtxmlpatterns abi_x86_32
+dev-ruby/activerecord postgres
+dev-ruby/json ruby_targets_ruby20
+dev-ruby/racc ruby_targets_ruby20
+dev-ruby/rake ruby_targets_ruby20
+dev-ruby/rdoc ruby_targets_ruby20
+dev-ruby/rubygems ruby_targets_ruby20
 dev-util/pkgconfig abi_x86_32
 dev-vcs/git -pcre -perl -gtk -python
 gnome-base/gnome-menus python
@@ -90,6 +97,7 @@ media-video/mplayer win32codecs mmxext bindist
 media-video/vlc bluray -cdda dvbpsi fontconfig -gcrypt libass matroska mpeg -ncurses -opengl postproc qt4 svga truetype vorbis win32codecs vdpau wma-fixed x264 rtsp
 net-analyzer/netcat6 -bluetooth
 net-analyzer/nmap -gtk -lua
+net-analyzer/wireshark androiddump
 net-dns/dnsmasq dbus dhcp script
 net-firewall/iptables ipv6
 net-im/pidgin -spell -xscreensaver
@@ -181,7 +189,7 @@ virtual/libiconv abi_x86_32
 virtual/libudev abi_x86_32
 virtual/opengl abi_x86_32
 virtual/pkgconfig abi_x86_32
-virtual/rubygems ruby_targets_ruby23
+virtual/rubygems ruby_targets_ruby20
 www-client/chromium hangouts
 www-client/firefox bindist gstreamer
 www-client/links -X -tiff -jpeg -deprecated

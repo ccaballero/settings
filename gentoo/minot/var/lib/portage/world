@@ -97,7 +97,6 @@ dev-db/sqlite
 dev-java/ant-core
 dev-java/icedtea-bin
 dev-java/java-config
-dev-java/java-config-wrapper
 dev-java/javatoolkit
 dev-java/jdbc-oracle-bin
 dev-java/oracle-jdk-bin
@@ -109,11 +108,13 @@ dev-lang/orc
 dev-lang/perl
 dev-lang/php
 dev-lang/php:5.6
+dev-lang/php:7.0
 dev-lang/python
 dev-lang/python-exec
 dev-lang/python:2.7
 dev-lang/python:3.4
 dev-lang/ruby
+dev-lang/ruby:2.0
 dev-lang/ruby:2.2
 dev-lang/spidermonkey
 dev-lang/spidermonkey:0
@@ -180,12 +181,14 @@ dev-perl/Digest-Perl-MD5
 dev-perl/IO-stringy
 dev-perl/Locale-gettext
 dev-perl/OLE-StorageLite
+dev-perl/Switch
 dev-perl/Text-CSV
 dev-perl/Text-CSV_XS
 dev-perl/Text-Unidecode
 dev-perl/URI
 dev-perl/Unicode-EastAsianWidth
 dev-perl/Unicode-Map
+dev-perl/WWW-Mechanize
 dev-perl/XML-NamespaceSupport
 dev-perl/XML-Parser
 dev-perl/XML-SAX
@@ -235,7 +238,13 @@ dev-python/simplejson
 dev-python/six
 dev-python/urllib3
 dev-python/urwid
+dev-qt/qtcore
+dev-qt/qtdbus
+dev-qt/qtgui
 dev-qt/qthelp
+dev-qt/qtnetwork
+dev-qt/qtopengl
+dev-qt/qtscript
 dev-qt/qtsvg
 dev-qt/qtwidgets
 dev-ruby/jsobfu
@@ -279,6 +288,7 @@ gnome-base/librsvg
 gnome-extra/yelp-xsl
 mail-client/mutt
 mail-filter/spamassassin
+mail-mta/nullmailer
 media-fonts/arkpandora
 media-fonts/artwiz-aleczapka-en
 media-fonts/corefonts
@@ -296,11 +306,13 @@ media-fonts/inconsolata
 media-fonts/liberation-fonts
 media-fonts/libertine
 media-fonts/proggy-fonts
+media-fonts/roboto
 media-fonts/terminus-font
 media-fonts/ttf-bitstream-vera
 media-fonts/unifont
 media-gfx/comix
 media-gfx/exiv2
+media-gfx/fontforge
 media-gfx/gimp
 media-gfx/graphite2
 media-gfx/inkscape
@@ -391,11 +403,14 @@ media-video/vlc
 net-analyzer/gnu-netcat
 net-analyzer/greenbone-security-assistant
 net-analyzer/hydra
+net-analyzer/metasploit
 net-analyzer/nessus
 net-analyzer/net-snmp
 net-analyzer/nikto
 net-analyzer/nmap
 net-analyzer/openvas
+net-analyzer/openvas-cli
+net-analyzer/openvas-libraries
 net-analyzer/openvas-manager
 net-analyzer/openvas-scanner
 net-analyzer/scapy
@@ -403,6 +418,7 @@ net-analyzer/ssldump
 net-analyzer/sslscan
 net-analyzer/traceroute
 net-analyzer/wapiti
+net-analyzer/wireshark
 net-dns/bind-tools
 net-dns/dnsmasq
 net-dns/libidn
@@ -450,6 +466,7 @@ net-wireless/blueman
 net-wireless/bluez
 net-wireless/broadcom-sta
 net-wireless/crda
+net-wireless/hostapd
 net-wireless/iw
 net-wireless/rfkill
 net-wireless/wireless-regdb
@@ -523,6 +540,8 @@ sys-fs/udev-init-scripts
 sys-fs/udisks
 sys-fs/yaffs2-utils
 sys-kernel/gentoo-sources
+sys-kernel/gentoo-sources:4.5.0-r1
+sys-kernel/gentoo-sources:4.5.2
 sys-kernel/linux-firmware
 sys-kernel/linux-headers
 sys-libs/binutils-libs
@@ -569,6 +588,7 @@ virtual/perl-JSON-PP
 virtual/perl-MIME-Base64
 virtual/perl-Module-Metadata
 virtual/perl-Perl-OSType
+virtual/perl-Storable
 virtual/perl-Test-Harness
 virtual/perl-Text-ParseWords
 virtual/python-ipaddress
@@ -576,7 +596,6 @@ virtual/udev
 www-client/firefox
 www-client/google-chrome
 www-client/links
-www-client/phantomjs
 www-plugins/adobe-flash
 www-servers/nginx
 x11-apps/bdftopcf
@@ -698,6 +717,7 @@ xfce-extra/thunar-archive-plugin
 xfce-extra/thunar-media-tags-plugin
 xfce-extra/thunar-shares-plugin
 xfce-extra/thunar-volman
+xfce-extra/tumbler
 xfce-extra/xfce4-screenshooter
 xfce-extra/xfce4-taskmanager
 xfce-extra/xfce4-volumed

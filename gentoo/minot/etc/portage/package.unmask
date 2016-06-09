@@ -1,2 +1,13 @@
 =sci-geosciences/googleearth-7.1.2.2041
 
+# required by app-mobilephone/obexftp-0.24::gentoo
+# required by sys-fs/obexfs-0.12::gentoo
+# required by obexfs (argument)
+# /etc/portage/package.mask:
+=dev-libs/openobex-1.7.1
+# required by dev-ruby/rjb-1.5.4::gentoo
+# required by net-analyzer/metasploit-4.11.7::gentoo[java,ruby_targets_ruby21]
+# required by @selected
+# required by @world (argument)
+# /etc/portage/package.mask:
+=dev-java/java-config-2.2.0-r3

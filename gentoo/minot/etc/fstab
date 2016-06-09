@@ -11,22 +11,25 @@
 /dev/vg/usr   /usr        ext4     noatime                                     0 1
 /dev/vg/var   /var        ext4     noatime,defaults,acl                        0 2
 
-/dev/vg/portage   /usr/portage             ext4 noatime                        0 2
-/dev/vg/music     /media/music             ext4 noatime                        0 2
-/dev/vg/books     /media/books             ext4 noatime                        0 2
-/dev/vg/resources /media/resources         ext4 noatime                        0 2
+/dev/vg/portage   /usr/portage          ext4 noatime                        0 2
+/dev/vg/music     /media/music          ext4 noatime                        0 2
+/dev/vg/books     /media/books          ext4 noatime                        0 2
+/dev/vg/resources /media/resources      ext4 noatime                        0 2
 
-/dev/cdrom    /mnt/cdrom      auto     noauto,uid=000,gid=000,umask=023,users,ro   0 0
+/dev/cdrom      /mnt/cdrom      auto    noauto,uid=000,gid=000,umask=023,users,ro   0 0
 
-proc          /proc           proc     defaults                                    0 0
-shm           /dev/shm        tmpfs    nodev,nosuid,noexec                         0 0
+proc            /proc           proc    defaults                                    0 0
+shm             /dev/shm        tmpfs   nodev,nosuid,noexec                         0 0
+
+#/dev/sdb1       /mnt/usb        auto    noauto,uid=000,gid=100,umask=002        0 0
+/dev/sdc1       /mnt/usb        auto    noauto,uid=000,gid=100,umask=002        0 0
 
 /var/lib/mpd/playlists            /bckp/playlists         none bind 0 0
 /etc                              /bckp/gentoo/minot/etc  none bind 0 0
 /var                              /bckp/gentoo/minot/var  none bind 0 0
-/home/jacobian/.config/awesome    /bckp/awesome/minot     none bind 0 0
-/home/jacobian/.conky             /bckp/conky/minot       none bind 0 0
 /root/kernel                      /bckp/kernel/minot      none bind 0 0
+/home/jacobian/.config/awesome    /bckp/awesome/main      none bind 0 0
+/home/jacobian/.conky             /bckp/conky/main        none bind 0 0
 
 /bckp/bash/main                   /home/jacobian/.bash    none bind 0 0
 
